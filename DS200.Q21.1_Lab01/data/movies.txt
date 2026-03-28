@@ -1,0 +1,50 @@
+1043, Toy Story (1995), Animation|Children|Comedy
+2589, The Matrix (1999), Action|Sci-Fi
+3791, Inception (2010), Action|Adventure|Sci-Fi
+4862, Forrest Gump (1994), Drama|Romance
+5930, The Lion King (1994), Animation|Adventure|Drama
+5274, Titanic (1997), Drama|Romance
+5882, Star Wars: A New Hope (1977), Action|Adventure|Sci-Fi
+5210, The Godfather (1972), Crime|Drama
+4357, Pulp Fiction (1994), Crime|Drama
+4024, The Dark Knight (2008), Action|Crime|Drama
+3156, Schindler's List (1993), Biography|Drama|History
+1287, The Shawshank Redemption (1994), Drama
+2398, The Avengers (2012), Action|Adventure|Sci-Fi
+1743, Jurassic Park (1993), Adventure|Sci-Fi|Thriller
+1590, Back to the Future (1985), Adventure|Comedy|Sci-Fi
+1630, Gladiator (2000), Action|Adventure|Drama
+1729, Braveheart (1995), Biography|Drama|History
+1830, The Departed (2006), Crime|Drama|Thriller
+1945, The Silence of the Lambs (1991), Crime|Drama|Thriller
+2056, Saving Private Ryan (1998), Drama|War
+2134, Avatar (2009), Action|Adventure|Fantasy
+2247, Interstellar (2014), Adventure|Drama|Sci-Fi
+2389, The Prestige (2006), Drama|Mystery|Sci-Fi
+2450, Memento (2000), Mystery|Thriller
+2578, The Green Mile (1999), Crime|Drama|Fantasy
+2684, The Lord of the Rings: The Fellowship of the Ring (2001), Adventure|Drama|Fantasy
+2790, The Lord of the Rings: The Two Towers (2002), Adventure|Drama|Fantasy
+2831, The Lord of the Rings: The Return of the King (2003), Adventure|Drama|Fantasy
+2967, Fight Club (1999), Drama
+3021, Se7en (1995), Crime|Drama|Mystery
+3150, The Usual Suspects (1995), Crime|Mystery|Thriller
+3278, American Beauty (1999), Drama
+3321, Good Will Hunting (1997), Drama|Romance
+3467, The Social Network (2010), Biography|Drama
+3589, Slumdog Millionaire (2008), Drama|Romance
+3690, Whiplash (2014), Drama|Music
+3752, La La Land (2016), Comedy|Drama|Music
+3876, Mad Max: Fury Road (2015), Action|Adventure|Sci-Fi
+3921, The Revenant (2015), Action|Adventure|Drama
+4050, Gravity (2013), Drama|Sci-Fi|Thriller
+4189, The Wolf of Wall Street (2013), Biography|Crime|Drama
+4234, Birdman (2014), Comedy|Drama
+4367, The Big Short (2015), Biography|Comedy|Drama
+4450, Manchester by the Sea (2016), Drama
+4589, Moonlight (2016), Drama
+4670, Spotlight (2015), Biography|Crime|Drama
+4782, The Imitation Game (2014), Biography|Drama|Thriller
+4893, Dunkirk (2017), Action|Drama|History
+4950, Coco (2017), Animation|Adventure|Family
+5012, Parasite (2019), Comedy|Drama|Thriller
