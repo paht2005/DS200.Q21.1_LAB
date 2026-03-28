@@ -8,14 +8,23 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Course-DS200.Q21.1-555?style=for-the-badge" alt="DS200" />
-  <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Java%20MapReduce-Lab01-orange?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java MapReduce" />
+  <img src="https://img.shields.io/badge/Python-optional-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python optional" />
 </p>
+
+---
+
+## Student information
+
+| Student ID | Full name        | GitHub                                  | Email                  |
+|:----------:|------------------|-----------------------------------------|------------------------|
+| 23521143   | Nguyen Cong Phat | [paht2005](https://github.com/paht2005) | 23521143@gm.uit.edu.vn |
 
 ---
 
 ## Purpose
 
-This repository is the **course workspace** for **DS200.Q21.1**. Each lab is a **self-contained subdirectory** (data, Hadoop Streaming scripts, optional pandas/Jupyter, outputs) so you can add **Lab02**, **Lab03**, and so on later.
+This repository is the **course workspace** for **DS200.Q21.1**. Each lab is a **self-contained subdirectory** (data, **Java MapReduce**, optional **Hadoop Streaming (Python)**, optional pandas/Jupyter, outputs) so you can add **Lab02**, **Lab03**, and so on later.
 
 ---
 
@@ -26,14 +35,16 @@ DS200.Q21.1_Lab/
 ├── README.md                    ← Workspace overview (this file)
 ├── slides/                      ← Course PDFs (e.g. Hadoop MapReduce tutorial)
 │
-└── DS200.Q21.1_Lab01/           ← Lab 01 — Movie ratings (MapReduce / Hadoop Streaming)
-    ├── README.md                ← Lab 01: structure, run commands, cluster notes
+└── DS200.Q21.1_Lab01/           ← Lab 01 — Movie ratings (Java MR + optional Streaming / pandas)
+    ├── README.md                ← Lab 01: outline, flows, run commands (start here)
     ├── data/                    ← CSV-style .txt datasets
     ├── hadoop/
-    │   ├── streaming/           ← Python mappers & reducers for Streaming
+    │   ├── java/lab01-mapreduce/ ← Maven Java MapReduce (primary)
+    │   ├── streaming/           ← Optional Python mappers & reducers for Streaming
     │   └── run_hadoop_cluster_example.sh
     ├── scripts/
-    │   ├── run_hadoop_streaming_local.sh   ← Local MapReduce (sort + pipes)
+    │   ├── run_java_mapreduce_local.sh     ← Build JAR + run Java drivers (needs hadoop + mvn)
+    │   ├── run_hadoop_streaming_local.sh   ← Optional: local Streaming (sort + pipes)
     │   └── run_all_assignments.py          ← Optional pandas reference
     ├── src/lab01/               ← Optional pandas implementation
     ├── notebooks/               ← assignments.ipynb

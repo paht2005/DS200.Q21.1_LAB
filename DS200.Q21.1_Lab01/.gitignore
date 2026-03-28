@@ -1,9 +1,28 @@
+# =============================================================================
+# What is ignored vs what you commit
+# =============================================================================
+# - All Java SOURCE files (*.java) under hadoop/java/ are meant to be committed.
+#   This file does NOT ignore *.java.
+# - Only Maven BUILD OUTPUT is ignored (target/) so you do not push JARs/classes;
+#   rebuild anytime with: cd hadoop/java/lab01-mapreduce && mvn package -DskipTests
+#
+# Python entries below ignore local tooling artifacts only. Python SOURCE (*.py)
+# in hadoop/streaming/, scripts/, and src/ is still committed — those files are
+# an OPTIONAL reference path (Hadoop Streaming + pandas); see README.md.
+# =============================================================================
+
+# Python virtual environments and local secrets
 .venv/
 .env
 venv/
+
+# Python bytecode
 __pycache__/
 *.pyc
+
+# OS / Jupyter
 .DS_Store
 .ipynb_checkpoints/
 
-
+# Maven build output (Lab 01 Java MapReduce) — not source code
+hadoop/java/lab01-mapreduce/target/
