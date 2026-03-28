@@ -8,7 +8,38 @@
 
 **Lab folder:** `DS200.Q21.1_Lab/DS200.Q21.1_Lab01/` - Parent overview: [../README.md](../README.md)
 
-Run terminal commands from **`DS200.Q21.1_Lab01`** (the directory that contains `data/`, `hadoop/`, `scripts/`).
+Run terminal commands from **`DS200.Q21.1_Lab01`** (the  directory that contains `data/`, `hadoop/`, `scripts/`).
+
+---
+
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-11+-orange?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 11+" />
+  <img src="https://img.shields.io/badge/Hadoop-3.x-FF6B35?style=for-the-badge" alt="Hadoop 3.x" />
+  <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.9+ (optional)" />
+  <img src="https://img.shields.io/badge/Pandas-optional-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas optional" />
+  <img src="https://img.shields.io/badge/Jupyter-optional-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter optional" />
+</p>
+
+
+---
+
+## Outline
+
+1. [Student information](#student-information)
+2. [Repository layout](#repository-layout)
+3. [What this lab does](#what-this-lab-does)
+4. [Which code is "main": Java vs Python](#which-code-is-main-java-vs-python)
+5. [End-to-end data flow (MapReduce mental model)](#end-to-end-data-flow-mapreduce-mental-model)
+6. [Task-by-task flow (Java implementation)](#task-by-task-flow-java-implementation)
+7. [Prerequisites](#prerequisites)
+8. [Run: Java MapReduce](#run-java-mapreduce)
+9. [Run: Hadoop Streaming (Python)](#run-hadoop-streaming-python)
+10. [Run: Pandas and Jupyter](#run-pandas-and-jupyter)
+11. [Run on a real Hadoop cluster](#run-on-a-real-hadoop-cluster)
+12. [Submission checklist](#submission-checklist)
+13. [Notes (encoding, age buckets, concat ratings)](#notes-encoding-age-buckets-concat-ratings)
+
 
 ---
 
@@ -18,33 +49,33 @@ Run terminal commands from **`DS200.Q21.1_Lab01`** (the directory that contains 
 |:----------:|------------------|-----------------------------------------|------------------------|
 | 23521143   | Nguyen Cong Phat | [paht2005](https://github.com/paht2005) | 23521143@gm.uit.edu.vn |
 
----
-
-## Outline
-
-1. [Student information](#student-information)
-2. [What this lab does](#what-this-lab-does)
-3. [Which code is "main": Java vs Python](#which-code-is-main-java-vs-python)
-4. [End-to-end data flow (MapReduce mental model)](#end-to-end-data-flow-mapreduce-mental-model)
-5. [Task-by-task flow (Java implementation)](#task-by-task-flow-java-implementation)
-6. [Repository layout](#repository-layout)
-7. [Prerequisites](#prerequisites)
-8. [Run: Java MapReduce](#run-java-mapreduce)
-9. [Run: Hadoop Streaming (Python)](#run-hadoop-streaming-python)
-10. [Run: Pandas and Jupyter](#run-pandas-and-jupyter)
-11. [Run on a real Hadoop cluster](#run-on-a-real-hadoop-cluster)
-12. [Submission checklist](#submission-checklist)
-13. [Notes (encoding, age buckets, concat ratings)](#notes-encoding-age-buckets-concat-ratings)
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-11+-orange?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 11+" />
-  <img src="https://img.shields.io/badge/Hadoop-3.x-FF6B35?style=for-the-badge" alt="Hadoop 3.x" />
-  <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.9+ (optional)" />
-  <img src="https://img.shields.io/badge/Pandas-optional-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas optional" />
-  <img src="https://img.shields.io/badge/Jupyter-optional-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter optional" />
-</p>
+## Repository layout
+
+```text
+DS200.Q21.1_Lab01/
+├── README.md                          <- This file
+├── requirements.txt                   <- pandas + Jupyter (optional)
+├── data/                              <- movies, ratings_1/2, users
+├── hadoop/
+│   ├── java/
+│   │   ├── README.md                  <- Short pointer + build reminder
+│   │   └── lab01-mapreduce/           <- Maven Java MapReduce (sources committed; target/ gitignored)
+│   ├── streaming/                     <- Optional Python Streaming mappers/reducers
+│   └── run_hadoop_cluster_example.sh
+├── scripts/
+│   ├── run_java_mapreduce_local.sh    <- Build JAR + run all 4 Java drivers (needs hadoop + mvn)
+│   ├── run_hadoop_streaming_local.sh  <- Optional: Python + sort pipeline
+│   └── run_all_assignments.py         <- Optional: pandas -> output/
+├── src/lab01/                         <- Optional pandas package
+├── notebooks/assignments.ipynb
+├── output/                            <- Generated reports
+└── screenshots/                       <- images for reporting
+```
+
+**Course slides (PDF):** [`../slides/`](../slides/) - align HDFS paths, `-files`, and streaming JAR commands with the instructor's templates.
 
 ---
 
@@ -142,32 +173,7 @@ Input split (for example merged ratings lines)
 
 **Shared helpers:** `ds200.lab01.Lab01Parse` (CSV parsing, `fmtRating`, age buckets), `ds200.lab01.SideTables` (load cached files using **ISO-8859-1** for side files).
 
----
 
-## Repository layout
-
-```text
-DS200.Q21.1_Lab01/
-├── README.md                          <- This file
-├── requirements.txt                   <- pandas + Jupyter (optional)
-├── data/                              <- movies, ratings_1/2, users
-├── hadoop/
-│   ├── java/
-│   │   ├── README.md                  <- Short pointer + build reminder
-│   │   └── lab01-mapreduce/           <- Maven Java MapReduce (sources committed; target/ gitignored)
-│   ├── streaming/                     <- Optional Python Streaming mappers/reducers
-│   └── run_hadoop_cluster_example.sh
-├── scripts/
-│   ├── run_java_mapreduce_local.sh    <- Build JAR + run all 4 Java drivers (needs hadoop + mvn)
-│   ├── run_hadoop_streaming_local.sh  <- Optional: Python + sort pipeline
-│   └── run_all_assignments.py         <- Optional: pandas -> output/
-├── src/lab01/                         <- Optional pandas package
-├── notebooks/assignments.ipynb
-├── output/                            <- Generated reports
-└── screenshots/
-```
-
-**Course slides (PDF):** [`../slides/`](../slides/) - align HDFS paths, `-files`, and streaming JAR commands with your instructor's templates.
 
 ---
 
