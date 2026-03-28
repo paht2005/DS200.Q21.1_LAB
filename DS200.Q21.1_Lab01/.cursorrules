@@ -1,0 +1,21 @@
+# Project context: movie recommendation analytics
+This project processes movie, rating, and user tables for DS200 Lab 01.
+
+## Data schema
+1. **movies.txt** — `MovieID, Title, Genres` (genres separated by `|`).
+2. **ratings_1.txt & ratings_2.txt** — `UserID, MovieID, Rating, Timestamp` (merge both for full ratings).
+3. **users.txt** — `UserID, Gender, Age, Occupation, Zip-code`.
+
+## Tech stack
+- Python; **pandas** for tables; optional **matplotlib** / **seaborn** for plots.
+- When reading `.txt` files, set **encoding** (`ISO-8859-1` preferred for this lab).
+- Join keys: **MovieID**, **UserID**. Prefer **vectorized** pandas over Python loops.
+
+## Paths
+- Dataset default location: **`data/`** at the repository root.
+- Notebook: **`notebooks/assignments.ipynb`**.
+- Optional override: environment variable **`LAB01_DATA_DIR`** pointing at a folder that contains the four `.txt` files.
+
+## AI assistant rules
+- Read markdown instructions in **`notebooks/assignments.ipynb`** before implementing tasks.
+- For trend questions, suggest visualizations consistent with the schema above.
