@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center"><b>DS200.Q21.1 — Lab workspace</b></h1>
+<h1 align="center"><b>DS200.Q21.1 - Big Data Analysis - Lab workspace</b></h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Course-DS200.Q21.1-555?style=for-the-badge" alt="DS200" />
