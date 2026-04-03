@@ -1,0 +1,12 @@
+# Copy to params.properties and adjust paths, or let scripts/run_pig_local.sh generate it.
+INPUT_REVIEW=data/hotel-review.csv
+INPUT_STOP=data/stopwords.txt
+OUT_TASK1=output/pig_task01_tokens
+OUT_TASK2A=output/pig_task02_wordfreq_gt500
+OUT_TASK2B=output/pig_task02_comments_by_category
+OUT_TASK2C=output/pig_task02_comments_by_aspect
+OUT_TASK3A=output/pig_task03_aspect_negative_counts
+OUT_TASK3B=output/pig_task03_aspect_positive_counts
+OUT_TASK4A=output/pig_task04_top5_positive_by_category
+OUT_TASK4B=output/pig_task04_top5_negative_by_category
+OUT_TASK5=output/pig_task05_top5_words_by_category

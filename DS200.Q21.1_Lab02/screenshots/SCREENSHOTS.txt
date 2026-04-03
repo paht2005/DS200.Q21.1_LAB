@@ -1,0 +1,25 @@
+Screenshots for submission (include your OS username in the capture)
+======================================================================
+
+Course submissions often require proof that you ran the jobs yourself. Capture
+your terminal or desktop in a way that shows:
+
+1) Your username (examples: run `whoami` on macOS/Linux, or show your prompt).
+2) The command you ran (Pig local run or the Python mirror).
+3) A snippet of printed paths or `head` of a result file under output/.
+
+Suggested commands (from the Lab02 root folder):
+
+  whoami
+  date
+  bash scripts/run_pig_local.sh
+  # or, if Pig is not installed:
+  python3 scripts/generate_outputs.py
+  head -n 10 output/task03_summary.tsv
+
+Save images as PNG or JPG in this folder, for example:
+
+  screenshots/01_whoami_and_run.png
+  screenshots/02_task03_summary_head.png
+
+You can remove this instruction file before pushing if your course only wants images.

@@ -1,0 +1,32 @@
+=== Sample terminal transcript (re-run on your machine for screenshots) ===
+user: phatcnguyen
+host: C02GH35KQ05N
+date: Fri Apr  3 09:25:00 +07 2026
+
+--- head output/task04_top5_positive_words_by_category.tsv ---
+category	word	count
+CLEANLINESS	phòng	1186
+CLEANLINESS	sạch	997
+CLEANLINESS	tiện	552
+CLEANLINESS	ốc	498
+CLEANLINESS	nghi	482
+COMFORT	lòng	541
+COMFORT	hài	530
+COMFORT	khách	440
+COMFORT	phòng	435
+COMFORT	sạn	382
+DESIGN&FEATURES	phòng	529
+
+--- head output/task05_top5_words_by_category.tsv ---
+category	word	count
+CLEANLINESS	phòng	1402
+CLEANLINESS	sạch	1097
+CLEANLINESS	tiện	580
+CLEANLINESS	ốc	557
+CLEANLINESS	sinh	529
+COMFORT	phòng	655
+COMFORT	lòng	623
+COMFORT	hài	612
+COMFORT	khách	552
+COMFORT	không	504
+DESIGN&FEATURES	phòng	785
