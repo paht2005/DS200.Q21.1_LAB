@@ -4,6 +4,97 @@
 
 This folder matches the five tasks described in `assignments.ipynb`: preprocessing (lowercase, tokenize, stopwords), frequency and segment statistics, aspect–sentiment summaries, and top words per category / polarity.
 
+## Table of contents
+
+- [Prerequisites](#prerequisites)
+- [Repository layout](#repository-layout)
+- [How to run](#how-to-run)
+- [Output files](#output-files-pig-part-r-00000)
+- [Task 3 answers](#task-3-answers)
+- [Screenshots](#screenshots)
+- [Submission](#submission)
+- [Notes](#notes)
+
+## Prerequisites
+
+### 1. Install Java (JDK 8)
+
+Apache Pig 0.17 requires **Java 8**. Check if you already have it:
+
+```bash
+java -version
+# Should show: java version "1.8.x" or openjdk version "1.8.x"
+```
+
+**macOS (Homebrew):**
+
+```bash
+brew install --cask temurin@8
+```
+
+**Ubuntu / Debian:**
+
+```bash
+sudo apt update && sudo apt install openjdk-8-jdk -y
+```
+
+Set `JAVA_HOME` if not set automatically:
+
+```bash
+# Add to ~/.zshrc or ~/.bashrc
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8 2>/dev/null || echo "/usr/lib/jvm/java-8-openjdk-amd64")
+export PATH="$JAVA_HOME/bin:$PATH"
+```
+
+Reload your shell:
+
+```bash
+source ~/.zshrc   # or source ~/.bashrc
+```
+
+### 2. Install Apache Pig
+
+**macOS (Homebrew):**
+
+```bash
+brew install pig
+```
+
+**Manual install (all platforms):**
+
+```bash
+# Download Pig 0.17.0
+curl -O https://archive.apache.org/dist/pig/pig-0.17.0/pig-0.17.0.tar.gz
+tar -xzf pig-0.17.0.tar.gz
+sudo mv pig-0.17.0 /usr/local/pig
+```
+
+Add Pig to your `PATH`:
+
+```bash
+# Add to ~/.zshrc or ~/.bashrc
+export PIG_HOME=/usr/local/pig
+export PATH="$PIG_HOME/bin:$PATH"
+```
+
+Reload and verify:
+
+```bash
+source ~/.zshrc
+pig --version
+# Expected: Apache Pig version 0.17.0 (r1797386)
+```
+
+### 3. Verify the installation
+
+```bash
+whoami          # confirm your user
+java -version   # JDK 8
+pig --version   # Apache Pig 0.17.0
+```
+
+If all three commands produce output without errors, you are ready to run the scripts.
+
 ## Repository layout
 
 | Path | Purpose |
