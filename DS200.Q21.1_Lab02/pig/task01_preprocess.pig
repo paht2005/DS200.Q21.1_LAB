@@ -28,9 +28,9 @@ comment_norm = FOREACH reviews_raw GENERATE
         REPLACE(
           REPLACE(
             REPLACE(LOWER(TRIM(comment)), ',', ' '),
-            '.', ' '),
+            '\\.', ' '),
           '!', ' '),
-        '?', ' '),
+        '\\?', ' '),
       ';', ' ') AS comment_lc;
 
 -- One row per (segment, token); tokens are split on whitespace by TOKENIZE.

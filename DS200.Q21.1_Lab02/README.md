@@ -1,5 +1,7 @@
 # DS200 — Lab 02 (Apache Pig — hotel review text analytics)
 
+**Student:** Phat Cong Nguyen - 23521143
+
 This folder matches the five tasks described in `assignments.ipynb`: preprocessing (lowercase, tokenize, stopwords), frequency and segment statistics, aspect–sentiment summaries, and top words per category / polarity.
 
 ## Repository layout
@@ -12,13 +14,11 @@ This folder matches the five tasks described in `assignments.ipynb`: preprocessi
 | `pig/*.pig` | Apache Pig Latin sources (comments in English). |
 | `pig/params.properties.example` | Template for Pig parameters (paths). |
 | `scripts/run_pig_local.sh` | Runs all Pig scripts in local mode (requires `pig` on `PATH`). |
-| `scripts/generate_outputs.py` | Python mirror of the Pig logic; writes compact **TSV** files into `output/` when Pig is unavailable. |
-| `output/*.tsv` | Committed result tables for submission (see below). |
-| `screenshots/` | Add your own PNG/JPG captures; see `screenshots/SCREENSHOTS.txt`. |
+| `scripts/screenshots.sh` | Displays output results with student info for taking screenshots. |
+| `output/pig_*/part-r-00000` | Pig result files (CRC and `_SUCCESS` markers are git-ignored). |
+| `screenshots/` | Terminal screenshots with student identity and results. |
 
 ## How to run
-
-### Option A — Apache Pig (expected for the course)
 
 From this directory:
 
@@ -28,39 +28,55 @@ bash scripts/run_pig_local.sh
 
 This generates `output/pig_*` folders with `part-r-*` files. Inspect them with `cat`, `head`, or your editor.
 
-`task04_sentiment_words.pig` and `task05_category_words.pig` use `FLATTEN(top.(word, cnt))` inside nested `FOREACH` blocks; that requires a reasonably recent Pig (0.14+). If your cluster rejects that syntax, replace it with `FLATTEN(top)` and drop duplicate columns when reading the output.
+## Output files (Pig `part-r-00000`)
 
-### Option B — Python (same outputs as TSV)
+| Directory | Task |
+|-----------|------|
+| `output/pig_task01_tokens/` | Cleaned tokens with segment metadata. |
+| `output/pig_task02_wordfreq_gt500/` | Words with total count > 500. |
+| `output/pig_task02_comments_by_category/` | Number of segments per category. |
+| `output/pig_task02_comments_by_aspect/` | Number of segments per aspect. |
+| `output/pig_task03_aspect_negative_counts/` | Negative segment counts per aspect (sorted). |
+| `output/pig_task03_aspect_positive_counts/` | Positive segment counts per aspect (sorted). |
+| `output/pig_task04_top5_positive_by_category/` | Top 5 frequent words in **positive** segments, per category. |
+| `output/pig_task04_top5_negative_by_category/` | Top 5 frequent words in **negative** segments, per category. |
+| `output/pig_task05_top5_words_by_category/` | Top 5 frequent words per category (all sentiments). |
 
-```bash
-python3 scripts/generate_outputs.py
-```
+## Task 3 answers
 
-## Output files (TSV)
-
-| File | Task |
-|------|------|
-| `output/task01_tokens.tsv` | Cleaned tokens with segment metadata (large, ~6–7 MB). |
-| `output/task02_wordfreq_gt500.tsv` | Words with total count > 500. |
-| `output/task02_comments_by_category.tsv` | Number of segments per category. |
-| `output/task02_comments_by_aspect.tsv` | Number of segments per aspect. |
-| `output/task03_aspect_negative_counts.tsv` | Negative segment counts per aspect (sorted). |
-| `output/task03_aspect_positive_counts.tsv` | Positive segment counts per aspect (sorted). |
-| `output/task03_summary.tsv` | Top aspect for negative / positive (quick answer). |
-| `output/task04_top5_positive_words_by_category.tsv` | Top 5 frequent words in **positive** segments, per category. |
-| `output/task04_top5_negative_words_by_category.tsv` | Top 5 frequent words in **negative** segments, per category. |
-| `output/task05_top5_words_by_category.tsv` | Top 5 frequent words per category (all sentiments). |
-
-## Task 3 answers (from `task03_summary.tsv`)
-
-- **Most negative aspect:** `ROOMS` (515 negative segments in this dataset).
+- **Most negative aspect:** `ROOMS` (515 negative segments).
 - **Most positive aspect:** `HOTEL` (2942 positive segments).
 
-## Screenshots (grading / identity)
+## Screenshots
 
-Place images under `screenshots/` that show **your username** (e.g. `whoami` in the same terminal pane) plus the command you ran and a preview of results. Follow `screenshots/SCREENSHOTS.txt`.
+Screenshots under `screenshots/` show username (`whoami`), Pig run command, and result previews.
+
+To reproduce the screenshots yourself:
+
+```bash
+# Run all at once (press Enter between each to take a screenshot)
+bash scripts/screenshots.sh
+
+# Or run a single screenshot (1–8)
+bash scripts/screenshots.sh 1   # Identity & Pig Run
+bash scripts/screenshots.sh 2   # Task 1 — Preprocessed Tokens
+bash scripts/screenshots.sh 3   # Task 2 — Word Freq > 500
+bash scripts/screenshots.sh 4   # Task 2 — Category & Aspect Stats
+bash scripts/screenshots.sh 5   # Task 3 — Aspect Sentiment
+bash scripts/screenshots.sh 6   # Task 4 — Top 5 Positive Words
+bash scripts/screenshots.sh 7   # Task 4 — Top 5 Negative Words
+bash scripts/screenshots.sh 8   # Task 5 — Top 5 Words by Category
+```
+
+## Submission
+
+Submit via GitHub. The repo includes:
+- Apache Pig source files (`pig/*.pig`)
+- Result files (`output/pig_*/part-r-00000`)
+- Terminal screenshots (`screenshots/*.png`)
 
 ## Notes
 
-- Tokenization follows the assignment: **split on whitespace** after lowercasing; common punctuation is turned into spaces so tokens are not glued to commas.
-- Multi-word stop phrases (e.g. `chúng ta`) only match if the tokenizer emits the exact same token string (whitespace-delimited).
+- Pig's `REPLACE()` uses Java regex — `.` and `?` must be escaped as `\\.` and `\\?` in Pig Latin strings.
+- Tokenization follows the assignment: **split on whitespace** after lowercasing; common punctuation is turned into spaces.
+- Multi-word stop phrases (e.g. `chúng ta`) only match if the tokenizer emits the exact same token string.

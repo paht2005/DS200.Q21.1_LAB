@@ -24,9 +24,9 @@ comment_norm = FOREACH reviews_raw GENERATE
         REPLACE(
           REPLACE(
             REPLACE(LOWER(TRIM(comment)), ',', ' '),
-            '.', ' '),
+            '\\.', ' '),
           '!', ' '),
-        '?', ' '),
+        '\\?', ' '),
       ';', ' ') AS comment_lc;
 
 words = FOREACH comment_norm GENERATE
