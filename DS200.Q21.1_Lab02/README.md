@@ -142,6 +142,22 @@ This generates `output/pig_*` folders with `part-r-*` files. Inspect them with `
 
 Screenshots under `screenshots/` show username (`whoami`), Pig run command, and result previews.
 
+Current screenshot files:
+
+| File | Description |
+|------|-------------|
+| `screenshots/00.1_run_local_pig_start.png` | Extra capture: start of the full local Pig run. |
+| `screenshots/00.2_run_local_pig_end.png` | Extra capture: end of the full local Pig run. |
+| `screenshots/01_whoami_and_run.png` | Screenshot 1: identity and Pig run command. |
+| `screenshots/02_task01_tokens.png` | Screenshot 2: Task 1 output preview. |
+| `screenshots/03.1_task02_wordfreq.png` | Screenshot 3 (part 1): Task 2 word frequency output. |
+| `screenshots/03.2_task02_wordfreq.png` | Screenshot 3 (part 2): continued Task 2 word frequency output. |
+| `screenshots/04_task02_category_aspect.png` | Screenshot 4: Task 2 category/aspect statistics. |
+| `screenshots/05_task03_sentiment.png` | Screenshot 5: Task 3 aspect sentiment counts. |
+| `screenshots/06_task04_negative.png` | Screenshot 7: Task 4 top 5 negative words. |
+| `screenshots/07_task04_positive.png` | Screenshot 6: Task 4 top 5 positive words. |
+| `screenshots/08_task05_top_words.png` | Screenshot 8: Task 5 top words by category. |
+
 To reproduce the screenshots yourself:
 
 ```bash
