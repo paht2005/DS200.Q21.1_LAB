@@ -21,13 +21,6 @@
 
 </div>
 
-<!-- Section divider for clarity -->
-<hr/>
-
-
-<p align="center">
-  <img src="./thumbnail.jpeg" alt="Project thumbnail" width="400">
-</p>
 
 
 **Student:** Phat Cong Nguyen - 23521143

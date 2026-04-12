@@ -33,8 +33,12 @@
 
 </div>
 
-<!-- Section divider for clarity -->
-<hr/>
+
+
+<p align="center">
+  <img src="./thumbnail.jpeg" alt="Project thumbnail" width="400">
+</p>
+
 
 ---
 
