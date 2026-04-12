@@ -3,6 +3,7 @@
 <!-- Contact section: centered, single row of badges, short intro -->
 <div align="center">
 
+
 <!-- HEADER BANNER -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=220&section=header&text=Nguyen%20Cong%20Phat%20(James)&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%20Engineer%20%7C%20Data%20Scientist%20%7C%20Community%20Builder&descSize=16&descAlignY=55&descAlign=50" width="100%"/>
 
@@ -22,6 +23,11 @@
 
 <!-- Section divider for clarity -->
 <hr/>
+
+
+<p align="center">
+  <img src="./thumbnail.jpeg" alt="Project thumbnail" width="400">
+</p>
 
 
 **Student:** Phat Cong Nguyen - 23521143
