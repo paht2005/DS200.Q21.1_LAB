@@ -13,13 +13,36 @@
   <img src="https://img.shields.io/badge/Python-optional-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python optional" />
 </p>
 
+<!-- Contact section: centered, single row of badges, short intro -->
+<div align="center">
+
+<!-- HEADER BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=220&section=header&text=Nguyen%20Cong%20Phat%20(James)&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%20Engineer%20%7C%20Data%20Scientist%20%7C%20Community%20Builder&descSize=16&descAlignY=55&descAlign=50" width="100%"/>
+
+<br/>
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-667eea?style=for-the-badge&logo=vercel&logoColor=white)](https://nguyen-cong-phat-portfolio.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ncp2005/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:congphatnguyen.work@gmail.com)
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/phat.nguyencong.2005/)
+
+<br/>
+
+> *"Everything is a win when the goal is experience."*
+
+
+</div>
+
+<!-- Section divider for clarity -->
+<hr/>
+
 ---
 
 ## Student information
 
 | Student ID | Full name        | GitHub                                  | Email                  |
 |:----------:|------------------|-----------------------------------------|------------------------|
-| 23521143   | Nguyen Cong Phat | [paht2005](https://github.com/paht2005) | 23521143@gm.uit.edu.vn |
+| 23521143   | Phat Cong Nguyen | [paht2005](https://github.com/paht2005) | 23521143@gm.uit.edu.vn |
 
 ---
 
