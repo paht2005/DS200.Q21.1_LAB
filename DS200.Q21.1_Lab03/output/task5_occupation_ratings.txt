@@ -1,0 +1,15 @@
+Occupation|AverageRating|TotalRatings
+Accountant|3.5833|6
+Artist|3.7273|11
+Consultant|3.8571|14
+Designer|4.0000|13
+Doctor|3.6905|21
+Engineer|3.5556|18
+Journalist|3.8529|17
+Lawyer|3.6471|17
+Manager|3.4688|16
+Nurse|3.8636|11
+Programmer|4.2500|10
+Salesperson|3.6471|17
+Student|4.0000|8
+Teacher|3.7000|5

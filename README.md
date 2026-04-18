@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/badge/Course-DS200.Q21.1-555?style=for-the-badge" alt="DS200" />
   <img src="https://img.shields.io/badge/Java%20MapReduce-Lab01-orange?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java MapReduce" />
   <img src="https://img.shields.io/badge/Apache%20Pig-Lab02-yellow?style=for-the-badge&logo=apache&logoColor=white" alt="Apache Pig" />
+  <img src="https://img.shields.io/badge/Java%20Spark%20RDD-Lab03-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Java Spark RDD" />
   <img src="https://img.shields.io/badge/Python-optional-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python optional" />
 </p>
 
@@ -52,7 +53,7 @@
 
 ## Purpose
 
-This repository is the **course workspace** for **DS200.Q21.1**. Each lab is a **self-contained subdirectory** (data, **Java MapReduce**, optional **Hadoop Streaming (Python)**, optional pandas/Jupyter, outputs) so you can add **Lab02**, **Lab03**, and so on later.
+This repository is the **course workspace** for **DS200.Q21.1**. Each lab is a **self-contained subdirectory** (data, Java processing stack, outputs, and lab-specific scripts) so you can add **Lab02**, **Lab03**, and so on later.
 
 ---
 
@@ -79,7 +80,7 @@ DS200.Q21.1_Lab/
 │   ├── output/                  ← Task reports (.txt)
 │   └── screenshots/             ← Submission images
 │
-└── DS200.Q21.1_Lab02/           ← Lab 02 — Hotel review text analytics (Apache Pig)
+├── DS200.Q21.1_Lab02/           ← Lab 02 — Hotel review text analytics (Apache Pig)
     ├── README.md                ← Lab 02: tasks, run commands, results
     ├── assignments.ipynb        ← Lab wording (Vietnamese)
     ├── data/                    ← hotel-review.csv + stopwords.txt
@@ -89,6 +90,16 @@ DS200.Q21.1_Lab/
     │   └── screenshots.sh       ← Display results for taking screenshots
     ├── output/pig_*/part-r-00000 ← Pig result files
     └── screenshots/             ← Terminal screenshots with student info
+
+└── DS200.Q21.1_Lab03/           ← Lab 03 — Movie analytics with Java Spark RDD
+    ├── README.md                ← Lab 03: tasks, run commands, outputs
+    ├── assignments.ipynb        ← Lab wording (Vietnamese)
+    ├── movies.txt, ratings_1.txt, ratings_2.txt, users.txt, occupation.txt
+    ├── scripts/
+    │   ├── run_java_rdd_local.sh ← Build + run all 6 Java RDD tasks locally
+    │   └── java.sh              ← Convenience wrapper for the main script
+    ├── spark/java/lab03-rdd/    ← Maven Java Spark project (RDD implementation)
+    └── output/                  ← Task reports (.txt)
 ```
 
 Add future labs as siblings (e.g. `DS200.Q21.1_Lab03/`), each with its own `README.md`.
@@ -103,6 +114,7 @@ Add future labs as siblings (e.g. `DS200.Q21.1_Lab03/`), each with its own `READ
    ```bash
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab01   # Lab 01
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab02   # Lab 02
+  cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab03   # Lab 03
    ```
 
 3. **Docs:** each lab has its own `README.md` with setup, run commands, and submission steps.
@@ -121,6 +133,7 @@ Add future labs as siblings (e.g. `DS200.Q21.1_Lab03/`), each with its own `READ
 ```
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab01/   # Lab 01 — MapReduce
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab02/   # Lab 02 — Apache Pig
+Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab03/   # Lab 03 — Java Spark RDD
 ```
 
 Keep the parent folder **`DS200.Q21.1_Lab`** as the root that contains each **`DS200.Q21.1_Lab0X`** lab directory.

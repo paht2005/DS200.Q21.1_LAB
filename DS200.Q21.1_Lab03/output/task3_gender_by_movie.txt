@@ -1,0 +1,15 @@
+MovieID|Title|MaleAverage|MaleCount|FemaleAverage|FemaleCount
+1020|E.T. the Extra-Terrestrial (1982)|3.8125|8|3.5500|10
+1028|Fight Club (1999)|3.5000|4|3.5000|3
+1040|Gladiator (2000)|3.5909|11|3.6429|7
+1010|Lawrence of Arabia (1962)|3.5500|10|3.3125|8
+1050|Mad Max: Fury Road (2015)|4.0000|4|3.3214|14
+1043|No Country for Old Men (2007)|3.9167|12|3.8333|6
+1012|Psycho (1960)|N/A|0|4.0000|2
+1015|Sunset Boulevard (1950)|4.3333|6|4.5000|1
+1013|The Godfather: Part II (1974)|4.0556|9|3.9375|8
+1037|The Lord of the Rings: The Fellowship of the Ring (2001)|4.0000|8|3.8000|10
+1039|The Lord of the Rings: The Return of the King (2003)|3.7500|6|3.9000|5
+1030|The Silence of the Lambs (1991)|3.3333|3|3.0000|4
+1047|The Social Network (2010)|4.0000|4|3.6667|3
+1025|The Terminator (1984)|3.9286|7|4.1364|11

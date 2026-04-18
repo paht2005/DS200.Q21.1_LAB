@@ -1,0 +1,35 @@
+MovieID|Title|AgeGroup|AverageRating|TotalRatings
+1020|E.T. the Extra-Terrestrial (1982)|19-35|3.5625|8
+1020|E.T. the Extra-Terrestrial (1982)|36-50|3.8333|9
+1020|E.T. the Extra-Terrestrial (1982)|51+|3.0000|1
+1028|Fight Club (1999)|19-35|3.5000|3
+1028|Fight Club (1999)|36-50|3.5000|2
+1028|Fight Club (1999)|51+|3.5000|2
+1040|Gladiator (2000)|19-35|3.4375|8
+1040|Gladiator (2000)|36-50|3.8125|8
+1040|Gladiator (2000)|51+|3.5000|2
+1010|Lawrence of Arabia (1962)|19-35|3.6000|5
+1010|Lawrence of Arabia (1962)|36-50|3.2917|12
+1010|Lawrence of Arabia (1962)|51+|4.5000|1
+1050|Mad Max: Fury Road (2015)|19-35|3.3636|11
+1050|Mad Max: Fury Road (2015)|36-50|3.6429|7
+1043|No Country for Old Men (2007)|19-35|3.8125|8
+1043|No Country for Old Men (2007)|36-50|3.9375|8
+1043|No Country for Old Men (2007)|51+|4.0000|2
+1012|Psycho (1960)|19-35|4.5000|1
+1012|Psycho (1960)|36-50|3.5000|1
+1015|Sunset Boulevard (1950)|19-35|4.1667|3
+1015|Sunset Boulevard (1950)|36-50|4.5000|4
+1013|The Godfather: Part II (1974)|19-35|3.7778|9
+1013|The Godfather: Part II (1974)|36-50|4.2500|8
+1037|The Lord of the Rings: The Fellowship of the Ring (2001)|19-35|4.0000|6
+1037|The Lord of the Rings: The Fellowship of the Ring (2001)|36-50|3.8333|12
+1039|The Lord of the Rings: The Return of the King (2003)|19-35|3.8333|3
+1039|The Lord of the Rings: The Return of the King (2003)|36-50|3.8125|8
+1030|The Silence of the Lambs (1991)|19-35|3.0000|3
+1030|The Silence of the Lambs (1991)|36-50|3.2500|4
+1047|The Social Network (2010)|19-35|4.0000|4
+1047|The Social Network (2010)|36-50|3.6667|3
+1025|The Terminator (1984)|19-35|4.1667|6
+1025|The Terminator (1984)|36-50|4.0500|10
+1025|The Terminator (1984)|51+|3.7500|2

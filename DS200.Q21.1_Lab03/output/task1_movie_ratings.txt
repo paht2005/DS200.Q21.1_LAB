@@ -1,0 +1,17 @@
+MovieID|Title|AverageRating|TotalRatings
+1020|E.T. the Extra-Terrestrial (1982)|3.6667|18
+1028|Fight Club (1999)|3.5000|7
+1040|Gladiator (2000)|3.6111|18
+1010|Lawrence of Arabia (1962)|3.4444|18
+1050|Mad Max: Fury Road (2015)|3.4722|18
+1043|No Country for Old Men (2007)|3.8889|18
+1012|Psycho (1960)|4.0000|2
+1015|Sunset Boulevard (1950)|4.3571|7
+1013|The Godfather: Part II (1974)|4.0000|17
+1037|The Lord of the Rings: The Fellowship of the Ring (2001)|3.8889|18
+1039|The Lord of the Rings: The Return of the King (2003)|3.8182|11
+1030|The Silence of the Lambs (1991)|3.1429|7
+1047|The Social Network (2010)|3.8571|7
+1025|The Terminator (1984)|4.0556|18
+
+TOP_MOVIE(minRatings=5)|1015|Sunset Boulevard (1950)|4.3571|7

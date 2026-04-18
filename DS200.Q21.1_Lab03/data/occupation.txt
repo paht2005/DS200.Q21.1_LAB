@@ -1,0 +1,15 @@
+1,Programmer
+2,Doctor
+3,Engineer
+4,Teacher
+5,Lawyer
+6,Artist
+7,Manager
+8,Nurse
+9,Salesperson
+10,Accountant
+11,Journalist
+12,Designer
+13,Researcher
+14,Consultant
+15,Student

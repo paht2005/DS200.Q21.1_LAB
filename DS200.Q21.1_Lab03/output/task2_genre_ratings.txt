@@ -1,0 +1,13 @@
+Genre|AverageRating|TotalRatings
+Action|3.7130|54
+Adventure|3.6325|83
+Biography|3.5600|25
+Crime|3.8095|42
+Drama|3.7578|128
+Family|3.6667|18
+Fantasy|3.8621|29
+Film-Noir|4.3571|7
+Horror|4.0000|2
+Mystery|4.0000|2
+Sci-Fi|3.7315|54
+Thriller|3.7037|27

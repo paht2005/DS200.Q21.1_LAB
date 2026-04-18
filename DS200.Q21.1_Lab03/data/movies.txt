@@ -1,0 +1,50 @@
+1001,The Godfather (1972),Crime|Drama
+1002,The Shawshank Redemption (1994),Drama
+1003,Schindler's List (1993),Biography|Drama|History
+1004,Raging Bull (1980),Biography|Drama|Sport
+1005,Casablanca (1942),Drama|Romance|War
+1006,Citizen Kane (1941),Drama|Mystery
+1007,Gone with the Wind (1939),Drama|Romance|History
+1008,The Wizard of Oz (1939),Adventure|Family|Fantasy
+1009,One Flew Over the Cuckoo's Nest (1975),Drama
+1010,Lawrence of Arabia (1962),Adventure|Biography|Drama
+1011,Vertigo (1958),Mystery|Thriller
+1012,Psycho (1960),Horror|Mystery|Thriller
+1013,The Godfather: Part II (1974),Crime|Drama
+1014,On the Waterfront (1954),Crime|Drama
+1015,Sunset Boulevard (1950),Drama|Film-Noir
+1016,The Sound of Music (1965),Biography|Drama|Family
+1017,12 Angry Men (1957),Crime|Drama
+1018,West Side Story (1961),Crime|Drama|Musical
+1019,Star Wars (1977),Action|Adventure|Fantasy
+1020,E.T. the Extra-Terrestrial (1982),Family|Sci-Fi
+1021,Jaws (1975),Adventure|Thriller
+1022,Raiders of the Lost Ark (1981),Action|Adventure
+1023,Back to the Future (1985),Adventure|Comedy|Sci-Fi
+1024,Die Hard (1988),Action|Thriller
+1025,The Terminator (1984),Action|Sci-Fi
+1026,Aliens (1986),Action|Adventure|Sci-Fi
+1027,The Matrix (1999),Action|Sci-Fi
+1028,Fight Club (1999),Drama
+1029,Se7en (1995),Crime|Drama|Mystery
+1030,The Silence of the Lambs (1991),Crime|Drama|Thriller
+1031,Saving Private Ryan (1998),Drama|War
+1032,American Beauty (1999),Drama
+1033,The Usual Suspects (1995),Crime|Mystery|Thriller
+1034,L.A. Confidential (1997),Crime|Drama|Mystery
+1035,Goodfellas (1990),Biography|Crime|Drama
+1036,The Matrix Reloaded (2003),Action|Sci-Fi
+1037,The Lord of the Rings: The Fellowship of the Ring (2001),Adventure|Drama|Fantasy
+1038,The Lord of the Rings: The Two Towers (2002),Adventure|Drama|Fantasy
+1039,The Lord of the Rings: The Return of the King (2003),Adventure|Drama|Fantasy
+1040,Gladiator (2000),Action|Adventure|Drama
+1041,Memento (2000),Mystery|Thriller
+1042,The Departed (2006),Crime|Drama|Thriller
+1043,No Country for Old Men (2007),Crime|Drama|Thriller
+1044,There Will Be Blood (2007),Drama
+1045,The Dark Knight (2008),Action|Crime|Drama
+1046,Inception (2010),Action|Adventure|Sci-Fi
+1047,The Social Network (2010),Biography|Drama
+1048,Interstellar (2014),Adventure|Drama|Sci-Fi
+1049,Whiplash (2014),Drama|Music
+1050,Mad Max: Fury Road (2015),Action|Adventure|Sci-Fi

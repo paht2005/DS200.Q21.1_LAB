@@ -1,0 +1,2 @@
+Year|AverageRating|TotalRatings
+2020|3.7527|184
