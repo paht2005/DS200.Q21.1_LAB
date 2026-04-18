@@ -81,25 +81,26 @@ DS200.Q21.1_Lab/
 │   └── screenshots/             ← Submission images
 │
 ├── DS200.Q21.1_Lab02/           ← Lab 02 — Hotel review text analytics (Apache Pig)
-    ├── README.md                ← Lab 02: tasks, run commands, results
-    ├── assignments.ipynb        ← Lab wording (Vietnamese)
-    ├── data/                    ← hotel-review.csv + stopwords.txt
-    ├── pig/                     ← Apache Pig Latin scripts (task01–task05)
-    ├── scripts/
-    │   ├── run_pig_local.sh     ← Run all Pig scripts locally (needs pig on PATH)
-    │   └── screenshots.sh       ← Display results for taking screenshots
-    ├── output/pig_*/part-r-00000 ← Pig result files
-    └── screenshots/             ← Terminal screenshots with student info
-
+│   ├── README.md                ← Lab 02: tasks, run commands, results
+│   ├── assignments.ipynb        ← Lab wording (Vietnamese)
+│   ├── data/                    ← hotel-review.csv + stopwords.txt
+│   ├── pig/                     ← Apache Pig Latin scripts (task01–task05)
+│   ├── scripts/
+│   │   ├── run_pig_local.sh     ← Run all Pig scripts locally (needs pig on PATH)
+│   │   └── screenshots.sh       ← Display results for taking screenshots
+│   ├── output/pig_*/part-r-00000 ← Pig result files
+│   └── screenshots/             ← Terminal screenshots with student info
+│
 └── DS200.Q21.1_Lab03/           ← Lab 03 — Movie analytics with Java Spark RDD
-    ├── README.md                ← Lab 03: tasks, run commands, outputs
-    ├── assignments.ipynb        ← Lab wording (Vietnamese)
-    ├── movies.txt, ratings_1.txt, ratings_2.txt, users.txt, occupation.txt
-    ├── scripts/
-    │   ├── run_java_rdd_local.sh ← Build + run all 6 Java RDD tasks locally
-    │   └── java.sh              ← Convenience wrapper for the main script
-    ├── spark/java/lab03-rdd/    ← Maven Java Spark project (RDD implementation)
-    └── output/                  ← Task reports (.txt)
+  ├── README.md                ← Lab 03: tasks, run commands, outputs
+  ├── assignments.ipynb        ← Lab wording (Vietnamese)
+  ├── data/                    ← movies.txt, ratings_1.txt, ratings_2.txt, users.txt, occupation.txt
+  ├── scripts/
+  │   ├── run_java_rdd_local.sh ← Build + run all 6 Java RDD tasks locally
+  │   └── java.sh              ← Convenience wrapper for the main script
+  ├── spark/java/lab03-rdd/    ← Maven Java Spark project (RDD implementation)
+  ├── output/                  ← Task reports (.txt)
+  └── screenshots/             ← Submission screenshots
 ```
 
 Add future labs as siblings (e.g. `DS200.Q21.1_Lab03/`), each with its own `README.md`.
@@ -114,7 +115,7 @@ Add future labs as siblings (e.g. `DS200.Q21.1_Lab03/`), each with its own `READ
    ```bash
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab01   # Lab 01
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab02   # Lab 02
-  cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab03   # Lab 03
+   cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab03   # Lab 03
    ```
 
 3. **Docs:** each lab has its own `README.md` with setup, run commands, and submission steps.
