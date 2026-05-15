@@ -42,7 +42,8 @@
 8. [Run all tasks](#run-all-tasks)
 9. [Run each task individually](#run-each-task-individually)
 10. [Output files](#output-files)
-11. [Submission checklist](#submission-checklist)
+11. [Screenshots](#screenshots)
+12. [Submission checklist](#submission-checklist)
 
 ---
 
@@ -206,20 +207,40 @@ The script:
 
 ---
 
-## Taking screenshots
+## Screenshots
 
-Run `screenshots.sh` to display each task's output with a student info header suitable for screenshotting:
+### How to capture
+
+Run `screenshots.sh` to display each task's output with a student info header:
 
 ```bash
 # Display all tasks one by one (press Enter between each)
 scripts/screenshots.sh
 
-# Display a specific task only (e.g. task 3)
+# Display a specific task only (e.g. step 3)
 scripts/screenshots.sh 3
 ```
 
-Screenshot numbers map to tasks: 1 = environment info, 2–9 = tasks 1–5, 6, 7, 10 in order.  
-Save screenshots to `screenshots/`.
+### Naming convention
+
+Files in `screenshots/` follow the pattern `ssNN_<description>.png`:
+
+| File(s) | Content |
+|---------|---------|
+| `ss01_identity.png` | Environment info: whoami, Java, Maven, Spark versions |
+| `ss02_task1_load_datasets.png` | Task 1 — CSV schemas + row counts |
+| `ss03_task2_overall_stats.png` | Task 2 — Total orders / customers / sellers |
+| `ss04_task3_orders_by_country.png` | Task 3 — Orders by country (descending) |
+| `ss05_task4_orders_by_year_month.png` | Task 4 — Orders grouped by year and month |
+| `ss06_task5_review_stats.png` | Task 5 — Review score statistics |
+| `ss07_task6_revenue_2024.png` | Task 6 — Revenue 2024 by product category |
+| `ss08_task7_top_products.png` | Task 7 — Top-selling products + avg review score *(see note)* |
+| `ss09_task10_seller_ranking.png` | Task 10 — Seller ranking by revenue + order count *(see note)* |
+
+**Multi-part screenshots:** When an output is too long to fit in one screen, it is split into numbered parts — e.g. `ss02_task1_load_datasets_01.png`, `ss02_task1_load_datasets_01.png`.
+
+**Truncated screenshots (tasks 7 and 10):** These outputs contain hundreds of rows (all products / all 3,095 sellers). The screenshots capture the bash script invocation and the top portion of the results only.  
+→ **Full results are in `output/task7_top_products.txt` and `output/task10_seller_ranking.txt`.**
 
 ---
 
@@ -280,5 +301,5 @@ spark-submit --master local[*] --class ds200.lab04.task10.Task10App $JAR $DATA $
 - [x] `spark/java/lab04-dataframe/src/…` — 8 task apps + 2 utilities
 - [x] `scripts/run_java_dataframe_local.sh` — one-shot build + run script
 - [x] `output/*.txt` — 8 result files
-- [ ] `screenshots/` — terminal screenshots with student info (run `scripts/screenshots.sh` and capture)
+- [x] `screenshots/` — terminal screenshots (full results in `output/*.txt`)
 - [x] `README.md` — this file

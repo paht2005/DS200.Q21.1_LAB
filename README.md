@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/badge/Java%20MapReduce-Lab01-orange?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java MapReduce" />
   <img src="https://img.shields.io/badge/Apache%20Pig-Lab02-yellow?style=for-the-badge&logo=apache&logoColor=white" alt="Apache Pig" />
   <img src="https://img.shields.io/badge/Java%20Spark%20RDD-Lab03-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Java Spark RDD" />
+  <img src="https://img.shields.io/badge/Java%20Spark%20DataFrame-Lab04-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Java Spark DataFrame" />
   <img src="https://img.shields.io/badge/Python-optional-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python optional" />
 </p>
 
@@ -91,19 +92,30 @@ DS200.Q21.1_Lab/
 │   ├── output/pig_*/part-r-00000 ← Pig result files
 │   └── screenshots/             ← Terminal screenshots with student info
 │
-└── DS200.Q21.1_Lab03/           ← Lab 03 — Movie analytics with Java Spark RDD
-  ├── README.md                ← Lab 03: tasks, run commands, outputs
-  ├── assignments.ipynb        ← Lab wording (Vietnamese)
-  ├── data/                    ← movies.txt, ratings_1.txt, ratings_2.txt, users.txt, occupation.txt
-  ├── scripts/
-  │   ├── run_java_rdd_local.sh ← Build + run all 6 Java RDD tasks locally
-  │   └── java.sh              ← Convenience wrapper for the main script
-  ├── spark/java/lab03-rdd/    ← Maven Java Spark project (RDD implementation)
-  ├── output/                  ← Task reports (.txt)
-  └── screenshots/             ← Submission screenshots
+├── DS200.Q21.1_Lab03/           ← Lab 03 — Movie analytics with Java Spark RDD
+│   ├── README.md                ← Lab 03: tasks, run commands, outputs
+│   ├── assignments.ipynb        ← Lab wording (Vietnamese)
+│   ├── data/                    ← movies.txt, ratings_1.txt, ratings_2.txt, users.txt, occupation.txt
+│   ├── scripts/
+│   │   ├── run_java_rdd_local.sh ← Build + run all 6 Java RDD tasks locally
+│   │   └── java.sh              ← Convenience wrapper for the main script
+│   ├── spark/java/lab03-rdd/    ← Maven Java Spark project (RDD implementation)
+│   ├── output/                  ← Task reports (.txt)
+│   └── screenshots/             ← Submission screenshots
+│
+└── DS200.Q21.1_Lab04/           ← Lab 04 — Fecom e-commerce analytics with Java Spark DataFrame
+    ├── README.md                ← Lab 04: tasks, run commands, outputs
+    ├── assignments.ipynb        ← Lab wording (Vietnamese)
+    ├── data/                    ← Orders.csv, Customer_List.csv, Order_Items.csv, Products.csv, Order_Reviews.csv
+    ├── scripts/
+    │   ├── run_java_dataframe_local.sh ← Build + run all 8 Java DataFrame tasks locally
+    │   └── java.sh              ← Convenience wrapper for the main script
+    ├── spark/java/lab04-dataframe/ ← Maven Java Spark project (DataFrame implementation)
+    ├── output/                  ← Task reports (.txt)
+    └── screenshots/             ← Submission screenshots
 ```
 
-Add future labs as siblings (e.g. `DS200.Q21.1_Lab03/`), each with its own `README.md`.
+Add future labs as siblings, each with its own `README.md`.
 
 ---
 
@@ -116,6 +128,7 @@ Add future labs as siblings (e.g. `DS200.Q21.1_Lab03/`), each with its own `READ
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab01   # Lab 01
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab02   # Lab 02
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab03   # Lab 03
+   cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab04   # Lab 04
    ```
 
 3. **Docs:** each lab has its own `README.md` with setup, run commands, and submission steps.
@@ -135,6 +148,7 @@ Add future labs as siblings (e.g. `DS200.Q21.1_Lab03/`), each with its own `READ
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab01/   # Lab 01 — MapReduce
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab02/   # Lab 02 — Apache Pig
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab03/   # Lab 03 — Java Spark RDD
+Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab04/   # Lab 04 — Java Spark DataFrame
 ```
 
 Keep the parent folder **`DS200.Q21.1_Lab`** as the root that contains each **`DS200.Q21.1_Lab0X`** lab directory.

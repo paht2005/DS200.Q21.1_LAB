@@ -1,0 +1,31 @@
+=== Task 3: Number of orders by country (descending) ===
+
+Country                                  OrderCount
+-------------------------------------------------------
+Germany                                  41,754
+France                                   12,848
+Netherlands                              11,629
+Belgium                                  5,464
+Austria                                  5,043
+Switzerland                              3,640
+United Kingdom                           3,382
+Poland                                   2,139
+Czechia                                  2,034
+Italy                                    2,025
+Spain                                    1,651
+Portugal                                 1,336
+Sweden                                   975
+Denmark                                  905
+Serbia                                   746
+Norway                                   716
+Slovakia                                 534
+Slovenia                                 495
+Turkey                                   485
+Greece                                   412
+Lithuania                                351
+Latvia                                   280
+Croatia                                  254
+Estonia                                  148
+Finland                                  81
+Luxembourg                               68
+Andorra                                  46

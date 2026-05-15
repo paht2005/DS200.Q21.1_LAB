@@ -1,0 +1,13 @@
+=== Task 5: Review score statistics (score levels 1–5) ===
+
+Total rows in dataset          : 99,270
+Valid rows (score 1–5, non-null): 99,223
+Overall average review score   : 4.0864
+
+Score    ReviewCount
+-------------------------
+1        11,424
+2        3,151
+3        8,179
+4        19,141
+5        57,328

@@ -1,0 +1,5 @@
+=== Task 2: Total orders, customers, and sellers ===
+
+Total Orders              : 99,441
+Unique Customers          : 99,441
+Unique Sellers            : 3,095

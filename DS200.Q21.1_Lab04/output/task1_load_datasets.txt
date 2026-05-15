@@ -1,0 +1,66 @@
+=== Task 1: Load CSV files with inferSchema ===
+
+--- Orders ---
+Row count : 99441
+Column count: 8
+Schema:
+  Order_ID : string
+  Customer_Trx_ID : string
+  Order_Status : string
+  Order_Purchase_Timestamp : timestamp
+  Order_Approved_At : timestamp
+  Order_Delivered_Carrier_Date : timestamp
+  Order_Delivered_Customer_Date : timestamp
+  Order_Estimated_Delivery_Date : timestamp
+
+--- Customer_List ---
+Row count : 102727
+Column count: 10
+Schema:
+  Customer_Trx_ID : string
+  Subscriber_ID : string
+  Subscribe_Date : date
+  First_Order_Date : date
+  Customer_Postal_Code : string
+  Customer_City : string
+  Customer_Country : string
+  Customer_Country_Code : string
+  Age : int
+  Gender : string
+
+--- Order_Items ---
+Row count : 112650
+Column count: 7
+Schema:
+  Order_ID : string
+  Order_Item_ID : int
+  Product_ID : string
+  Seller_ID : string
+  Shipping_Limit_Date : timestamp
+  Price : double
+  Freight_Value : double
+
+--- Products ---
+Row count : 32951
+Column count: 6
+Schema:
+  Product_ID : string
+  Product_Category_Name : string
+  Product_Weight_Gr : int
+  Product_Length_Cm : int
+  Product_Height_Cm : int
+  Product_Width_Cm : int
+
+--- Order_Reviews ---
+Row count : 99270
+Column count: 7
+Schema:
+  Review_ID : string
+  Order_ID : string
+  Review_Score : string
+  Review_Comment_Title_En : string
+  Review_Comment_Message_En : string
+  Review_Creation_Date : string
+  Review_Answer_Timestamp : timestamp
+
+All 5 datasets loaded successfully.

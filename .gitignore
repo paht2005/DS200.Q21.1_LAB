@@ -1,3 +1,4 @@
+# Python virtual environment
 .venv/
 .env
 venv/
@@ -7,4 +8,15 @@ __pycache__/
 .DS_Store
 .ipynb_checkpoints/
 
+# GitHub workflows
+.github/
 
+# IntelliJ IDEA
+DS200.Q21.1_Lab04/.planning/
+.planning/
+.idea/
+
+# Java build artifacts
+**/target/
+*.class
+*.jar
