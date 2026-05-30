@@ -138,14 +138,18 @@ curl -L -o yolo12n.pt "https://github.com/ultralytics/assets/releases/download/v
 # wget https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
 ```
 
-> **Note**: Model đã được tải sẵn: `models/yolo/yolo12n.pt` ✓
+> **Note**: Model already downloaded: `models/yolo/yolo12n.pt` ✓
 
-### 3. Test Video → `data/video/` (Optional)
+### 3. Test Video → `data/video/` (Already included)
 
+A test video with people is already included:
+- `data/video/people-detection.mp4` ✓
+
+To download additional videos:
 ```bash
 cd data/video/
-# Download any video file with people, e.g.:
-wget https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4 -O test.mp4
+# Download pedestrian detection video
+wget -O pedestrians.mp4 "https://github.com/intel-iot-devkit/sample-videos/raw/master/people-detection.mp4"
 ```
 
 ---
