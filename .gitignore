@@ -20,3 +20,8 @@ DS200.Q21.1_Lab04/.planning/
 **/target/
 *.class
 *.jar
+
+# IntelliJ IDEA project files
+.idea/
+*/.planning/ 
+.planning/

@@ -1,0 +1,12 @@
+# Python dependencies for Real-Time Person Counting System
+
+# Core dependencies
+pyspark>=3.4.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# YOLO for object detection
+ultralytics>=8.0.0
+
+# Utilities
+pillow>=10.0.0
