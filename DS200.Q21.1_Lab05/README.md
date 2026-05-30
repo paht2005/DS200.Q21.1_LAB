@@ -354,22 +354,22 @@ python3 src/examine_mediapipe.py --input image.jpg --mode all
   "video_path": "data/video/pedestrian-video1.mp4",
   "video_info": {
     "total_frames": 3493,
-    "fps": 30.0,
-    "resolution": "1920x1080",
-    "duration_seconds": 116.43
+    "fps": 29.97,
+    "resolution": "640x360",
+    "duration_seconds": 116.55
   },
   "detection_summary": {
-    "total_detections": 30234,
+    "total_detections": 39814,
     "frames_processed": 3493,
-    "avg_persons_per_frame": 8.66,
-    "max_persons_in_frame": 15,
-    "frames_with_persons": 3450,
+    "avg_persons_per_frame": 11.4,
+    "max_persons_in_frame": 18,
+    "frames_with_persons": 3493,
     "detection_method": "YOLO"
   },
   "processing": {
-    "processing_time_seconds": 432.10,
-    "fps_processing": 8.08,
-    "timestamp": "2026-05-30T15:42:40.788"
+    "processing_time_seconds": 735.66,
+    "fps_processing": 4.75,
+    "timestamp": "2026-05-30T20:37:50.660"
   }
 }
 ```
@@ -402,18 +402,27 @@ python3 src/examine_mediapipe.py --input image.jpg --mode all
 {
   "processing_info": {
     "total_videos": 3,
-    "total_processing_time": 653.05,
+    "total_processing_time": 1369.79,
     "detection_method": "YOLO",
-    "spark_enabled": false,
-    "timestamp": "2026-05-30T15:46:20"
+    "spark_enabled": true,
+    "timestamp": "2026-05-30T20:48:23"
   },
   "videos": [
-    {"video_name": "pedestrian-video1", "...": "..."},
-    {"video_name": "pedestrian-video2", "...": "..."},
-    {"video_name": "people-detection", "...": "..."}
+    {"video_name": "pedestrian-video1", "total_detections": 39814, "avg_persons_per_frame": 11.4},
+    {"video_name": "pedestrian-video2", "total_detections": 7747, "avg_persons_per_frame": 7.09},
+    {"video_name": "people-detection", "total_detections": 411, "avg_persons_per_frame": 0.69}
   ]
 }
 ```
+
+### Latest Processing Results (Confidence = 0.3)
+
+| Video | Frames | Persons Detected | Avg/Frame | Max/Frame | Time |
+|-------|--------|------------------|-----------|-----------|------|
+| pedestrian-video1 | 3,493 | 39,814 | 11.4 | 18 | 735.66s |
+| pedestrian-video2 | 1,093 | 7,747 | 7.09 | 17 | 462.57s |
+| people-detection | 596 | 411 | 0.69 | - | 169.62s |
+| **Total** | **5,182** | **47,972** | - | - | **1369.79s** |
 
 ---
 
@@ -427,7 +436,7 @@ class Config:
     RECEIVER_PORT = 6100
     PROCESSING_PORT = 6200
     STORAGE_PORT = 6300
-    CONFIDENCE_THRESHOLD = 0.5
+    CONFIDENCE_THRESHOLD = 0.3  # Lowered for better detection
     YOLO_MODEL_PATH = "models/yolo/yolo12n.pt"
 ```
 
@@ -435,7 +444,7 @@ class Config:
 
 To improve person detection accuracy, especially in crowded scenes or when persons appear small in the frame:
 
-1. **Lower the confidence threshold**: Reduce `CONFIDENCE_THRESHOLD` in `src/config.py` from `0.5` to a lower value (e.g., `0.3` or `0.25`). This allows detections with lower confidence scores to be included.
+1. **Lower the confidence threshold**: Reduce `CONFIDENCE_THRESHOLD` in `src/config.py` from `0.5` to a lower value (e.g., `0.3` or `0.25`). This allows detections with lower confidence scores to be included. **Current setting: 0.3**
 
 2. **Enable SAHI**: Use SAHI (Slicing Aided Hyper Inference) for batch processing:
    ```bash
@@ -446,28 +455,78 @@ To improve person detection accuracy, especially in crowded scenes or when perso
 
 **Note**: Lower thresholds may increase false positives. SAHI increases processing time but provides more accurate counts in complex scenes.
 
+### SAHI vs YOLO Detection Comparison
+
+The following comparison demonstrates the improvement SAHI provides for detecting small or distant persons in crowded scenes.
+
+**Generate comparison screenshots:**
+```bash
+python3 src/generate_comparison_screenshots.py
+```
+
+**Results (pedestrian-video1 with confidence=0.3):**
+
+| Frame | YOLO Only | SAHI Enabled | Improvement |
+|-------|-----------|--------------|-------------|
+| Frame 1 | 11 persons | 12 persons | +9% |
+| Frame 300 | 14 persons | 16 persons | +14% |
+| Frame 500 | 11 persons | 16 persons | +45% |
+| Frame 1000 | 11 persons | 13 persons | +18% |
+| **Average** | **12.0** | **13.5** | **+12.5%** |
+
+**Visual Comparison:**
+
+<table>
+<tr>
+<th>YOLO Only (no-sahi)</th>
+<th>SAHI Enabled (with-sahi)</th>
+</tr>
+<tr>
+<td><img src="output/screenshots/no-sahi/pedestrian-video1/frame_0300.jpg" width="400"/></td>
+<td><img src="output/screenshots/with-sahi/pedestrian-video1/frame_0300.jpg" width="400"/></td>
+</tr>
+<tr>
+<td><img src="output/screenshots/no-sahi/pedestrian-video1/frame_0500.jpg" width="400"/></td>
+<td><img src="output/screenshots/with-sahi/pedestrian-video1/frame_0500.jpg" width="400"/></td>
+</tr>
+</table>
+
+**Key observations:**
+- SAHI detects more persons in crowded scenes (especially distant/small persons)
+- Green boxes: YOLO detection | Yellow boxes: SAHI detection
+- SAHI provides ~12.5% improvement on average for pedestrian-video1
+
+**Comparison screenshots location:**
+```text
+output/screenshots/
+├── no-sahi/              # Standard YOLO detection
+│   ├── pedestrian-video1/
+│   ├── pedestrian-video2/
+│   └── people-detection/
+└── with-sahi/            # SAHI sliced inference
+    ├── pedestrian-video1/
+    ├── pedestrian-video2/
+    └── people-detection/
+```
+
 ---
 
 ## Screenshots
 
-Detection visualization screenshots are available in `screenshots/`:
+Detection visualization screenshots are available in `output/screenshots/`:
 
 ```text
-screenshots/
-├── pedestrian-video1/          # Sampled frames with detection boxes
-│   ├── frame_0001.jpg
-│   ├── frame_0100.jpg
-│   ├── frame_0500.jpg
-│   ├── frame_1000.jpg
-│   ├── frame_2000.jpg
-│   └── frame_3000.jpg
+output/screenshots/
+├── no-sahi/                    # Standard YOLO detection
+│   ├── pedestrian-video1/
+│   ├── pedestrian-video2/
+│   └── people-detection/
+├── with-sahi/                  # SAHI sliced inference
+│   ├── pedestrian-video1/
+│   ├── pedestrian-video2/
+│   └── people-detection/
+├── pedestrian-video1/          # Legacy sampled frames
 └── pedestrian-video2/
-    ├── frame_0001.jpg
-    ├── frame_0100.jpg
-    ├── frame_0300.jpg
-    ├── frame_0500.jpg
-    ├── frame_0800.jpg
-    └── frame_1000.jpg
 ```
 
 Each screenshot shows:

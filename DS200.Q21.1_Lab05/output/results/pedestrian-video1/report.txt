@@ -9,11 +9,11 @@ Video Info:
 
 Detection Results:
   - Detection Method: YOLO
-  - Total Persons Detected: 30234
-  - Average Persons/Frame: 8.66
-  - Max Persons in Single Frame: 14
+  - Total Persons Detected: 39814
+  - Average Persons/Frame: 11.4
+  - Max Persons in Single Frame: 18
   - Frames with Persons: 3493/3493
 
 Processing:
-  - Processing Time: 432.10 seconds
-  - Processing FPS: 8.08
+  - Processing Time: 735.66 seconds
+  - Processing FPS: 4.75

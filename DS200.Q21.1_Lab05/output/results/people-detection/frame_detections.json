@@ -142,8 +142,16 @@
   {
     "frame_number": 21,
     "timestamp": 1.75,
-    "person_count": 0,
-    "bounding_boxes": [],
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 197,
+        "y": 278,
+        "width": 142,
+        "height": 152,
+        "confidence": 0.414
+      }
+    ],
     "detection_method": "YOLO"
   },
   {
@@ -402,8 +410,16 @@
   {
     "frame_number": 41,
     "timestamp": 3.4166666666666665,
-    "person_count": 0,
-    "bounding_boxes": [],
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 360,
+        "y": 92,
+        "width": 89,
+        "height": 211,
+        "confidence": 0.442
+      }
+    ],
     "detection_method": "YOLO"
   },
   {
@@ -559,8 +575,16 @@
   {
     "frame_number": 52,
     "timestamp": 4.333333333333333,
-    "person_count": 0,
-    "bounding_boxes": [],
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 472,
+        "y": 82,
+        "width": 93,
+        "height": 176,
+        "confidence": 0.454
+      }
+    ],
     "detection_method": "YOLO"
   },
   {
@@ -1654,8 +1678,16 @@
   {
     "frame_number": 181,
     "timestamp": 15.083333333333334,
-    "person_count": 0,
-    "bounding_boxes": [],
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 158,
+        "y": 333,
+        "width": 79,
+        "height": 98,
+        "confidence": 0.475
+      }
+    ],
     "detection_method": "YOLO"
   },
   {
@@ -2658,7 +2690,7 @@
   {
     "frame_number": 227,
     "timestamp": 18.916666666666668,
-    "person_count": 2,
+    "person_count": 3,
     "bounding_boxes": [
       {
         "x": 49,
@@ -2673,6 +2705,13 @@
         "width": 70,
         "height": 169,
         "confidence": 0.697
+      },
+      {
+        "x": 125,
+        "y": 77,
+        "width": 58,
+        "height": 140,
+        "confidence": 0.459
       }
     ],
     "detection_method": "YOLO"
@@ -3047,8 +3086,16 @@
   {
     "frame_number": 247,
     "timestamp": 20.583333333333332,
-    "person_count": 0,
-    "bounding_boxes": [],
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 88,
+        "width": 75,
+        "height": 149,
+        "confidence": 0.433
+      }
+    ],
     "detection_method": "YOLO"
   },
   {
@@ -4016,7 +4063,7 @@
   {
     "frame_number": 354,
     "timestamp": 29.5,
-    "person_count": 2,
+    "person_count": 3,
     "bounding_boxes": [
       {
         "x": 179,
@@ -4031,6 +4078,13 @@
         "width": 106,
         "height": 201,
         "confidence": 0.523
+      },
+      {
+        "x": 410,
+        "y": 305,
+        "width": 173,
+        "height": 124,
+        "confidence": 0.46
       }
     ],
     "detection_method": "YOLO"
@@ -4480,7 +4534,7 @@
   {
     "frame_number": 370,
     "timestamp": 30.833333333333332,
-    "person_count": 3,
+    "person_count": 4,
     "bounding_boxes": [
       {
         "x": 468,
@@ -4502,6 +4556,13 @@
         "width": 65,
         "height": 194,
         "confidence": 0.529
+      },
+      {
+        "x": 426,
+        "y": 100,
+        "width": 63,
+        "height": 127,
+        "confidence": 0.43
       }
     ],
     "detection_method": "YOLO"
@@ -4980,7 +5041,7 @@
   {
     "frame_number": 387,
     "timestamp": 32.25,
-    "person_count": 3,
+    "person_count": 4,
     "bounding_boxes": [
       {
         "x": 588,
@@ -5002,6 +5063,13 @@
         "width": 104,
         "height": 194,
         "confidence": 0.832
+      },
+      {
+        "x": 0,
+        "y": 135,
+        "width": 21,
+        "height": 85,
+        "confidence": 0.309
       }
     ],
     "detection_method": "YOLO"
@@ -5009,7 +5077,7 @@
   {
     "frame_number": 388,
     "timestamp": 32.333333333333336,
-    "person_count": 3,
+    "person_count": 4,
     "bounding_boxes": [
       {
         "x": 606,
@@ -5031,6 +5099,13 @@
         "width": 82,
         "height": 148,
         "confidence": 0.83
+      },
+      {
+        "x": 0,
+        "y": 133,
+        "width": 22,
+        "height": 88,
+        "confidence": 0.447
       }
     ],
     "detection_method": "YOLO"
@@ -5038,7 +5113,7 @@
   {
     "frame_number": 389,
     "timestamp": 32.416666666666664,
-    "person_count": 3,
+    "person_count": 4,
     "bounding_boxes": [
       {
         "x": 619,
@@ -5060,6 +5135,13 @@
         "width": 74,
         "height": 149,
         "confidence": 0.819
+      },
+      {
+        "x": 0,
+        "y": 133,
+        "width": 24,
+        "height": 88,
+        "confidence": 0.5
       }
     ],
     "detection_method": "YOLO"
@@ -5067,7 +5149,7 @@
   {
     "frame_number": 390,
     "timestamp": 32.5,
-    "person_count": 3,
+    "person_count": 4,
     "bounding_boxes": [
       {
         "x": 620,
@@ -5089,6 +5171,13 @@
         "width": 67,
         "height": 150,
         "confidence": 0.82
+      },
+      {
+        "x": 0,
+        "y": 131,
+        "width": 26,
+        "height": 88,
+        "confidence": 0.364
       }
     ],
     "detection_method": "YOLO"
@@ -5096,7 +5185,7 @@
   {
     "frame_number": 391,
     "timestamp": 32.583333333333336,
-    "person_count": 3,
+    "person_count": 4,
     "bounding_boxes": [
       {
         "x": 619,
@@ -5118,6 +5207,13 @@
         "width": 64,
         "height": 148,
         "confidence": 0.894
+      },
+      {
+        "x": 0,
+        "y": 130,
+        "width": 23,
+        "height": 90,
+        "confidence": 0.456
       }
     ],
     "detection_method": "YOLO"
@@ -5125,7 +5221,7 @@
   {
     "frame_number": 392,
     "timestamp": 32.666666666666664,
-    "person_count": 3,
+    "person_count": 4,
     "bounding_boxes": [
       {
         "x": 619,
@@ -5147,6 +5243,13 @@
         "width": 72,
         "height": 147,
         "confidence": 0.877
+      },
+      {
+        "x": 0,
+        "y": 140,
+        "width": 22,
+        "height": 79,
+        "confidence": 0.414
       }
     ],
     "detection_method": "YOLO"
@@ -5154,7 +5257,7 @@
   {
     "frame_number": 393,
     "timestamp": 32.75,
-    "person_count": 3,
+    "person_count": 4,
     "bounding_boxes": [
       {
         "x": 574,
@@ -5176,6 +5279,13 @@
         "width": 112,
         "height": 185,
         "confidence": 0.892
+      },
+      {
+        "x": 0,
+        "y": 162,
+        "width": 22,
+        "height": 57,
+        "confidence": 0.336
       }
     ],
     "detection_method": "YOLO"
@@ -5444,8 +5554,23 @@
   {
     "frame_number": 403,
     "timestamp": 33.583333333333336,
-    "person_count": 0,
-    "bounding_boxes": [],
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 656,
+        "y": 96,
+        "width": 65,
+        "height": 140,
+        "confidence": 0.488
+      },
+      {
+        "x": 0,
+        "y": 137,
+        "width": 45,
+        "height": 107,
+        "confidence": 0.485
+      }
+    ],
     "detection_method": "YOLO"
   },
   {
@@ -6735,8 +6860,16 @@
   {
     "frame_number": 551,
     "timestamp": 45.916666666666664,
-    "person_count": 0,
-    "bounding_boxes": [],
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 46,
+        "y": 57,
+        "width": 130,
+        "height": 197,
+        "confidence": 0.433
+      }
+    ],
     "detection_method": "YOLO"
   },
   {
@@ -6802,8 +6935,16 @@
   {
     "frame_number": 556,
     "timestamp": 46.333333333333336,
-    "person_count": 0,
-    "bounding_boxes": [],
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 64,
+        "width": 68,
+        "height": 183,
+        "confidence": 0.356
+      }
+    ],
     "detection_method": "YOLO"
   },
   {
@@ -6824,8 +6965,16 @@
   {
     "frame_number": 558,
     "timestamp": 46.5,
-    "person_count": 0,
-    "bounding_boxes": [],
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 97,
+        "width": 95,
+        "height": 154,
+        "confidence": 0.497
+      }
+    ],
     "detection_method": "YOLO"
   },
   {
@@ -6846,7 +6995,7 @@
   {
     "frame_number": 560,
     "timestamp": 46.666666666666664,
-    "person_count": 1,
+    "person_count": 2,
     "bounding_boxes": [
       {
         "x": 0,
@@ -6854,6 +7003,13 @@
         "width": 64,
         "height": 125,
         "confidence": 0.53
+      },
+      {
+        "x": 0,
+        "y": 124,
+        "width": 38,
+        "height": 127,
+        "confidence": 0.445
       }
     ],
     "detection_method": "YOLO"
@@ -6861,8 +7017,16 @@
   {
     "frame_number": 561,
     "timestamp": 46.75,
-    "person_count": 0,
-    "bounding_boxes": [],
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 119,
+        "width": 40,
+        "height": 132,
+        "confidence": 0.435
+      }
+    ],
     "detection_method": "YOLO"
   },
   {

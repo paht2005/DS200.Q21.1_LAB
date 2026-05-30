@@ -29,7 +29,7 @@ class Config:
     SPARK_BATCH_INTERVAL = 1  # seconds
     
     # Detection settings
-    CONFIDENCE_THRESHOLD = 0.5
+    CONFIDENCE_THRESHOLD = 0.3
     YOLO_MODEL_PATH = os.path.join(PROJECT_ROOT, "models", "yolo", "yolo12n.pt")
     
     # Storage settings
