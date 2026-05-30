@@ -1,4 +1,5 @@
 # Python dependencies for Real-Time Person Counting System
+# DS200.Q21.1 Lab05 - Big Data
 
 # Core dependencies
 pyspark>=3.4.0
@@ -7,6 +8,9 @@ numpy>=1.24.0
 
 # YOLOv12 for object detection (Ultralytics)
 ultralytics>=8.3.0
+
+# MediaPipe for pose/face/hand detection
+mediapipe>=0.10.0
 
 # Utilities
 pillow>=10.0.0

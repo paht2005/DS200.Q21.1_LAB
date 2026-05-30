@@ -8,18 +8,16 @@
 
 ## Overview
 
-A distributed real-time person counting system that processes camera frames using a three-tier server architecture. The system demonstrates big data stream processing concepts with **Apache Spark Streaming** for scalable frame processing and **YOLO (You Only Look Once)** deep learning model for accurate person detection.
+A distributed real-time person counting system that processes camera frames using a three-tier server architecture. The system demonstrates big data stream processing concepts with **PySpark Streaming** for scalable frame processing and **YOLO (You Only Look Once)** deep learning model for accurate person detection.
 
-### Implementation Strategy
+### Features
 
-This project provides **two complementary implementations**:
-
-| Implementation | Purpose | Technology |
-|----------------|---------|------------|
-| **Java (Spark Streaming)** | Server infrastructure and TCP communication | Java 11+, Apache Spark Streaming, Maven |
-| **Python (YOLO Detection)** | Object detection with pre-trained models | Python 3.8+, Ultralytics YOLO, PySpark |
-
-> **Important**: The **Python implementation** is required to execute the YOLO model (`yolo12n.pt`) for actual person detection. The Java implementation provides the distributed server architecture but uses mock detection. For production-quality detection with bounding boxes, run the Python scripts.
+- **Frame Sender** — Captures and sends video frames via TCP
+- **Frame Receiver** — Receives and forwards frames to detector
+- **Object Detector** — YOLO-based person detection with bounding boxes
+- **Storage Server** — Persists detection results to JSON
+- **Background Remover** — Remove background from images using MediaPipe
+- **MediaPipe Explorer** — Explore pose, face, and hand detection
 
 ---
 
@@ -27,46 +25,34 @@ This project provides **two complementary implementations**:
 
 ```
 ┌─────────────┐     TCP      ┌──────────────┐     TCP      ┌──────────────┐
-│   Camera/   │ ──────────► │   Receiver   │ ──────────► │  Processing  │
-│   Video     │   frames    │    Server    │   frames    │    Server    │
-│   Source    │             │  (port 6100) │             │  (port 6200) │
-└─────────────┘             └──────────────┘             └──────────────┘
-                                                                │
+│   Video/    │ ──────────► │   Receiver   │ ──────────► │  Detector    │
+│   Camera    │   frames    │  (port 6100) │   frames    │  (port 6200) │
+│  (sender)   │             └──────────────┘             └──────────────┘
+└─────────────┘                                                 │
                                                                 │ detection
-                                                                │ results (bounding boxes)
+                                                                │ results
                                                                 ▼
                                                          ┌──────────────┐
                                                          │   Storage    │
-                                                         │    Server    │
                                                          │  (port 6300) │
                                                          └──────────────┘
                                                                 │
                                                                 ▼
-                                                    output/results/detections.json
+                                                    output/detections.json
 ```
-
-### Server Components
-
-| Server | Port | Description |
-|--------|------|-------------|
-| **FrameReceiverServer** | 6100 | Receives camera frames via TCP and forwards to processing server |
-| **ProcessingServer** | 6200 | Performs object detection using Spark Streaming, outputs bounding boxes |
-| **StorageServer** | 6300 | Persists detection results to JSON format |
 
 ---
 
 ## Technologies
 
-| Technology | Purpose | Implementation |
-|------------|---------|----------------|
-| **Java 11+** | Server infrastructure and TCP communication | `spark/java/` |
-| **Apache Spark Streaming** | Distributed stream processing (big data) | Both Java and Python |
-| **Python 3.8+** | YOLO model inference and detection | `src/` |
-| **Ultralytics YOLO** | Pre-trained person detection model | `models/yolo/yolo12n.pt` |
-| **OpenCV** | Image processing and frame handling | Python |
-| **Maven** | Java build and dependency management | `pom.xml` |
-| **GSON** | JSON serialization | Java |
-| **TCP Sockets** | Inter-server communication | Both |
+| Technology | Purpose |
+|------------|---------|
+| **Python 3.8+** | Primary language |
+| **PySpark Streaming** | Big data stream processing |
+| **Ultralytics YOLO** | Person detection model |
+| **OpenCV** | Image processing |
+| **MediaPipe** | Pose/face/hand detection |
+| **TCP Sockets** | Inter-server communication |
 
 ---
 
@@ -74,30 +60,216 @@ This project provides **two complementary implementations**:
 
 ```
 DS200.Q21.1_Lab05/
-├── README.md                           ← This documentation
-├── 23521143.txt                        ← Student ID file
-├── requirements.txt                    ← Python dependencies
+├── README.md                    ← This documentation
+├── 23521143.txt                 ← Student ID
+├── requirements.txt             ← Python dependencies
+├── tcp_example.py               ← TCP connection example
 │
-├── src/                                ← Python implementation (YOLO detection)
-│   ├── config.py                       ← Configuration constants
-│   ├── receiver_server.py              ← Server 1: Receives frames from camera
-│   ├── processing_server.py            ← Server 2: YOLO detection + Spark Streaming
-│   ├── storage_server.py               ← Server 3: Persists results to JSON
-│   └── video_source.py                 ← Video/camera frame source
+├── src/                         ← Python source code
+│   ├── config.py                ← Configuration settings
+│   ├── sender.py                ← Frame sender (client)
+│   ├── receiver.py              ← Frame receiver server
+│   ├── detect_object.py         ← Object detection server (YOLO)
+│   ├── storage_server.py        ← Result storage server
+│   ├── background_remover.py    ← Background removal utility
+│   ├── examine_mediapipe.py     ← MediaPipe exploration tool
+│   └── demo-example.py          ← End-to-end demo script
 │
-├── spark/java/lab05-streaming/         ← Java implementation (server infrastructure)
-│   ├── pom.xml                         ← Maven configuration
-│   └── src/main/java/lab05/
-│       ├── MainApp.java                ← Main launcher
-│       ├── Config.java                 ← Configuration constants
-│       ├── DataModels.java             ← Data classes (Frame, BoundingBox, etc.)
-│       ├── FrameReceiverServer.java    ← Server 1: Receives frames
-│       ├── ProcessingServer.java       ← Server 2: Spark Streaming processing
-│       ├── StorageServer.java          ← Server 3: Stores results
-│       └── VideoSource.java            ← Test video/image source
+├── scripts/                     ← Shell scripts for quick execution
+│   ├── run_all.sh               ← Start all servers
+│   ├── run_sender.sh            ← Start sender
+│   ├── run_receiver.sh          ← Start receiver
+│   ├── run_detector.sh          ← Start detector
+│   ├── run_storage.sh           ← Start storage
+│   ├── run_demo.sh              ← Run demo
+│   ├── run_background_remover.sh
+│   └── run_mediapipe.sh
 │
-├── scripts/
-│   ├── run_java_streaming_local.sh     ← Build and run Java servers
+├── data/
+│   ├── images/                  ← Sample images
+│   ├── video/                   ← Sample videos
+│   └── results/                 ← Detection results
+│
+├── models/
+│   └── yolo/                    ← YOLO model files
+│
+├── output/
+│   ├── detections.json          ← Detection results
+│   └── screenshots/             ← System screenshots
+│
+└── .planning/                   ← Project planning files
+```
+
+---
+
+## Quick Start
+
+### 1. Install Dependencies
+
+```bash
+# Create virtual environment (optional)
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### 2. Run the Demo
+
+```bash
+# Option 1: Run full demo (starts all servers + sender)
+./scripts/run_demo.sh --frames 10
+
+# Option 2: Start servers manually
+./scripts/run_all.sh
+
+# Then in another terminal:
+python src/sender.py --frames 10
+```
+
+### 3. View Results
+
+```bash
+cat output/detections.json
+```
+
+---
+
+## Running Individual Components
+
+### Start Servers (in separate terminals)
+
+```bash
+# Terminal 1: Storage Server
+./scripts/run_storage.sh
+
+# Terminal 2: Detector Server  
+./scripts/run_detector.sh
+
+# Terminal 3: Receiver Server
+./scripts/run_receiver.sh
+
+# Terminal 4: Send frames
+./scripts/run_sender.sh --frames 20
+```
+
+### With Video File
+
+```bash
+python src/sender.py --video data/video/sample.mp4 --fps 5
+```
+
+### With Webcam
+
+```bash
+python src/sender.py --camera 0 --fps 2
+```
+
+---
+
+## Utility Scripts
+
+### Background Remover
+
+```bash
+# Remove background from image
+python src/background_remover.py --input image.jpg --output result.png
+
+# With transparent background
+python src/background_remover.py --input image.jpg --color transparent
+
+# Blur background
+python src/background_remover.py --input image.jpg --blur
+```
+
+### MediaPipe Explorer
+
+```bash
+# Detect pose
+python src/examine_mediapipe.py --input image.jpg --mode pose
+
+# Detect faces
+python src/examine_mediapipe.py --input image.jpg --mode face
+
+# Detect hands
+python src/examine_mediapipe.py --input image.jpg --mode hands
+
+# All detections
+python src/examine_mediapipe.py --input image.jpg --mode all
+```
+
+---
+
+## Output Format
+
+Detection results are stored in JSON format:
+
+```json
+{
+  "frame_id": "abc123",
+  "frame_number": 1,
+  "timestamp": "2026-05-30T14:30:00",
+  "processing_time_ms": 45.2,
+  "detection": {
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 100,
+        "y": 50,
+        "width": 60,
+        "height": 150,
+        "confidence": 0.92,
+        "class": "person"
+      }
+    ],
+    "detection_method": "YOLO"
+  }
+}
+```
+
+---
+
+## Configuration
+
+Edit `src/config.py` to change settings:
+
+```python
+class Config:
+    HOST = "localhost"
+    RECEIVER_PORT = 6100
+    PROCESSING_PORT = 6200
+    STORAGE_PORT = 6300
+    CONFIDENCE_THRESHOLD = 0.5
+```
+
+---
+
+## Requirements
+
+- Python 3.8+
+- OpenCV
+- NumPy
+- Ultralytics (YOLO)
+- MediaPipe
+- PySpark (optional, for distributed processing)
+
+Install all with:
+```bash
+pip install opencv-python numpy ultralytics mediapipe pyspark
+```
+
+---
+
+## Screenshots
+
+See `output/screenshots/` for system screenshots.
+
+---
+
+## License
+
+This project is for educational purposes as part of DS200.Q21.1 Big Data course.
 │   ├── run_detection.py                ← Run Python YOLO detection pipeline
 │   └── java.sh                         ← Convenience wrapper
 │
