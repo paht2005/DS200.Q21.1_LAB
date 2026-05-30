@@ -4,10 +4,13 @@
 # Core dependencies
 pyspark>=3.4.0
 opencv-python>=4.8.0
-numpy>=1.24.0
+numpy>=1.24.0,<2.0.0
 
 # YOLOv12 for object detection (Ultralytics)
 ultralytics>=8.3.0
+
+# SAHI for improved small object detection
+sahi>=0.11.0
 
 # MediaPipe for pose/face/hand detection
 mediapipe>=0.10.0

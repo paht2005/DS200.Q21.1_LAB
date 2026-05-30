@@ -44,6 +44,15 @@ except ImportError:
     YOLO_AVAILABLE = False
     print("Warning: Ultralytics YOLO not available. Using mock detection.")
 
+# SAHI imports (Slicing Aided Hyper Inference)
+try:
+    from sahi import AutoDetectionModel
+    from sahi.predict import get_sliced_prediction
+    SAHI_AVAILABLE = True
+except ImportError:
+    SAHI_AVAILABLE = False
+    print("Warning: SAHI not available. Using standard YOLO detection.")
+
 from config import Config, MessageType
 
 # Configure logging
@@ -52,30 +61,43 @@ logger = logging.getLogger("Detector")
 
 
 class PersonDetector:
-    """Person detection using YOLO model."""
+    """Person detection using YOLO model with optional SAHI sliced inference."""
     
-    def __init__(self, model_path=Config.YOLO_MODEL_PATH, confidence=Config.CONFIDENCE_THRESHOLD):
+    def __init__(self, model_path=Config.YOLO_MODEL_PATH, confidence=Config.CONFIDENCE_THRESHOLD, use_sahi=True):
         self.model = None
+        self.sahi_model = None
         self.model_path = model_path
         self.confidence_threshold = confidence
+        self.use_sahi = use_sahi and SAHI_AVAILABLE
         self._load_model()
     
     def _load_model(self):
-        """Load the YOLO model."""
+        """Load the YOLO model and optionally SAHI wrapper."""
         if YOLO_AVAILABLE:
             try:
                 self.model = YOLO(self.model_path)
                 logger.info(f"YOLO model loaded from {self.model_path}")
+                
+                # Initialize SAHI model wrapper if available
+                if self.use_sahi and SAHI_AVAILABLE:
+                    self.sahi_model = AutoDetectionModel.from_pretrained(
+                        model_type="yolov8",
+                        model_path=self.model_path,
+                        confidence_threshold=self.confidence_threshold,
+                        device="cpu"  # Use "cuda:0" for GPU
+                    )
+                    logger.info("SAHI sliced inference enabled")
             except Exception as e:
                 logger.warning(f"Could not load YOLO model: {e}")
                 logger.info("Using mock detection instead")
                 self.model = None
+                self.sahi_model = None
         else:
             logger.warning("YOLO not available. Using mock detection.")
     
     def detect(self, image_data):
         """
-        Detect persons in the image.
+        Detect persons in the image using SAHI sliced inference or standard YOLO.
         
         Args:
             image_data: Base64 encoded image string or numpy array
@@ -100,10 +122,58 @@ class PersonDetector:
         if image is None:
             return self._mock_detection()
         
-        if self.model and CV2_AVAILABLE:
+        if self.sahi_model and CV2_AVAILABLE:
+            return self._sahi_detection(image)
+        elif self.model and CV2_AVAILABLE:
             return self._yolo_detection(image)
         else:
             return self._mock_detection()
+    
+    def _sahi_detection(self, image):
+        """Perform SAHI sliced inference for better small object detection."""
+        try:
+            # Run sliced prediction - slices the image into overlapping patches
+            result = get_sliced_prediction(
+                image,
+                self.sahi_model,
+                slice_height=256,
+                slice_width=256,
+                overlap_height_ratio=0.2,
+                overlap_width_ratio=0.2,
+                postprocess_type="NMS",
+                postprocess_match_threshold=0.5,
+                verbose=0
+            )
+            
+            bounding_boxes = []
+            person_count = 0
+            
+            for prediction in result.object_prediction_list:
+                # Filter for person class (class 0 in COCO)
+                if prediction.category.id == 0:
+                    bbox = prediction.bbox
+                    confidence = prediction.score.value
+                    
+                    bounding_boxes.append({
+                        "x": int(bbox.minx),
+                        "y": int(bbox.miny),
+                        "width": int(bbox.maxx - bbox.minx),
+                        "height": int(bbox.maxy - bbox.miny),
+                        "confidence": round(confidence, 3),
+                        "class": "person"
+                    })
+                    person_count += 1
+            
+            return {
+                "person_count": person_count,
+                "bounding_boxes": bounding_boxes,
+                "detection_method": "SAHI"
+            }
+            
+        except Exception as e:
+            logger.error(f"SAHI detection error: {e}")
+            # Fall back to standard YOLO
+            return self._yolo_detection(image)
     
     def _yolo_detection(self, image):
         """Perform actual YOLO detection."""
@@ -167,16 +237,17 @@ class PersonDetector:
 
 
 class ObjectDetectionServer:
-    """TCP server for object detection with optional PySpark Streaming."""
+    """TCP server for object detection with optional PySpark Streaming and SAHI."""
     
-    def __init__(self, host=Config.HOST, port=Config.PROCESSING_PORT, use_spark=False):
+    def __init__(self, host=Config.HOST, port=Config.PROCESSING_PORT, use_spark=False, use_sahi=True):
         self.host = host
         self.port = port
         self.use_spark = use_spark and SPARK_AVAILABLE
+        self.use_sahi = use_sahi
         self.server_socket = None
         self.storage_connection = None
         self.running = False
-        self.detector = PersonDetector()
+        self.detector = PersonDetector(use_sahi=use_sahi)
         self.frame_count = 0
         
         # Spark context
@@ -221,8 +292,9 @@ class ObjectDetectionServer:
         logger.info("=" * 60)
         logger.info(f"  DETECTOR SERVER started on {self.host}:{self.port}")
         logger.info("=" * 60)
-        logger.info(f"Detection method: {'YOLO' if self.detector.model else 'Mock'}")
+        logger.info(f"Detection method: {'SAHI + YOLO' if self.detector.sahi_model else ('YOLO' if self.detector.model else 'Mock')}")
         logger.info(f"Spark Streaming: {'Enabled' if self.use_spark else 'Disabled'}")
+        logger.info(f"SAHI Sliced Inference: {'Enabled' if self.detector.sahi_model else 'Disabled'}")
         logger.info("Waiting for receiver to connect...")
         
         # Connect to storage
@@ -348,18 +420,24 @@ class ObjectDetectionServer:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Object detection server with YOLO")
+    parser = argparse.ArgumentParser(description="Object detection server with YOLO, SAHI and PySpark Streaming")
     parser.add_argument("--host", default=Config.HOST, help=f"Host to bind (default: {Config.HOST})")
     parser.add_argument("--port", "-p", type=int, default=Config.PROCESSING_PORT,
                         help=f"Port to listen on (default: {Config.PROCESSING_PORT})")
-    parser.add_argument("--spark", "-s", action="store_true", help="Enable PySpark Streaming")
+    parser.add_argument("--no-spark", action="store_true", help="Disable PySpark Streaming (standalone mode)")
+    parser.add_argument("--no-sahi", action="store_true", help="Disable SAHI sliced inference (use standard YOLO)")
     
     args = parser.parse_args()
+    
+    # PySpark Streaming enabled by default
+    use_spark = not args.no_spark
+    use_sahi = not args.no_sahi
     
     server = ObjectDetectionServer(
         host=args.host,
         port=args.port,
-        use_spark=args.spark
+        use_spark=use_spark,
+        use_sahi=use_sahi
     )
     
     try:

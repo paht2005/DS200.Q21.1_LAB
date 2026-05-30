@@ -1,0 +1,23 @@
+{
+  "video_name": "pedestrian-video2",
+  "video_path": "/Users/phatcnguyen/Documents/DS200.Q21.1_LAB/DS200.Q21.1_Lab05/data/video/pedestrian-video2.mp4",
+  "video_info": {
+    "total_frames": 1093,
+    "fps": 23.976023976023978,
+    "resolution": "640x360",
+    "duration_seconds": 45.58720833333333
+  },
+  "detection_summary": {
+    "total_detections": 6167,
+    "frames_processed": 1093,
+    "avg_persons_per_frame": 5.64,
+    "max_persons_in_frame": 13,
+    "frames_with_persons": 1079,
+    "detection_method": "YOLO"
+  },
+  "processing": {
+    "processing_time_seconds": 132.32,
+    "fps_processing": 8.26,
+    "timestamp": "2026-05-30T15:44:53.216932"
+  }
+}

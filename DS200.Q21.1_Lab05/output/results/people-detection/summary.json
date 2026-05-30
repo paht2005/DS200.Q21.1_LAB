@@ -1,0 +1,23 @@
+{
+  "video_name": "people-detection",
+  "video_path": "/Users/phatcnguyen/Documents/DS200.Q21.1_LAB/DS200.Q21.1_Lab05/data/video/people-detection.mp4",
+  "video_info": {
+    "total_frames": 596,
+    "fps": 12.0,
+    "resolution": "768x432",
+    "duration_seconds": 49.666666666666664
+  },
+  "detection_summary": {
+    "total_detections": 389,
+    "frames_processed": 596,
+    "avg_persons_per_frame": 0.65,
+    "max_persons_in_frame": 4,
+    "frames_with_persons": 216,
+    "detection_method": "YOLO"
+  },
+  "processing": {
+    "processing_time_seconds": 87.28,
+    "fps_processing": 6.83,
+    "timestamp": "2026-05-30T15:46:20.533400"
+  }
+}

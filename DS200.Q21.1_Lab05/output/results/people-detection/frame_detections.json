@@ -1,0 +1,7113 @@
+[
+  {
+    "frame_number": 1,
+    "timestamp": 0.08333333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 2,
+    "timestamp": 0.16666666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 3,
+    "timestamp": 0.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 4,
+    "timestamp": 0.3333333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 5,
+    "timestamp": 0.4166666666666667,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 6,
+    "timestamp": 0.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 7,
+    "timestamp": 0.5833333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 8,
+    "timestamp": 0.6666666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 9,
+    "timestamp": 0.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 10,
+    "timestamp": 0.8333333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 11,
+    "timestamp": 0.9166666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 12,
+    "timestamp": 1.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 13,
+    "timestamp": 1.0833333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 14,
+    "timestamp": 1.1666666666666667,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 15,
+    "timestamp": 1.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 16,
+    "timestamp": 1.3333333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 17,
+    "timestamp": 1.4166666666666667,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 18,
+    "timestamp": 1.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 19,
+    "timestamp": 1.5833333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 20,
+    "timestamp": 1.6666666666666667,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 21,
+    "timestamp": 1.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 22,
+    "timestamp": 1.8333333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 23,
+    "timestamp": 1.9166666666666667,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 219,
+        "y": 231,
+        "width": 133,
+        "height": 198,
+        "confidence": 0.782
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 24,
+    "timestamp": 2.0,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 228,
+        "y": 219,
+        "width": 129,
+        "height": 210,
+        "confidence": 0.867
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 25,
+    "timestamp": 2.0833333333333335,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 241,
+        "y": 209,
+        "width": 120,
+        "height": 221,
+        "confidence": 0.9
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 26,
+    "timestamp": 2.1666666666666665,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 27,
+    "timestamp": 2.25,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 251,
+        "y": 179,
+        "width": 116,
+        "height": 248,
+        "confidence": 0.829
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 28,
+    "timestamp": 2.3333333333333335,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 258,
+        "y": 168,
+        "width": 115,
+        "height": 256,
+        "confidence": 0.828
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 29,
+    "timestamp": 2.4166666666666665,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 276,
+        "y": 153,
+        "width": 107,
+        "height": 254,
+        "confidence": 0.9
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 30,
+    "timestamp": 2.5,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 285,
+        "y": 146,
+        "width": 102,
+        "height": 253,
+        "confidence": 0.911
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 31,
+    "timestamp": 2.5833333333333335,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 289,
+        "y": 142,
+        "width": 103,
+        "height": 258,
+        "confidence": 0.901
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 32,
+    "timestamp": 2.6666666666666665,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 293,
+        "y": 138,
+        "width": 103,
+        "height": 261,
+        "confidence": 0.912
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 33,
+    "timestamp": 2.75,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 299,
+        "y": 131,
+        "width": 99,
+        "height": 260,
+        "confidence": 0.915
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 34,
+    "timestamp": 2.8333333333333335,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 306,
+        "y": 123,
+        "width": 94,
+        "height": 258,
+        "confidence": 0.924
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 35,
+    "timestamp": 2.9166666666666665,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 322,
+        "y": 112,
+        "width": 80,
+        "height": 241,
+        "confidence": 0.903
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 36,
+    "timestamp": 3.0,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 331,
+        "y": 106,
+        "width": 75,
+        "height": 228,
+        "confidence": 0.866
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 37,
+    "timestamp": 3.0833333333333335,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 337,
+        "y": 102,
+        "width": 76,
+        "height": 223,
+        "confidence": 0.856
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 38,
+    "timestamp": 3.1666666666666665,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 338,
+        "y": 101,
+        "width": 85,
+        "height": 224,
+        "confidence": 0.801
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 39,
+    "timestamp": 3.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 40,
+    "timestamp": 3.3333333333333335,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 41,
+    "timestamp": 3.4166666666666665,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 42,
+    "timestamp": 3.5,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 376,
+        "y": 87,
+        "width": 81,
+        "height": 198,
+        "confidence": 0.595
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 43,
+    "timestamp": 3.5833333333333335,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 396,
+        "y": 85,
+        "width": 75,
+        "height": 200,
+        "confidence": 0.882
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 44,
+    "timestamp": 3.6666666666666665,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 406,
+        "y": 85,
+        "width": 74,
+        "height": 201,
+        "confidence": 0.843
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 45,
+    "timestamp": 3.75,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 408,
+        "y": 88,
+        "width": 84,
+        "height": 198,
+        "confidence": 0.682
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 46,
+    "timestamp": 3.8333333333333335,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 409,
+        "y": 88,
+        "width": 91,
+        "height": 196,
+        "confidence": 0.845
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 47,
+    "timestamp": 3.9166666666666665,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 421,
+        "y": 84,
+        "width": 92,
+        "height": 194,
+        "confidence": 0.729
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 48,
+    "timestamp": 4.0,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 438,
+        "y": 79,
+        "width": 85,
+        "height": 188,
+        "confidence": 0.752
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 49,
+    "timestamp": 4.083333333333333,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 462,
+        "y": 78,
+        "width": 74,
+        "height": 189,
+        "confidence": 0.841
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 50,
+    "timestamp": 4.166666666666667,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 468,
+        "y": 78,
+        "width": 76,
+        "height": 184,
+        "confidence": 0.515
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 51,
+    "timestamp": 4.25,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 470,
+        "y": 80,
+        "width": 87,
+        "height": 181,
+        "confidence": 0.543
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 52,
+    "timestamp": 4.333333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 53,
+    "timestamp": 4.416666666666667,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 477,
+        "y": 83,
+        "width": 101,
+        "height": 174,
+        "confidence": 0.763
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 54,
+    "timestamp": 4.5,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 484,
+        "y": 81,
+        "width": 104,
+        "height": 180,
+        "confidence": 0.834
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 55,
+    "timestamp": 4.583333333333333,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 514,
+        "y": 79,
+        "width": 86,
+        "height": 173,
+        "confidence": 0.794
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 56,
+    "timestamp": 4.666666666666667,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 530,
+        "y": 79,
+        "width": 80,
+        "height": 173,
+        "confidence": 0.857
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 57,
+    "timestamp": 4.75,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 538,
+        "y": 81,
+        "width": 82,
+        "height": 172,
+        "confidence": 0.883
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 58,
+    "timestamp": 4.833333333333333,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 539,
+        "y": 84,
+        "width": 89,
+        "height": 168,
+        "confidence": 0.896
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 59,
+    "timestamp": 4.916666666666667,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 544,
+        "y": 87,
+        "width": 95,
+        "height": 165,
+        "confidence": 0.892
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 60,
+    "timestamp": 5.0,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 553,
+        "y": 85,
+        "width": 94,
+        "height": 165,
+        "confidence": 0.874
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 61,
+    "timestamp": 5.083333333333333,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 574,
+        "y": 83,
+        "width": 85,
+        "height": 164,
+        "confidence": 0.875
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 62,
+    "timestamp": 5.166666666666667,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 590,
+        "y": 84,
+        "width": 77,
+        "height": 165,
+        "confidence": 0.799
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 63,
+    "timestamp": 5.25,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 598,
+        "y": 85,
+        "width": 79,
+        "height": 163,
+        "confidence": 0.852
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 64,
+    "timestamp": 5.333333333333333,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 598,
+        "y": 86,
+        "width": 85,
+        "height": 158,
+        "confidence": 0.848
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 65,
+    "timestamp": 5.416666666666667,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 601,
+        "y": 90,
+        "width": 96,
+        "height": 153,
+        "confidence": 0.875
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 66,
+    "timestamp": 5.5,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 604,
+        "y": 91,
+        "width": 98,
+        "height": 152,
+        "confidence": 0.877
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 67,
+    "timestamp": 5.583333333333333,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 617,
+        "y": 90,
+        "width": 95,
+        "height": 153,
+        "confidence": 0.679
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 68,
+    "timestamp": 5.666666666666667,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 631,
+        "y": 89,
+        "width": 84,
+        "height": 154,
+        "confidence": 0.816
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 69,
+    "timestamp": 5.75,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 652,
+        "y": 89,
+        "width": 74,
+        "height": 153,
+        "confidence": 0.842
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 70,
+    "timestamp": 5.833333333333333,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 654,
+        "y": 91,
+        "width": 77,
+        "height": 151,
+        "confidence": 0.881
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 71,
+    "timestamp": 5.916666666666667,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 653,
+        "y": 95,
+        "width": 83,
+        "height": 147,
+        "confidence": 0.9
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 72,
+    "timestamp": 6.0,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 657,
+        "y": 96,
+        "width": 84,
+        "height": 146,
+        "confidence": 0.904
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 73,
+    "timestamp": 6.083333333333333,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 670,
+        "y": 96,
+        "width": 81,
+        "height": 141,
+        "confidence": 0.88
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 74,
+    "timestamp": 6.166666666666667,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 680,
+        "y": 94,
+        "width": 75,
+        "height": 138,
+        "confidence": 0.862
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 75,
+    "timestamp": 6.25,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 689,
+        "y": 94,
+        "width": 73,
+        "height": 141,
+        "confidence": 0.838
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 76,
+    "timestamp": 6.333333333333333,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 691,
+        "y": 96,
+        "width": 76,
+        "height": 137,
+        "confidence": 0.855
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 77,
+    "timestamp": 6.416666666666667,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 78,
+    "timestamp": 6.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 79,
+    "timestamp": 6.583333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 80,
+    "timestamp": 6.666666666666667,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 81,
+    "timestamp": 6.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 82,
+    "timestamp": 6.833333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 83,
+    "timestamp": 6.916666666666667,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 84,
+    "timestamp": 7.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 85,
+    "timestamp": 7.083333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 86,
+    "timestamp": 7.166666666666667,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 87,
+    "timestamp": 7.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 88,
+    "timestamp": 7.333333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 89,
+    "timestamp": 7.416666666666667,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 90,
+    "timestamp": 7.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 91,
+    "timestamp": 7.583333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 92,
+    "timestamp": 7.666666666666667,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 93,
+    "timestamp": 7.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 94,
+    "timestamp": 7.833333333333333,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 95,
+    "timestamp": 7.916666666666667,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 96,
+    "timestamp": 8.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 97,
+    "timestamp": 8.083333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 98,
+    "timestamp": 8.166666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 99,
+    "timestamp": 8.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 100,
+    "timestamp": 8.333333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 101,
+    "timestamp": 8.416666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 102,
+    "timestamp": 8.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 103,
+    "timestamp": 8.583333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 104,
+    "timestamp": 8.666666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 105,
+    "timestamp": 8.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 106,
+    "timestamp": 8.833333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 107,
+    "timestamp": 8.916666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 108,
+    "timestamp": 9.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 109,
+    "timestamp": 9.083333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 110,
+    "timestamp": 9.166666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 111,
+    "timestamp": 9.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 112,
+    "timestamp": 9.333333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 113,
+    "timestamp": 9.416666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 114,
+    "timestamp": 9.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 115,
+    "timestamp": 9.583333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 116,
+    "timestamp": 9.666666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 117,
+    "timestamp": 9.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 118,
+    "timestamp": 9.833333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 119,
+    "timestamp": 9.916666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 120,
+    "timestamp": 10.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 121,
+    "timestamp": 10.083333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 122,
+    "timestamp": 10.166666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 123,
+    "timestamp": 10.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 124,
+    "timestamp": 10.333333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 125,
+    "timestamp": 10.416666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 126,
+    "timestamp": 10.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 127,
+    "timestamp": 10.583333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 128,
+    "timestamp": 10.666666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 129,
+    "timestamp": 10.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 130,
+    "timestamp": 10.833333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 131,
+    "timestamp": 10.916666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 132,
+    "timestamp": 11.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 133,
+    "timestamp": 11.083333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 134,
+    "timestamp": 11.166666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 135,
+    "timestamp": 11.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 136,
+    "timestamp": 11.333333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 137,
+    "timestamp": 11.416666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 138,
+    "timestamp": 11.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 139,
+    "timestamp": 11.583333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 140,
+    "timestamp": 11.666666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 141,
+    "timestamp": 11.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 142,
+    "timestamp": 11.833333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 143,
+    "timestamp": 11.916666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 144,
+    "timestamp": 12.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 145,
+    "timestamp": 12.083333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 146,
+    "timestamp": 12.166666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 147,
+    "timestamp": 12.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 148,
+    "timestamp": 12.333333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 149,
+    "timestamp": 12.416666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 150,
+    "timestamp": 12.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 151,
+    "timestamp": 12.583333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 152,
+    "timestamp": 12.666666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 153,
+    "timestamp": 12.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 154,
+    "timestamp": 12.833333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 155,
+    "timestamp": 12.916666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 156,
+    "timestamp": 13.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 157,
+    "timestamp": 13.083333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 158,
+    "timestamp": 13.166666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 159,
+    "timestamp": 13.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 160,
+    "timestamp": 13.333333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 161,
+    "timestamp": 13.416666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 162,
+    "timestamp": 13.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 163,
+    "timestamp": 13.583333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 164,
+    "timestamp": 13.666666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 165,
+    "timestamp": 13.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 166,
+    "timestamp": 13.833333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 167,
+    "timestamp": 13.916666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 168,
+    "timestamp": 14.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 169,
+    "timestamp": 14.083333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 170,
+    "timestamp": 14.166666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 171,
+    "timestamp": 14.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 172,
+    "timestamp": 14.333333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 173,
+    "timestamp": 14.416666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 174,
+    "timestamp": 14.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 175,
+    "timestamp": 14.583333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 176,
+    "timestamp": 14.666666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 177,
+    "timestamp": 14.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 178,
+    "timestamp": 14.833333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 179,
+    "timestamp": 14.916666666666666,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 180,
+    "timestamp": 15.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 181,
+    "timestamp": 15.083333333333334,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 182,
+    "timestamp": 15.166666666666666,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 398,
+        "y": 326,
+        "width": 130,
+        "height": 104,
+        "confidence": 0.86
+      },
+      {
+        "x": 146,
+        "y": 311,
+        "width": 157,
+        "height": 120,
+        "confidence": 0.816
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 183,
+    "timestamp": 15.25,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 151,
+        "y": 302,
+        "width": 167,
+        "height": 128,
+        "confidence": 0.899
+      },
+      {
+        "x": 391,
+        "y": 311,
+        "width": 131,
+        "height": 119,
+        "confidence": 0.856
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 184,
+    "timestamp": 15.333333333333334,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 155,
+        "y": 285,
+        "width": 159,
+        "height": 146,
+        "confidence": 0.895
+      },
+      {
+        "x": 373,
+        "y": 293,
+        "width": 135,
+        "height": 137,
+        "confidence": 0.871
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 185,
+    "timestamp": 15.416666666666666,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 157,
+        "y": 272,
+        "width": 156,
+        "height": 159,
+        "confidence": 0.9
+      },
+      {
+        "x": 366,
+        "y": 284,
+        "width": 136,
+        "height": 147,
+        "confidence": 0.879
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 186,
+    "timestamp": 15.5,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 159,
+        "y": 254,
+        "width": 149,
+        "height": 176,
+        "confidence": 0.895
+      },
+      {
+        "x": 363,
+        "y": 264,
+        "width": 126,
+        "height": 166,
+        "confidence": 0.861
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 187,
+    "timestamp": 15.583333333333334,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 360,
+        "y": 252,
+        "width": 119,
+        "height": 178,
+        "confidence": 0.901
+      },
+      {
+        "x": 159,
+        "y": 240,
+        "width": 152,
+        "height": 190,
+        "confidence": 0.894
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 188,
+    "timestamp": 15.666666666666666,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 161,
+        "y": 224,
+        "width": 152,
+        "height": 207,
+        "confidence": 0.903
+      },
+      {
+        "x": 353,
+        "y": 233,
+        "width": 117,
+        "height": 196,
+        "confidence": 0.895
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 189,
+    "timestamp": 15.75,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 164,
+        "y": 216,
+        "width": 149,
+        "height": 214,
+        "confidence": 0.919
+      },
+      {
+        "x": 347,
+        "y": 223,
+        "width": 118,
+        "height": 206,
+        "confidence": 0.901
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 190,
+    "timestamp": 15.833333333333334,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 166,
+        "y": 200,
+        "width": 140,
+        "height": 230,
+        "confidence": 0.926
+      },
+      {
+        "x": 340,
+        "y": 212,
+        "width": 115,
+        "height": 217,
+        "confidence": 0.91
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 191,
+    "timestamp": 15.916666666666666,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 169,
+        "y": 189,
+        "width": 138,
+        "height": 240,
+        "confidence": 0.926
+      },
+      {
+        "x": 338,
+        "y": 204,
+        "width": 113,
+        "height": 225,
+        "confidence": 0.895
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 192,
+    "timestamp": 16.0,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 332,
+        "y": 193,
+        "width": 113,
+        "height": 235,
+        "confidence": 0.914
+      },
+      {
+        "x": 172,
+        "y": 182,
+        "width": 132,
+        "height": 247,
+        "confidence": 0.906
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 193,
+    "timestamp": 16.083333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 331,
+        "y": 188,
+        "width": 109,
+        "height": 240,
+        "confidence": 0.917
+      },
+      {
+        "x": 176,
+        "y": 176,
+        "width": 127,
+        "height": 252,
+        "confidence": 0.913
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 194,
+    "timestamp": 16.166666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 183,
+        "y": 164,
+        "width": 119,
+        "height": 264,
+        "confidence": 0.936
+      },
+      {
+        "x": 331,
+        "y": 180,
+        "width": 102,
+        "height": 249,
+        "confidence": 0.918
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 195,
+    "timestamp": 16.25,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 186,
+        "y": 157,
+        "width": 116,
+        "height": 271,
+        "confidence": 0.922
+      },
+      {
+        "x": 330,
+        "y": 173,
+        "width": 100,
+        "height": 257,
+        "confidence": 0.909
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 196,
+    "timestamp": 16.333333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 189,
+        "y": 145,
+        "width": 115,
+        "height": 283,
+        "confidence": 0.919
+      },
+      {
+        "x": 329,
+        "y": 160,
+        "width": 95,
+        "height": 266,
+        "confidence": 0.896
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 197,
+    "timestamp": 16.416666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 190,
+        "y": 137,
+        "width": 114,
+        "height": 284,
+        "confidence": 0.917
+      },
+      {
+        "x": 328,
+        "y": 153,
+        "width": 93,
+        "height": 254,
+        "confidence": 0.899
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 198,
+    "timestamp": 16.5,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 191,
+        "y": 130,
+        "width": 109,
+        "height": 266,
+        "confidence": 0.916
+      },
+      {
+        "x": 325,
+        "y": 146,
+        "width": 90,
+        "height": 233,
+        "confidence": 0.904
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 199,
+    "timestamp": 16.583333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 191,
+        "y": 126,
+        "width": 107,
+        "height": 265,
+        "confidence": 0.926
+      },
+      {
+        "x": 322,
+        "y": 141,
+        "width": 89,
+        "height": 226,
+        "confidence": 0.878
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 200,
+    "timestamp": 16.666666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 193,
+        "y": 124,
+        "width": 103,
+        "height": 268,
+        "confidence": 0.887
+      },
+      {
+        "x": 317,
+        "y": 137,
+        "width": 86,
+        "height": 232,
+        "confidence": 0.84
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 201,
+    "timestamp": 16.75,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 192,
+        "y": 122,
+        "width": 101,
+        "height": 269,
+        "confidence": 0.905
+      },
+      {
+        "x": 313,
+        "y": 133,
+        "width": 85,
+        "height": 235,
+        "confidence": 0.856
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 202,
+    "timestamp": 16.833333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 188,
+        "y": 119,
+        "width": 105,
+        "height": 270,
+        "confidence": 0.928
+      },
+      {
+        "x": 307,
+        "y": 128,
+        "width": 81,
+        "height": 243,
+        "confidence": 0.869
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 203,
+    "timestamp": 16.916666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 184,
+        "y": 117,
+        "width": 109,
+        "height": 270,
+        "confidence": 0.924
+      },
+      {
+        "x": 303,
+        "y": 122,
+        "width": 80,
+        "height": 241,
+        "confidence": 0.885
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 204,
+    "timestamp": 17.0,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 292,
+        "y": 115,
+        "width": 86,
+        "height": 229,
+        "confidence": 0.904
+      },
+      {
+        "x": 178,
+        "y": 112,
+        "width": 113,
+        "height": 257,
+        "confidence": 0.897
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 205,
+    "timestamp": 17.083333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 173,
+        "y": 108,
+        "width": 114,
+        "height": 251,
+        "confidence": 0.878
+      },
+      {
+        "x": 288,
+        "y": 111,
+        "width": 81,
+        "height": 216,
+        "confidence": 0.875
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 206,
+    "timestamp": 17.166666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 167,
+        "y": 104,
+        "width": 111,
+        "height": 231,
+        "confidence": 0.918
+      },
+      {
+        "x": 280,
+        "y": 106,
+        "width": 72,
+        "height": 211,
+        "confidence": 0.877
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 207,
+    "timestamp": 17.25,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 275,
+        "y": 103,
+        "width": 71,
+        "height": 213,
+        "confidence": 0.902
+      },
+      {
+        "x": 164,
+        "y": 102,
+        "width": 107,
+        "height": 232,
+        "confidence": 0.901
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 208,
+    "timestamp": 17.333333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 158,
+        "y": 98,
+        "width": 99,
+        "height": 237,
+        "confidence": 0.896
+      },
+      {
+        "x": 270,
+        "y": 101,
+        "width": 68,
+        "height": 216,
+        "confidence": 0.869
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 209,
+    "timestamp": 17.416666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 157,
+        "y": 99,
+        "width": 100,
+        "height": 234,
+        "confidence": 0.899
+      },
+      {
+        "x": 266,
+        "y": 100,
+        "width": 68,
+        "height": 217,
+        "confidence": 0.891
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 210,
+    "timestamp": 17.5,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 153,
+        "y": 97,
+        "width": 105,
+        "height": 236,
+        "confidence": 0.907
+      },
+      {
+        "x": 262,
+        "y": 95,
+        "width": 69,
+        "height": 213,
+        "confidence": 0.899
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 211,
+    "timestamp": 17.583333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 257,
+        "y": 90,
+        "width": 74,
+        "height": 212,
+        "confidence": 0.912
+      },
+      {
+        "x": 149,
+        "y": 97,
+        "width": 107,
+        "height": 235,
+        "confidence": 0.906
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 212,
+    "timestamp": 17.666666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 145,
+        "y": 94,
+        "width": 108,
+        "height": 231,
+        "confidence": 0.899
+      },
+      {
+        "x": 251,
+        "y": 85,
+        "width": 66,
+        "height": 202,
+        "confidence": 0.877
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 213,
+    "timestamp": 17.75,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 247,
+        "y": 84,
+        "width": 60,
+        "height": 191,
+        "confidence": 0.924
+      },
+      {
+        "x": 141,
+        "y": 91,
+        "width": 105,
+        "height": 230,
+        "confidence": 0.887
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 214,
+    "timestamp": 17.833333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 238,
+        "y": 83,
+        "width": 65,
+        "height": 183,
+        "confidence": 0.918
+      },
+      {
+        "x": 137,
+        "y": 86,
+        "width": 93,
+        "height": 219,
+        "confidence": 0.9
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 215,
+    "timestamp": 17.916666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 220,
+        "y": 83,
+        "width": 83,
+        "height": 182,
+        "confidence": 0.883
+      },
+      {
+        "x": 134,
+        "y": 84,
+        "width": 82,
+        "height": 216,
+        "confidence": 0.872
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 216,
+    "timestamp": 18.0,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 211,
+        "y": 83,
+        "width": 91,
+        "height": 183,
+        "confidence": 0.877
+      },
+      {
+        "x": 127,
+        "y": 84,
+        "width": 83,
+        "height": 214,
+        "confidence": 0.875
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 217,
+    "timestamp": 18.083333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 211,
+        "y": 82,
+        "width": 89,
+        "height": 181,
+        "confidence": 0.879
+      },
+      {
+        "x": 121,
+        "y": 85,
+        "width": 89,
+        "height": 212,
+        "confidence": 0.876
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 218,
+    "timestamp": 18.166666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 113,
+        "y": 86,
+        "width": 97,
+        "height": 209,
+        "confidence": 0.907
+      },
+      {
+        "x": 206,
+        "y": 80,
+        "width": 90,
+        "height": 180,
+        "confidence": 0.891
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 219,
+    "timestamp": 18.25,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 105,
+        "y": 88,
+        "width": 105,
+        "height": 207,
+        "confidence": 0.908
+      },
+      {
+        "x": 196,
+        "y": 79,
+        "width": 88,
+        "height": 176,
+        "confidence": 0.849
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 220,
+    "timestamp": 18.333333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 94,
+        "y": 87,
+        "width": 111,
+        "height": 204,
+        "confidence": 0.907
+      },
+      {
+        "x": 187,
+        "y": 76,
+        "width": 70,
+        "height": 179,
+        "confidence": 0.872
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 221,
+    "timestamp": 18.416666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 87,
+        "y": 88,
+        "width": 110,
+        "height": 199,
+        "confidence": 0.863
+      },
+      {
+        "x": 178,
+        "y": 75,
+        "width": 62,
+        "height": 177,
+        "confidence": 0.841
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 222,
+    "timestamp": 18.5,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 78,
+        "y": 86,
+        "width": 105,
+        "height": 199,
+        "confidence": 0.893
+      },
+      {
+        "x": 168,
+        "y": 77,
+        "width": 70,
+        "height": 176,
+        "confidence": 0.834
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 223,
+    "timestamp": 18.583333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 71,
+        "y": 87,
+        "width": 96,
+        "height": 198,
+        "confidence": 0.904
+      },
+      {
+        "x": 159,
+        "y": 79,
+        "width": 78,
+        "height": 174,
+        "confidence": 0.869
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 224,
+    "timestamp": 18.666666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 59,
+        "y": 86,
+        "width": 93,
+        "height": 200,
+        "confidence": 0.886
+      },
+      {
+        "x": 151,
+        "y": 79,
+        "width": 85,
+        "height": 173,
+        "confidence": 0.867
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 225,
+    "timestamp": 18.75,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 57,
+        "y": 84,
+        "width": 96,
+        "height": 201,
+        "confidence": 0.879
+      },
+      {
+        "x": 144,
+        "y": 78,
+        "width": 90,
+        "height": 174,
+        "confidence": 0.879
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 226,
+    "timestamp": 18.833333333333332,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 53,
+        "y": 85,
+        "width": 97,
+        "height": 201,
+        "confidence": 0.874
+      },
+      {
+        "x": 133,
+        "y": 76,
+        "width": 83,
+        "height": 172,
+        "confidence": 0.581
+      },
+      {
+        "x": 132,
+        "y": 76,
+        "width": 56,
+        "height": 141,
+        "confidence": 0.533
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 227,
+    "timestamp": 18.916666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 49,
+        "y": 84,
+        "width": 102,
+        "height": 202,
+        "confidence": 0.869
+      },
+      {
+        "x": 124,
+        "y": 74,
+        "width": 70,
+        "height": 169,
+        "confidence": 0.697
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 228,
+    "timestamp": 19.0,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 40,
+        "y": 86,
+        "width": 107,
+        "height": 201,
+        "confidence": 0.885
+      },
+      {
+        "x": 115,
+        "y": 77,
+        "width": 66,
+        "height": 170,
+        "confidence": 0.732
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 229,
+    "timestamp": 19.083333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 37,
+        "y": 85,
+        "width": 102,
+        "height": 200,
+        "confidence": 0.888
+      },
+      {
+        "x": 109,
+        "y": 76,
+        "width": 68,
+        "height": 172,
+        "confidence": 0.803
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 230,
+    "timestamp": 19.166666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 30,
+        "y": 83,
+        "width": 95,
+        "height": 195,
+        "confidence": 0.895
+      },
+      {
+        "x": 98,
+        "y": 79,
+        "width": 78,
+        "height": 165,
+        "confidence": 0.855
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 231,
+    "timestamp": 19.25,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 25,
+        "y": 84,
+        "width": 90,
+        "height": 192,
+        "confidence": 0.868
+      },
+      {
+        "x": 94,
+        "y": 80,
+        "width": 82,
+        "height": 163,
+        "confidence": 0.823
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 232,
+    "timestamp": 19.333333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 16,
+        "y": 87,
+        "width": 85,
+        "height": 198,
+        "confidence": 0.879
+      },
+      {
+        "x": 81,
+        "y": 81,
+        "width": 94,
+        "height": 161,
+        "confidence": 0.817
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 233,
+    "timestamp": 19.416666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 10,
+        "y": 86,
+        "width": 93,
+        "height": 199,
+        "confidence": 0.874
+      },
+      {
+        "x": 76,
+        "y": 80,
+        "width": 94,
+        "height": 160,
+        "confidence": 0.735
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 234,
+    "timestamp": 19.5,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 5,
+        "y": 91,
+        "width": 96,
+        "height": 187,
+        "confidence": 0.88
+      },
+      {
+        "x": 61,
+        "y": 79,
+        "width": 94,
+        "height": 161,
+        "confidence": 0.741
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 235,
+    "timestamp": 19.583333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 92,
+        "width": 100,
+        "height": 185,
+        "confidence": 0.89
+      },
+      {
+        "x": 53,
+        "y": 80,
+        "width": 85,
+        "height": 163,
+        "confidence": 0.794
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 236,
+    "timestamp": 19.666666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 96,
+        "width": 100,
+        "height": 182,
+        "confidence": 0.918
+      },
+      {
+        "x": 53,
+        "y": 80,
+        "width": 72,
+        "height": 164,
+        "confidence": 0.802
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 237,
+    "timestamp": 19.75,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 96,
+        "width": 98,
+        "height": 182,
+        "confidence": 0.89
+      },
+      {
+        "x": 49,
+        "y": 82,
+        "width": 70,
+        "height": 163,
+        "confidence": 0.846
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 238,
+    "timestamp": 19.833333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 40,
+        "y": 83,
+        "width": 79,
+        "height": 164,
+        "confidence": 0.856
+      },
+      {
+        "x": 0,
+        "y": 115,
+        "width": 87,
+        "height": 164,
+        "confidence": 0.838
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 239,
+    "timestamp": 19.916666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 37,
+        "y": 83,
+        "width": 82,
+        "height": 161,
+        "confidence": 0.852
+      },
+      {
+        "x": 0,
+        "y": 124,
+        "width": 71,
+        "height": 157,
+        "confidence": 0.778
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 240,
+    "timestamp": 20.0,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 31,
+        "y": 86,
+        "width": 88,
+        "height": 160,
+        "confidence": 0.897
+      },
+      {
+        "x": 0,
+        "y": 124,
+        "width": 50,
+        "height": 157,
+        "confidence": 0.837
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 241,
+    "timestamp": 20.083333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 24,
+        "y": 85,
+        "width": 92,
+        "height": 157,
+        "confidence": 0.897
+      },
+      {
+        "x": 0,
+        "y": 127,
+        "width": 48,
+        "height": 153,
+        "confidence": 0.838
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 242,
+    "timestamp": 20.166666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 243,
+    "timestamp": 20.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 244,
+    "timestamp": 20.333333333333332,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 8,
+        "y": 84,
+        "width": 70,
+        "height": 157,
+        "confidence": 0.811
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 245,
+    "timestamp": 20.416666666666668,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 5,
+        "y": 86,
+        "width": 69,
+        "height": 155,
+        "confidence": 0.893
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 246,
+    "timestamp": 20.5,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 86,
+        "width": 74,
+        "height": 150,
+        "confidence": 0.804
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 247,
+    "timestamp": 20.583333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 248,
+    "timestamp": 20.666666666666668,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 90,
+        "width": 74,
+        "height": 148,
+        "confidence": 0.817
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 249,
+    "timestamp": 20.75,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 93,
+        "width": 73,
+        "height": 145,
+        "confidence": 0.838
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 250,
+    "timestamp": 20.833333333333332,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 104,
+        "width": 69,
+        "height": 134,
+        "confidence": 0.8
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 251,
+    "timestamp": 20.916666666666668,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 109,
+        "width": 61,
+        "height": 128,
+        "confidence": 0.595
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 252,
+    "timestamp": 21.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 253,
+    "timestamp": 21.083333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 254,
+    "timestamp": 21.166666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 255,
+    "timestamp": 21.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 256,
+    "timestamp": 21.333333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 257,
+    "timestamp": 21.416666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 258,
+    "timestamp": 21.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 259,
+    "timestamp": 21.583333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 260,
+    "timestamp": 21.666666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 261,
+    "timestamp": 21.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 262,
+    "timestamp": 21.833333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 263,
+    "timestamp": 21.916666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 264,
+    "timestamp": 22.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 265,
+    "timestamp": 22.083333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 266,
+    "timestamp": 22.166666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 267,
+    "timestamp": 22.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 268,
+    "timestamp": 22.333333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 269,
+    "timestamp": 22.416666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 270,
+    "timestamp": 22.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 271,
+    "timestamp": 22.583333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 272,
+    "timestamp": 22.666666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 273,
+    "timestamp": 22.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 274,
+    "timestamp": 22.833333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 275,
+    "timestamp": 22.916666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 276,
+    "timestamp": 23.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 277,
+    "timestamp": 23.083333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 278,
+    "timestamp": 23.166666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 279,
+    "timestamp": 23.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 280,
+    "timestamp": 23.333333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 281,
+    "timestamp": 23.416666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 282,
+    "timestamp": 23.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 283,
+    "timestamp": 23.583333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 284,
+    "timestamp": 23.666666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 285,
+    "timestamp": 23.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 286,
+    "timestamp": 23.833333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 287,
+    "timestamp": 23.916666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 288,
+    "timestamp": 24.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 289,
+    "timestamp": 24.083333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 290,
+    "timestamp": 24.166666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 291,
+    "timestamp": 24.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 292,
+    "timestamp": 24.333333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 293,
+    "timestamp": 24.416666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 294,
+    "timestamp": 24.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 295,
+    "timestamp": 24.583333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 296,
+    "timestamp": 24.666666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 297,
+    "timestamp": 24.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 298,
+    "timestamp": 24.833333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 299,
+    "timestamp": 24.916666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 300,
+    "timestamp": 25.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 301,
+    "timestamp": 25.083333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 302,
+    "timestamp": 25.166666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 303,
+    "timestamp": 25.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 304,
+    "timestamp": 25.333333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 305,
+    "timestamp": 25.416666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 306,
+    "timestamp": 25.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 307,
+    "timestamp": 25.583333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 308,
+    "timestamp": 25.666666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 309,
+    "timestamp": 25.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 310,
+    "timestamp": 25.833333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 311,
+    "timestamp": 25.916666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 312,
+    "timestamp": 26.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 313,
+    "timestamp": 26.083333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 314,
+    "timestamp": 26.166666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 315,
+    "timestamp": 26.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 316,
+    "timestamp": 26.333333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 317,
+    "timestamp": 26.416666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 318,
+    "timestamp": 26.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 319,
+    "timestamp": 26.583333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 320,
+    "timestamp": 26.666666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 321,
+    "timestamp": 26.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 322,
+    "timestamp": 26.833333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 323,
+    "timestamp": 26.916666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 324,
+    "timestamp": 27.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 325,
+    "timestamp": 27.083333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 326,
+    "timestamp": 27.166666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 327,
+    "timestamp": 27.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 328,
+    "timestamp": 27.333333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 329,
+    "timestamp": 27.416666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 330,
+    "timestamp": 27.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 331,
+    "timestamp": 27.583333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 332,
+    "timestamp": 27.666666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 333,
+    "timestamp": 27.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 334,
+    "timestamp": 27.833333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 335,
+    "timestamp": 27.916666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 336,
+    "timestamp": 28.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 337,
+    "timestamp": 28.083333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 338,
+    "timestamp": 28.166666666666668,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 339,
+    "timestamp": 28.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 340,
+    "timestamp": 28.333333333333332,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 341,
+    "timestamp": 28.416666666666668,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 112,
+        "y": 320,
+        "width": 182,
+        "height": 109,
+        "confidence": 0.618
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 342,
+    "timestamp": 28.5,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 117,
+        "y": 305,
+        "width": 184,
+        "height": 126,
+        "confidence": 0.856
+      },
+      {
+        "x": 376,
+        "y": 393,
+        "width": 82,
+        "height": 38,
+        "confidence": 0.544
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 343,
+    "timestamp": 28.583333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 121,
+        "y": 284,
+        "width": 188,
+        "height": 147,
+        "confidence": 0.881
+      },
+      {
+        "x": 360,
+        "y": 369,
+        "width": 97,
+        "height": 62,
+        "confidence": 0.741
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 344,
+    "timestamp": 28.666666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 127,
+        "y": 271,
+        "width": 193,
+        "height": 159,
+        "confidence": 0.875
+      },
+      {
+        "x": 345,
+        "y": 354,
+        "width": 110,
+        "height": 77,
+        "confidence": 0.688
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 345,
+    "timestamp": 28.75,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 137,
+        "y": 252,
+        "width": 198,
+        "height": 178,
+        "confidence": 0.909
+      },
+      {
+        "x": 339,
+        "y": 333,
+        "width": 123,
+        "height": 98,
+        "confidence": 0.72
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 346,
+    "timestamp": 28.833333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 140,
+        "y": 242,
+        "width": 193,
+        "height": 189,
+        "confidence": 0.9
+      },
+      {
+        "x": 341,
+        "y": 320,
+        "width": 121,
+        "height": 111,
+        "confidence": 0.756
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 347,
+    "timestamp": 28.916666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 155,
+        "y": 224,
+        "width": 182,
+        "height": 207,
+        "confidence": 0.906
+      },
+      {
+        "x": 347,
+        "y": 303,
+        "width": 116,
+        "height": 127,
+        "confidence": 0.743
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 348,
+    "timestamp": 29.0,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 157,
+        "y": 209,
+        "width": 182,
+        "height": 221,
+        "confidence": 0.923
+      },
+      {
+        "x": 345,
+        "y": 287,
+        "width": 118,
+        "height": 143,
+        "confidence": 0.698
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 349,
+    "timestamp": 29.083333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 163,
+        "y": 187,
+        "width": 179,
+        "height": 243,
+        "confidence": 0.921
+      },
+      {
+        "x": 350,
+        "y": 266,
+        "width": 117,
+        "height": 164,
+        "confidence": 0.861
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 350,
+    "timestamp": 29.166666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 169,
+        "y": 177,
+        "width": 175,
+        "height": 254,
+        "confidence": 0.929
+      },
+      {
+        "x": 351,
+        "y": 253,
+        "width": 118,
+        "height": 178,
+        "confidence": 0.82
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 351,
+    "timestamp": 29.25,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 174,
+        "y": 163,
+        "width": 171,
+        "height": 265,
+        "confidence": 0.929
+      },
+      {
+        "x": 353,
+        "y": 236,
+        "width": 117,
+        "height": 191,
+        "confidence": 0.841
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 352,
+    "timestamp": 29.333333333333332,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 175,
+        "y": 155,
+        "width": 170,
+        "height": 273,
+        "confidence": 0.928
+      },
+      {
+        "x": 354,
+        "y": 227,
+        "width": 115,
+        "height": 201,
+        "confidence": 0.608
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 353,
+    "timestamp": 29.416666666666668,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 176,
+        "y": 148,
+        "width": 166,
+        "height": 280,
+        "confidence": 0.931
+      },
+      {
+        "x": 356,
+        "y": 216,
+        "width": 110,
+        "height": 188,
+        "confidence": 0.773
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 354,
+    "timestamp": 29.5,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 179,
+        "y": 144,
+        "width": 160,
+        "height": 285,
+        "confidence": 0.928
+      },
+      {
+        "x": 358,
+        "y": 209,
+        "width": 106,
+        "height": 201,
+        "confidence": 0.523
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 355,
+    "timestamp": 29.583333333333332,
+    "person_count": 4,
+    "bounding_boxes": [
+      {
+        "x": 183,
+        "y": 135,
+        "width": 150,
+        "height": 293,
+        "confidence": 0.934
+      },
+      {
+        "x": 364,
+        "y": 196,
+        "width": 96,
+        "height": 228,
+        "confidence": 0.582
+      },
+      {
+        "x": 414,
+        "y": 231,
+        "width": 166,
+        "height": 199,
+        "confidence": 0.566
+      },
+      {
+        "x": 414,
+        "y": 292,
+        "width": 166,
+        "height": 138,
+        "confidence": 0.52
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 356,
+    "timestamp": 29.666666666666668,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 183,
+        "y": 126,
+        "width": 148,
+        "height": 302,
+        "confidence": 0.935
+      },
+      {
+        "x": 364,
+        "y": 185,
+        "width": 95,
+        "height": 242,
+        "confidence": 0.709
+      },
+      {
+        "x": 414,
+        "y": 282,
+        "width": 165,
+        "height": 147,
+        "confidence": 0.571
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 357,
+    "timestamp": 29.75,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 181,
+        "y": 114,
+        "width": 143,
+        "height": 308,
+        "confidence": 0.928
+      },
+      {
+        "x": 418,
+        "y": 208,
+        "width": 162,
+        "height": 221,
+        "confidence": 0.863
+      },
+      {
+        "x": 364,
+        "y": 172,
+        "width": 94,
+        "height": 246,
+        "confidence": 0.793
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 358,
+    "timestamp": 29.833333333333332,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 180,
+        "y": 108,
+        "width": 141,
+        "height": 296,
+        "confidence": 0.941
+      },
+      {
+        "x": 427,
+        "y": 193,
+        "width": 155,
+        "height": 235,
+        "confidence": 0.869
+      },
+      {
+        "x": 366,
+        "y": 162,
+        "width": 92,
+        "height": 222,
+        "confidence": 0.822
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 359,
+    "timestamp": 29.916666666666668,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 183,
+        "y": 101,
+        "width": 135,
+        "height": 281,
+        "confidence": 0.922
+      },
+      {
+        "x": 431,
+        "y": 181,
+        "width": 151,
+        "height": 247,
+        "confidence": 0.891
+      },
+      {
+        "x": 370,
+        "y": 156,
+        "width": 87,
+        "height": 227,
+        "confidence": 0.872
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 360,
+    "timestamp": 30.0,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 189,
+        "y": 98,
+        "width": 126,
+        "height": 285,
+        "confidence": 0.923
+      },
+      {
+        "x": 433,
+        "y": 175,
+        "width": 150,
+        "height": 254,
+        "confidence": 0.909
+      },
+      {
+        "x": 376,
+        "y": 153,
+        "width": 83,
+        "height": 228,
+        "confidence": 0.879
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 361,
+    "timestamp": 30.083333333333332,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 445,
+        "y": 165,
+        "width": 139,
+        "height": 263,
+        "confidence": 0.919
+      },
+      {
+        "x": 197,
+        "y": 94,
+        "width": 117,
+        "height": 288,
+        "confidence": 0.917
+      },
+      {
+        "x": 380,
+        "y": 146,
+        "width": 81,
+        "height": 233,
+        "confidence": 0.882
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 362,
+    "timestamp": 30.166666666666668,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 447,
+        "y": 162,
+        "width": 137,
+        "height": 266,
+        "confidence": 0.921
+      },
+      {
+        "x": 200,
+        "y": 91,
+        "width": 114,
+        "height": 289,
+        "confidence": 0.918
+      },
+      {
+        "x": 381,
+        "y": 139,
+        "width": 83,
+        "height": 230,
+        "confidence": 0.881
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 363,
+    "timestamp": 30.25,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 201,
+        "y": 86,
+        "width": 115,
+        "height": 289,
+        "confidence": 0.917
+      },
+      {
+        "x": 452,
+        "y": 156,
+        "width": 131,
+        "height": 273,
+        "confidence": 0.912
+      },
+      {
+        "x": 394,
+        "y": 130,
+        "width": 75,
+        "height": 210,
+        "confidence": 0.766
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 364,
+    "timestamp": 30.333333333333332,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 199,
+        "y": 80,
+        "width": 117,
+        "height": 281,
+        "confidence": 0.917
+      },
+      {
+        "x": 452,
+        "y": 150,
+        "width": 131,
+        "height": 278,
+        "confidence": 0.876
+      },
+      {
+        "x": 399,
+        "y": 126,
+        "width": 73,
+        "height": 198,
+        "confidence": 0.82
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 365,
+    "timestamp": 30.416666666666668,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 199,
+        "y": 73,
+        "width": 119,
+        "height": 264,
+        "confidence": 0.911
+      },
+      {
+        "x": 455,
+        "y": 138,
+        "width": 130,
+        "height": 280,
+        "confidence": 0.899
+      },
+      {
+        "x": 401,
+        "y": 120,
+        "width": 76,
+        "height": 202,
+        "confidence": 0.829
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 366,
+    "timestamp": 30.5,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 198,
+        "y": 69,
+        "width": 120,
+        "height": 251,
+        "confidence": 0.913
+      },
+      {
+        "x": 458,
+        "y": 132,
+        "width": 128,
+        "height": 268,
+        "confidence": 0.888
+      },
+      {
+        "x": 403,
+        "y": 116,
+        "width": 75,
+        "height": 206,
+        "confidence": 0.812
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 367,
+    "timestamp": 30.583333333333332,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 465,
+        "y": 125,
+        "width": 123,
+        "height": 248,
+        "confidence": 0.911
+      },
+      {
+        "x": 197,
+        "y": 66,
+        "width": 114,
+        "height": 246,
+        "confidence": 0.907
+      },
+      {
+        "x": 409,
+        "y": 114,
+        "width": 71,
+        "height": 207,
+        "confidence": 0.836
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 368,
+    "timestamp": 30.666666666666668,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 468,
+        "y": 123,
+        "width": 123,
+        "height": 245,
+        "confidence": 0.918
+      },
+      {
+        "x": 196,
+        "y": 64,
+        "width": 107,
+        "height": 247,
+        "confidence": 0.91
+      },
+      {
+        "x": 412,
+        "y": 111,
+        "width": 71,
+        "height": 204,
+        "confidence": 0.838
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 369,
+    "timestamp": 30.75,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 468,
+        "y": 122,
+        "width": 127,
+        "height": 248,
+        "confidence": 0.924
+      },
+      {
+        "x": 193,
+        "y": 65,
+        "width": 104,
+        "height": 248,
+        "confidence": 0.899
+      },
+      {
+        "x": 420,
+        "y": 105,
+        "width": 65,
+        "height": 199,
+        "confidence": 0.612
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 370,
+    "timestamp": 30.833333333333332,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 468,
+        "y": 121,
+        "width": 130,
+        "height": 248,
+        "confidence": 0.932
+      },
+      {
+        "x": 187,
+        "y": 64,
+        "width": 109,
+        "height": 245,
+        "confidence": 0.907
+      },
+      {
+        "x": 424,
+        "y": 102,
+        "width": 65,
+        "height": 194,
+        "confidence": 0.529
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 371,
+    "timestamp": 30.916666666666668,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 471,
+        "y": 118,
+        "width": 135,
+        "height": 244,
+        "confidence": 0.916
+      },
+      {
+        "x": 180,
+        "y": 62,
+        "width": 115,
+        "height": 235,
+        "confidence": 0.907
+      },
+      {
+        "x": 430,
+        "y": 96,
+        "width": 64,
+        "height": 175,
+        "confidence": 0.71
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 372,
+    "timestamp": 31.0,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 475,
+        "y": 117,
+        "width": 138,
+        "height": 235,
+        "confidence": 0.934
+      },
+      {
+        "x": 172,
+        "y": 60,
+        "width": 117,
+        "height": 224,
+        "confidence": 0.919
+      },
+      {
+        "x": 431,
+        "y": 94,
+        "width": 69,
+        "height": 177,
+        "confidence": 0.818
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 373,
+    "timestamp": 31.083333333333332,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 492,
+        "y": 111,
+        "width": 129,
+        "height": 226,
+        "confidence": 0.92
+      },
+      {
+        "x": 163,
+        "y": 57,
+        "width": 111,
+        "height": 212,
+        "confidence": 0.919
+      },
+      {
+        "x": 432,
+        "y": 96,
+        "width": 74,
+        "height": 175,
+        "confidence": 0.876
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 374,
+    "timestamp": 31.166666666666668,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 154,
+        "y": 56,
+        "width": 111,
+        "height": 213,
+        "confidence": 0.924
+      },
+      {
+        "x": 503,
+        "y": 109,
+        "width": 123,
+        "height": 221,
+        "confidence": 0.921
+      },
+      {
+        "x": 430,
+        "y": 95,
+        "width": 81,
+        "height": 173,
+        "confidence": 0.88
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 375,
+    "timestamp": 31.25,
+    "person_count": 4,
+    "bounding_boxes": [
+      {
+        "x": 142,
+        "y": 55,
+        "width": 114,
+        "height": 214,
+        "confidence": 0.921
+      },
+      {
+        "x": 517,
+        "y": 107,
+        "width": 115,
+        "height": 223,
+        "confidence": 0.918
+      },
+      {
+        "x": 438,
+        "y": 92,
+        "width": 83,
+        "height": 171,
+        "confidence": 0.771
+      },
+      {
+        "x": 463,
+        "y": 91,
+        "width": 59,
+        "height": 165,
+        "confidence": 0.67
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 376,
+    "timestamp": 31.333333333333332,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 136,
+        "y": 55,
+        "width": 117,
+        "height": 214,
+        "confidence": 0.921
+      },
+      {
+        "x": 516,
+        "y": 107,
+        "width": 119,
+        "height": 222,
+        "confidence": 0.91
+      },
+      {
+        "x": 446,
+        "y": 90,
+        "width": 81,
+        "height": 162,
+        "confidence": 0.815
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 377,
+    "timestamp": 31.416666666666668,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 128,
+        "y": 58,
+        "width": 124,
+        "height": 208,
+        "confidence": 0.939
+      },
+      {
+        "x": 517,
+        "y": 108,
+        "width": 122,
+        "height": 220,
+        "confidence": 0.9
+      },
+      {
+        "x": 467,
+        "y": 87,
+        "width": 70,
+        "height": 165,
+        "confidence": 0.796
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 378,
+    "timestamp": 31.5,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 124,
+        "y": 58,
+        "width": 127,
+        "height": 207,
+        "confidence": 0.933
+      },
+      {
+        "x": 518,
+        "y": 107,
+        "width": 125,
+        "height": 221,
+        "confidence": 0.897
+      },
+      {
+        "x": 481,
+        "y": 85,
+        "width": 61,
+        "height": 165,
+        "confidence": 0.887
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 379,
+    "timestamp": 31.583333333333332,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 529,
+        "y": 105,
+        "width": 121,
+        "height": 219,
+        "confidence": 0.913
+      },
+      {
+        "x": 123,
+        "y": 54,
+        "width": 111,
+        "height": 203,
+        "confidence": 0.887
+      },
+      {
+        "x": 482,
+        "y": 86,
+        "width": 73,
+        "height": 165,
+        "confidence": 0.871
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 380,
+    "timestamp": 31.666666666666668,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 544,
+        "y": 101,
+        "width": 111,
+        "height": 215,
+        "confidence": 0.926
+      },
+      {
+        "x": 482,
+        "y": 87,
+        "width": 79,
+        "height": 164,
+        "confidence": 0.871
+      },
+      {
+        "x": 123,
+        "y": 54,
+        "width": 96,
+        "height": 199,
+        "confidence": 0.87
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 381,
+    "timestamp": 31.75,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 556,
+        "y": 97,
+        "width": 106,
+        "height": 209,
+        "confidence": 0.911
+      },
+      {
+        "x": 114,
+        "y": 53,
+        "width": 83,
+        "height": 201,
+        "confidence": 0.884
+      },
+      {
+        "x": 485,
+        "y": 86,
+        "width": 83,
+        "height": 163,
+        "confidence": 0.858
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 382,
+    "timestamp": 31.833333333333332,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 556,
+        "y": 98,
+        "width": 111,
+        "height": 205,
+        "confidence": 0.911
+      },
+      {
+        "x": 106,
+        "y": 53,
+        "width": 88,
+        "height": 200,
+        "confidence": 0.897
+      },
+      {
+        "x": 496,
+        "y": 84,
+        "width": 74,
+        "height": 162,
+        "confidence": 0.865
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 383,
+    "timestamp": 31.916666666666668,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 556,
+        "y": 98,
+        "width": 119,
+        "height": 199,
+        "confidence": 0.927
+      },
+      {
+        "x": 95,
+        "y": 57,
+        "width": 99,
+        "height": 194,
+        "confidence": 0.895
+      },
+      {
+        "x": 513,
+        "y": 83,
+        "width": 64,
+        "height": 151,
+        "confidence": 0.887
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 384,
+    "timestamp": 32.0,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 556,
+        "y": 100,
+        "width": 123,
+        "height": 194,
+        "confidence": 0.913
+      },
+      {
+        "x": 87,
+        "y": 59,
+        "width": 108,
+        "height": 192,
+        "confidence": 0.904
+      },
+      {
+        "x": 523,
+        "y": 83,
+        "width": 60,
+        "height": 152,
+        "confidence": 0.847
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 385,
+    "timestamp": 32.083333333333336,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 559,
+        "y": 103,
+        "width": 132,
+        "height": 193,
+        "confidence": 0.939
+      },
+      {
+        "x": 75,
+        "y": 60,
+        "width": 115,
+        "height": 193,
+        "confidence": 0.886
+      },
+      {
+        "x": 524,
+        "y": 83,
+        "width": 69,
+        "height": 151,
+        "confidence": 0.858
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 386,
+    "timestamp": 32.166666666666664,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 567,
+        "y": 103,
+        "width": 132,
+        "height": 192,
+        "confidence": 0.918
+      },
+      {
+        "x": 67,
+        "y": 61,
+        "width": 113,
+        "height": 193,
+        "confidence": 0.889
+      },
+      {
+        "x": 524,
+        "y": 85,
+        "width": 73,
+        "height": 148,
+        "confidence": 0.866
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 387,
+    "timestamp": 32.25,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 588,
+        "y": 103,
+        "width": 121,
+        "height": 191,
+        "confidence": 0.902
+      },
+      {
+        "x": 526,
+        "y": 87,
+        "width": 82,
+        "height": 149,
+        "confidence": 0.892
+      },
+      {
+        "x": 54,
+        "y": 60,
+        "width": 104,
+        "height": 194,
+        "confidence": 0.832
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 388,
+    "timestamp": 32.333333333333336,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 606,
+        "y": 103,
+        "width": 107,
+        "height": 193,
+        "confidence": 0.91
+      },
+      {
+        "x": 51,
+        "y": 61,
+        "width": 90,
+        "height": 193,
+        "confidence": 0.833
+      },
+      {
+        "x": 532,
+        "y": 87,
+        "width": 82,
+        "height": 148,
+        "confidence": 0.83
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 389,
+    "timestamp": 32.416666666666664,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 619,
+        "y": 104,
+        "width": 102,
+        "height": 192,
+        "confidence": 0.917
+      },
+      {
+        "x": 31,
+        "y": 61,
+        "width": 97,
+        "height": 192,
+        "confidence": 0.866
+      },
+      {
+        "x": 552,
+        "y": 87,
+        "width": 74,
+        "height": 149,
+        "confidence": 0.819
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 390,
+    "timestamp": 32.5,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 620,
+        "y": 105,
+        "width": 107,
+        "height": 191,
+        "confidence": 0.914
+      },
+      {
+        "x": 20,
+        "y": 61,
+        "width": 107,
+        "height": 191,
+        "confidence": 0.868
+      },
+      {
+        "x": 564,
+        "y": 86,
+        "width": 67,
+        "height": 150,
+        "confidence": 0.82
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 391,
+    "timestamp": 32.583333333333336,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 619,
+        "y": 108,
+        "width": 113,
+        "height": 188,
+        "confidence": 0.92
+      },
+      {
+        "x": 7,
+        "y": 65,
+        "width": 120,
+        "height": 188,
+        "confidence": 0.895
+      },
+      {
+        "x": 574,
+        "y": 87,
+        "width": 64,
+        "height": 148,
+        "confidence": 0.894
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 392,
+    "timestamp": 32.666666666666664,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 619,
+        "y": 108,
+        "width": 116,
+        "height": 188,
+        "confidence": 0.915
+      },
+      {
+        "x": 2,
+        "y": 67,
+        "width": 125,
+        "height": 185,
+        "confidence": 0.904
+      },
+      {
+        "x": 574,
+        "y": 88,
+        "width": 72,
+        "height": 147,
+        "confidence": 0.877
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 393,
+    "timestamp": 32.75,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 574,
+        "y": 92,
+        "width": 82,
+        "height": 144,
+        "confidence": 0.901
+      },
+      {
+        "x": 624,
+        "y": 106,
+        "width": 119,
+        "height": 189,
+        "confidence": 0.895
+      },
+      {
+        "x": 4,
+        "y": 66,
+        "width": 112,
+        "height": 185,
+        "confidence": 0.892
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 394,
+    "timestamp": 32.833333333333336,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 579,
+        "y": 91,
+        "width": 82,
+        "height": 144,
+        "confidence": 0.927
+      },
+      {
+        "x": 636,
+        "y": 103,
+        "width": 110,
+        "height": 189,
+        "confidence": 0.911
+      },
+      {
+        "x": 8,
+        "y": 65,
+        "width": 96,
+        "height": 182,
+        "confidence": 0.864
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 395,
+    "timestamp": 32.916666666666664,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 654,
+        "y": 105,
+        "width": 97,
+        "height": 183,
+        "confidence": 0.902
+      },
+      {
+        "x": 593,
+        "y": 91,
+        "width": 74,
+        "height": 140,
+        "confidence": 0.885
+      },
+      {
+        "x": 1,
+        "y": 66,
+        "width": 86,
+        "height": 182,
+        "confidence": 0.852
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 396,
+    "timestamp": 33.0,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 658,
+        "y": 104,
+        "width": 98,
+        "height": 183,
+        "confidence": 0.898
+      },
+      {
+        "x": 0,
+        "y": 67,
+        "width": 75,
+        "height": 183,
+        "confidence": 0.88
+      },
+      {
+        "x": 604,
+        "y": 91,
+        "width": 67,
+        "height": 140,
+        "confidence": 0.876
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 397,
+    "timestamp": 33.083333333333336,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 616,
+        "y": 91,
+        "width": 66,
+        "height": 145,
+        "confidence": 0.878
+      },
+      {
+        "x": 660,
+        "y": 106,
+        "width": 102,
+        "height": 176,
+        "confidence": 0.877
+      },
+      {
+        "x": 0,
+        "y": 70,
+        "width": 75,
+        "height": 178,
+        "confidence": 0.821
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 398,
+    "timestamp": 33.166666666666664,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 658,
+        "y": 108,
+        "width": 108,
+        "height": 172,
+        "confidence": 0.921
+      },
+      {
+        "x": 0,
+        "y": 76,
+        "width": 74,
+        "height": 171,
+        "confidence": 0.859
+      },
+      {
+        "x": 617,
+        "y": 93,
+        "width": 72,
+        "height": 141,
+        "confidence": 0.851
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 399,
+    "timestamp": 33.25,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 657,
+        "y": 111,
+        "width": 110,
+        "height": 168,
+        "confidence": 0.906
+      },
+      {
+        "x": 0,
+        "y": 98,
+        "width": 75,
+        "height": 148,
+        "confidence": 0.875
+      },
+      {
+        "x": 617,
+        "y": 96,
+        "width": 78,
+        "height": 135,
+        "confidence": 0.807
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 400,
+    "timestamp": 33.333333333333336,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 659,
+        "y": 111,
+        "width": 108,
+        "height": 168,
+        "confidence": 0.88
+      },
+      {
+        "x": 0,
+        "y": 100,
+        "width": 75,
+        "height": 145,
+        "confidence": 0.853
+      },
+      {
+        "x": 617,
+        "y": 95,
+        "width": 85,
+        "height": 138,
+        "confidence": 0.846
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 401,
+    "timestamp": 33.416666666666664,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 671,
+        "y": 111,
+        "width": 96,
+        "height": 165,
+        "confidence": 0.812
+      },
+      {
+        "x": 624,
+        "y": 96,
+        "width": 83,
+        "height": 140,
+        "confidence": 0.774
+      },
+      {
+        "x": 0,
+        "y": 103,
+        "width": 69,
+        "height": 140,
+        "confidence": 0.614
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 402,
+    "timestamp": 33.5,
+    "person_count": 3,
+    "bounding_boxes": [
+      {
+        "x": 634,
+        "y": 95,
+        "width": 79,
+        "height": 141,
+        "confidence": 0.685
+      },
+      {
+        "x": 682,
+        "y": 115,
+        "width": 85,
+        "height": 161,
+        "confidence": 0.607
+      },
+      {
+        "x": 0,
+        "y": 118,
+        "width": 61,
+        "height": 127,
+        "confidence": 0.575
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 403,
+    "timestamp": 33.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 404,
+    "timestamp": 33.666666666666664,
+    "person_count": 2,
+    "bounding_boxes": [
+      {
+        "x": 658,
+        "y": 97,
+        "width": 68,
+        "height": 139,
+        "confidence": 0.622
+      },
+      {
+        "x": 0,
+        "y": 148,
+        "width": 32,
+        "height": 98,
+        "confidence": 0.509
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 405,
+    "timestamp": 33.75,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 657,
+        "y": 101,
+        "width": 74,
+        "height": 134,
+        "confidence": 0.864
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 406,
+    "timestamp": 33.833333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 659,
+        "y": 102,
+        "width": 77,
+        "height": 133,
+        "confidence": 0.814
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 407,
+    "timestamp": 33.916666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 664,
+        "y": 102,
+        "width": 78,
+        "height": 132,
+        "confidence": 0.614
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 408,
+    "timestamp": 34.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 409,
+    "timestamp": 34.083333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 689,
+        "y": 103,
+        "width": 63,
+        "height": 125,
+        "confidence": 0.627
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 410,
+    "timestamp": 34.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 411,
+    "timestamp": 34.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 412,
+    "timestamp": 34.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 413,
+    "timestamp": 34.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 414,
+    "timestamp": 34.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 415,
+    "timestamp": 34.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 416,
+    "timestamp": 34.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 417,
+    "timestamp": 34.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 418,
+    "timestamp": 34.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 419,
+    "timestamp": 34.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 420,
+    "timestamp": 35.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 421,
+    "timestamp": 35.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 422,
+    "timestamp": 35.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 423,
+    "timestamp": 35.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 424,
+    "timestamp": 35.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 425,
+    "timestamp": 35.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 426,
+    "timestamp": 35.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 427,
+    "timestamp": 35.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 428,
+    "timestamp": 35.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 429,
+    "timestamp": 35.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 430,
+    "timestamp": 35.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 431,
+    "timestamp": 35.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 432,
+    "timestamp": 36.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 433,
+    "timestamp": 36.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 434,
+    "timestamp": 36.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 435,
+    "timestamp": 36.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 436,
+    "timestamp": 36.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 437,
+    "timestamp": 36.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 438,
+    "timestamp": 36.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 439,
+    "timestamp": 36.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 440,
+    "timestamp": 36.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 441,
+    "timestamp": 36.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 442,
+    "timestamp": 36.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 443,
+    "timestamp": 36.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 444,
+    "timestamp": 37.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 445,
+    "timestamp": 37.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 446,
+    "timestamp": 37.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 447,
+    "timestamp": 37.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 448,
+    "timestamp": 37.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 449,
+    "timestamp": 37.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 450,
+    "timestamp": 37.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 451,
+    "timestamp": 37.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 452,
+    "timestamp": 37.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 453,
+    "timestamp": 37.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 454,
+    "timestamp": 37.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 455,
+    "timestamp": 37.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 456,
+    "timestamp": 38.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 457,
+    "timestamp": 38.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 458,
+    "timestamp": 38.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 459,
+    "timestamp": 38.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 460,
+    "timestamp": 38.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 461,
+    "timestamp": 38.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 462,
+    "timestamp": 38.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 463,
+    "timestamp": 38.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 464,
+    "timestamp": 38.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 465,
+    "timestamp": 38.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 466,
+    "timestamp": 38.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 467,
+    "timestamp": 38.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 468,
+    "timestamp": 39.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 469,
+    "timestamp": 39.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 470,
+    "timestamp": 39.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 471,
+    "timestamp": 39.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 472,
+    "timestamp": 39.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 473,
+    "timestamp": 39.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 474,
+    "timestamp": 39.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 475,
+    "timestamp": 39.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 476,
+    "timestamp": 39.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 477,
+    "timestamp": 39.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 478,
+    "timestamp": 39.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 479,
+    "timestamp": 39.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 480,
+    "timestamp": 40.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 481,
+    "timestamp": 40.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 482,
+    "timestamp": 40.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 483,
+    "timestamp": 40.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 484,
+    "timestamp": 40.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 485,
+    "timestamp": 40.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 486,
+    "timestamp": 40.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 487,
+    "timestamp": 40.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 488,
+    "timestamp": 40.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 489,
+    "timestamp": 40.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 490,
+    "timestamp": 40.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 491,
+    "timestamp": 40.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 492,
+    "timestamp": 41.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 493,
+    "timestamp": 41.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 494,
+    "timestamp": 41.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 495,
+    "timestamp": 41.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 496,
+    "timestamp": 41.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 497,
+    "timestamp": 41.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 498,
+    "timestamp": 41.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 499,
+    "timestamp": 41.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 500,
+    "timestamp": 41.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 501,
+    "timestamp": 41.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 502,
+    "timestamp": 41.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 503,
+    "timestamp": 41.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 504,
+    "timestamp": 42.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 505,
+    "timestamp": 42.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 506,
+    "timestamp": 42.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 507,
+    "timestamp": 42.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 508,
+    "timestamp": 42.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 509,
+    "timestamp": 42.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 510,
+    "timestamp": 42.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 511,
+    "timestamp": 42.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 512,
+    "timestamp": 42.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 513,
+    "timestamp": 42.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 514,
+    "timestamp": 42.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 515,
+    "timestamp": 42.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 516,
+    "timestamp": 43.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 517,
+    "timestamp": 43.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 518,
+    "timestamp": 43.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 519,
+    "timestamp": 43.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 520,
+    "timestamp": 43.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 521,
+    "timestamp": 43.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 522,
+    "timestamp": 43.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 523,
+    "timestamp": 43.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 524,
+    "timestamp": 43.666666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 314,
+        "y": 246,
+        "width": 193,
+        "height": 184,
+        "confidence": 0.873
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 525,
+    "timestamp": 43.75,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 300,
+        "y": 234,
+        "width": 187,
+        "height": 197,
+        "confidence": 0.882
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 526,
+    "timestamp": 43.833333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 306,
+        "y": 237,
+        "width": 151,
+        "height": 193,
+        "confidence": 0.917
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 527,
+    "timestamp": 43.916666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 313,
+        "y": 217,
+        "width": 136,
+        "height": 213,
+        "confidence": 0.92
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 528,
+    "timestamp": 44.0,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 305,
+        "y": 161,
+        "width": 150,
+        "height": 267,
+        "confidence": 0.901
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 529,
+    "timestamp": 44.083333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 298,
+        "y": 141,
+        "width": 154,
+        "height": 285,
+        "confidence": 0.928
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 530,
+    "timestamp": 44.166666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 286,
+        "y": 131,
+        "width": 159,
+        "height": 295,
+        "confidence": 0.918
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 531,
+    "timestamp": 44.25,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 281,
+        "y": 137,
+        "width": 152,
+        "height": 289,
+        "confidence": 0.938
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 532,
+    "timestamp": 44.333333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 283,
+        "y": 133,
+        "width": 120,
+        "height": 293,
+        "confidence": 0.923
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 533,
+    "timestamp": 44.416666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 276,
+        "y": 116,
+        "width": 110,
+        "height": 291,
+        "confidence": 0.924
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 534,
+    "timestamp": 44.5,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 262,
+        "y": 89,
+        "width": 111,
+        "height": 301,
+        "confidence": 0.896
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 535,
+    "timestamp": 44.583333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 251,
+        "y": 84,
+        "width": 117,
+        "height": 297,
+        "confidence": 0.902
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 536,
+    "timestamp": 44.666666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 252,
+        "y": 88,
+        "width": 115,
+        "height": 272,
+        "confidence": 0.921
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 537,
+    "timestamp": 44.75,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 254,
+        "y": 96,
+        "width": 116,
+        "height": 242,
+        "confidence": 0.888
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 538,
+    "timestamp": 44.833333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 253,
+        "y": 94,
+        "width": 116,
+        "height": 222,
+        "confidence": 0.896
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 539,
+    "timestamp": 44.916666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 240,
+        "y": 82,
+        "width": 115,
+        "height": 233,
+        "confidence": 0.892
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 540,
+    "timestamp": 45.0,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 223,
+        "y": 67,
+        "width": 125,
+        "height": 234,
+        "confidence": 0.877
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 541,
+    "timestamp": 45.083333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 212,
+        "y": 66,
+        "width": 125,
+        "height": 230,
+        "confidence": 0.857
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 542,
+    "timestamp": 45.166666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 200,
+        "y": 76,
+        "width": 112,
+        "height": 207,
+        "confidence": 0.808
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 543,
+    "timestamp": 45.25,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 192,
+        "y": 79,
+        "width": 95,
+        "height": 198,
+        "confidence": 0.848
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 544,
+    "timestamp": 45.333333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 168,
+        "y": 67,
+        "width": 114,
+        "height": 208,
+        "confidence": 0.897
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 545,
+    "timestamp": 45.416666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 154,
+        "y": 60,
+        "width": 121,
+        "height": 212,
+        "confidence": 0.861
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 546,
+    "timestamp": 45.5,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 128,
+        "y": 59,
+        "width": 144,
+        "height": 203,
+        "confidence": 0.911
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 547,
+    "timestamp": 45.583333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 116,
+        "y": 66,
+        "width": 148,
+        "height": 195,
+        "confidence": 0.868
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 548,
+    "timestamp": 45.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 549,
+    "timestamp": 45.75,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 89,
+        "y": 75,
+        "width": 101,
+        "height": 183,
+        "confidence": 0.823
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 550,
+    "timestamp": 45.833333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 60,
+        "y": 62,
+        "width": 122,
+        "height": 195,
+        "confidence": 0.83
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 551,
+    "timestamp": 45.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 552,
+    "timestamp": 46.0,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 31,
+        "y": 61,
+        "width": 132,
+        "height": 189,
+        "confidence": 0.916
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 553,
+    "timestamp": 46.083333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 29,
+        "y": 69,
+        "width": 121,
+        "height": 183,
+        "confidence": 0.862
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 554,
+    "timestamp": 46.166666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 15,
+        "y": 75,
+        "width": 100,
+        "height": 175,
+        "confidence": 0.533
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 555,
+    "timestamp": 46.25,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 3,
+        "y": 71,
+        "width": 105,
+        "height": 180,
+        "confidence": 0.829
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 556,
+    "timestamp": 46.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 557,
+    "timestamp": 46.416666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 68,
+        "width": 103,
+        "height": 183,
+        "confidence": 0.716
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 558,
+    "timestamp": 46.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 559,
+    "timestamp": 46.583333333333336,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 108,
+        "width": 92,
+        "height": 143,
+        "confidence": 0.821
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 560,
+    "timestamp": 46.666666666666664,
+    "person_count": 1,
+    "bounding_boxes": [
+      {
+        "x": 0,
+        "y": 126,
+        "width": 64,
+        "height": 125,
+        "confidence": 0.53
+      }
+    ],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 561,
+    "timestamp": 46.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 562,
+    "timestamp": 46.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 563,
+    "timestamp": 46.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 564,
+    "timestamp": 47.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 565,
+    "timestamp": 47.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 566,
+    "timestamp": 47.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 567,
+    "timestamp": 47.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 568,
+    "timestamp": 47.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 569,
+    "timestamp": 47.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 570,
+    "timestamp": 47.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 571,
+    "timestamp": 47.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 572,
+    "timestamp": 47.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 573,
+    "timestamp": 47.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 574,
+    "timestamp": 47.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 575,
+    "timestamp": 47.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 576,
+    "timestamp": 48.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 577,
+    "timestamp": 48.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 578,
+    "timestamp": 48.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 579,
+    "timestamp": 48.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 580,
+    "timestamp": 48.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 581,
+    "timestamp": 48.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 582,
+    "timestamp": 48.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 583,
+    "timestamp": 48.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 584,
+    "timestamp": 48.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 585,
+    "timestamp": 48.75,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 586,
+    "timestamp": 48.833333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 587,
+    "timestamp": 48.916666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 588,
+    "timestamp": 49.0,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 589,
+    "timestamp": 49.083333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 590,
+    "timestamp": 49.166666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 591,
+    "timestamp": 49.25,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 592,
+    "timestamp": 49.333333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 593,
+    "timestamp": 49.416666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 594,
+    "timestamp": 49.5,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 595,
+    "timestamp": 49.583333333333336,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  },
+  {
+    "frame_number": 596,
+    "timestamp": 49.666666666666664,
+    "person_count": 0,
+    "bounding_boxes": [],
+    "detection_method": "YOLO"
+  }
+]

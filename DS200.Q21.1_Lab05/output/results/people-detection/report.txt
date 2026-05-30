@@ -1,0 +1,19 @@
+Video Analysis Report: people-detection
+==================================================
+
+Video Info:
+  - Resolution: 768x432
+  - FPS: 12.0
+  - Total Frames: 596
+  - Duration: 49.67 seconds
+
+Detection Results:
+  - Detection Method: YOLO
+  - Total Persons Detected: 389
+  - Average Persons/Frame: 0.65
+  - Max Persons in Single Frame: 4
+  - Frames with Persons: 216/596
+
+Processing:
+  - Processing Time: 87.28 seconds
+  - Processing FPS: 6.83

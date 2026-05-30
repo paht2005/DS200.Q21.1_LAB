@@ -1,0 +1,19 @@
+Video Analysis Report: pedestrian-video2
+==================================================
+
+Video Info:
+  - Resolution: 640x360
+  - FPS: 23.976023976023978
+  - Total Frames: 1093
+  - Duration: 45.59 seconds
+
+Detection Results:
+  - Detection Method: YOLO
+  - Total Persons Detected: 6167
+  - Average Persons/Frame: 5.64
+  - Max Persons in Single Frame: 13
+  - Frames with Persons: 1079/1093
+
+Processing:
+  - Processing Time: 132.32 seconds
+  - Processing FPS: 8.26
