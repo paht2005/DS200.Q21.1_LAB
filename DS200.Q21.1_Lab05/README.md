@@ -1,14 +1,56 @@
-# DS200.Q21.1 Lab05 — Real-Time Person Counting System
+<p align="center">
+  <a href="https://www.uit.edu.vn/" title="University of Information Technology">
+    <img src="https://i.imgur.com/WmMnSRt.png" alt="University of Information Technology (UIT)" width="400">
+  </a>
+</p>
 
-> **Student ID**: 23521143  
-> **Course**: DS200.Q21.1 - Big Data  
-> **Lab**: 05 - Distributed Stream Processing with Spark Streaming
+<h1 align="center"><b>DS200.Q21.1 - Big Data Analysis (Lab 05)</b></h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.8+" />
+  <img src="https://img.shields.io/badge/Spark%20Streaming-3.x-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Spark Streaming" />
+  <img src="https://img.shields.io/badge/YOLO-v12-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" alt="YOLO" />
+  <img src="https://img.shields.io/badge/OpenCV-4.x-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/paht2005"><img src="https://img.shields.io/badge/GitHub-paht2005-181717?style=flat-square&logo=github" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/ncp2005/"><img src="https://img.shields.io/badge/LinkedIn-Phat%20Nguyen-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn" /></a>
+  <a href="mailto:23521143@gm.uit.edu.vn"><img src="https://img.shields.io/badge/Email-23521143%40gm.uit.edu.vn-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
+
+**Lab folder:** `DS200.Q21.1_Lab/DS200.Q21.1_Lab05/` — Parent overview: [../README.md](../README.md)
 
 ---
 
-## Overview
+## Student information
 
-A distributed real-time person counting system that processes camera frames using a three-tier server architecture. The system demonstrates big data stream processing concepts with **PySpark Streaming** for scalable frame processing and **YOLO (You Only Look Once)** deep learning model for accurate person detection.
+| Student ID | Full name        | GitHub                                  | Email                  |
+|:----------:|------------------|-----------------------------------------|------------------------|
+| 23521143   | Phat Cong Nguyen | [paht2005](https://github.com/paht2005) | 23521143@gm.uit.edu.vn |
+
+---
+
+## Outline
+
+1. [Objective](#objective)
+2. [System Architecture](#system-architecture)
+3. [Technologies](#technologies)
+4. [Repository Layout](#repository-layout)
+5. [Prerequisites](#prerequisites)
+6. [Quick Start](#quick-start)
+7. [Running Individual Components](#running-individual-components)
+8. [Utility Scripts](#utility-scripts)
+9. [Output Format](#output-format)
+10. [Configuration](#configuration)
+11. [Screenshots](#screenshots)
+12. [Submission Checklist](#submission-checklist)
+
+---
+
+## Objective
+
+Build a **distributed real-time person counting system** that processes camera frames using a three-tier server architecture. The system demonstrates big data stream processing concepts with **PySpark Streaming** for scalable frame processing and **YOLO (You Only Look Once)** deep learning model for accurate person detection.
 
 ### Features
 
@@ -21,7 +63,7 @@ A distributed real-time person counting system that processes camera frames usin
 
 ---
 
-## Architecture
+## System Architecture
 
 ```
 ┌─────────────┐     TCP      ┌──────────────┐     TCP      ┌──────────────┐
@@ -56,9 +98,9 @@ A distributed real-time person counting system that processes camera frames usin
 
 ---
 
-## Project Structure
+## Repository Layout
 
-```
+```text
 DS200.Q21.1_Lab05/
 ├── README.md                    ← This documentation
 ├── 23521143.txt                 ← Student ID
@@ -87,17 +129,44 @@ DS200.Q21.1_Lab05/
 │
 ├── data/
 │   ├── images/                  ← Sample images
-│   ├── video/                   ← Sample videos
+│   ├── video/                   ← Sample videos (people-detection.mp4)
 │   └── results/                 ← Detection results
 │
 ├── models/
-│   └── yolo/                    ← YOLO model files
+│   └── yolo/                    ← YOLO model files (yolo12n.pt)
 │
 ├── output/
-│   ├── detections.json          ← Detection results
+│   ├── results/                 ← Detection results JSON
 │   └── screenshots/             ← System screenshots
 │
 └── .planning/                   ← Project planning files
+```
+
+---
+
+## Prerequisites
+
+### Python Environment
+
+```bash
+# Python 3.8 or higher
+python3 --version
+
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate  # macOS/Linux
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Or install manually:
+
+```bash
+pip install opencv-python numpy ultralytics mediapipe pyspark
 ```
 
 ---
@@ -107,31 +176,29 @@ DS200.Q21.1_Lab05/
 ### 1. Install Dependencies
 
 ```bash
-# Create virtual environment (optional)
-python -m venv venv
-source venv/bin/activate  # macOS/Linux
-
-# Install dependencies
+cd DS200.Q21.1_Lab05
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
 ### 2. Run the Demo
 
 ```bash
-# Option 1: Run full demo (starts all servers + sender)
-./scripts/run_demo.sh --frames 10
+# Option 1: Run full demo with video file
+python3 src/demo-example.py --video data/video/people-detection.mp4 --frames 30
 
-# Option 2: Start servers manually
+# Option 2: Start servers manually (4 terminals)
 ./scripts/run_all.sh
 
 # Then in another terminal:
-python src/sender.py --frames 10
+python3 src/sender.py --video data/video/people-detection.mp4 --frames 30
 ```
 
 ### 3. View Results
 
 ```bash
-cat output/detections.json
+cat output/results/detections.json
 ```
 
 ---
@@ -142,28 +209,28 @@ cat output/detections.json
 
 ```bash
 # Terminal 1: Storage Server
-./scripts/run_storage.sh
+python3 src/storage_server.py
 
 # Terminal 2: Detector Server  
-./scripts/run_detector.sh
+python3 src/detect_object.py
 
 # Terminal 3: Receiver Server
-./scripts/run_receiver.sh
+python3 src/receiver.py
 
 # Terminal 4: Send frames
-./scripts/run_sender.sh --frames 20
+python3 src/sender.py --video data/video/people-detection.mp4 --frames 30
 ```
 
 ### With Video File
 
 ```bash
-python src/sender.py --video data/video/sample.mp4 --fps 5
+python3 src/sender.py --video data/video/people-detection.mp4 --fps 5
 ```
 
 ### With Webcam
 
 ```bash
-python src/sender.py --camera 0 --fps 2
+python3 src/sender.py --camera 0 --fps 2
 ```
 
 ---
@@ -174,57 +241,65 @@ python src/sender.py --camera 0 --fps 2
 
 ```bash
 # Remove background from image
-python src/background_remover.py --input image.jpg --output result.png
+python3 src/background_remover.py --input image.jpg --output result.png
 
 # With transparent background
-python src/background_remover.py --input image.jpg --color transparent
+python3 src/background_remover.py --input image.jpg --color transparent
 
 # Blur background
-python src/background_remover.py --input image.jpg --blur
+python3 src/background_remover.py --input image.jpg --blur
 ```
 
 ### MediaPipe Explorer
 
 ```bash
 # Detect pose
-python src/examine_mediapipe.py --input image.jpg --mode pose
+python3 src/examine_mediapipe.py --input image.jpg --mode pose
 
 # Detect faces
-python src/examine_mediapipe.py --input image.jpg --mode face
+python3 src/examine_mediapipe.py --input image.jpg --mode face
 
 # Detect hands
-python src/examine_mediapipe.py --input image.jpg --mode hands
+python3 src/examine_mediapipe.py --input image.jpg --mode hands
 
 # All detections
-python src/examine_mediapipe.py --input image.jpg --mode all
+python3 src/examine_mediapipe.py --input image.jpg --mode all
 ```
 
 ---
 
 ## Output Format
 
-Detection results are stored in JSON format:
+Detection results are stored in JSON format at `output/results/detections.json`:
 
 ```json
 {
-  "frame_id": "abc123",
-  "frame_number": 1,
-  "timestamp": "2026-05-30T14:30:00",
-  "processing_time_ms": 45.2,
-  "detection": {
-    "person_count": 2,
-    "bounding_boxes": [
-      {
-        "x": 100,
-        "y": 50,
-        "width": 60,
-        "height": 150,
-        "confidence": 0.92,
-        "class": "person"
-      }
-    ],
-    "detection_method": "YOLO"
-  }
+  "video_file": "data/video/people-detection.mp4",
+  "model": "models/yolo/yolo12n.pt",
+  "total_frames": 596,
+  "confidence_threshold": 0.5,
+  "summary": {
+    "total_person_detections": 389,
+    "frames_with_persons": 218,
+    "max_persons_in_frame": 4,
+    "avg_persons_per_frame": 0.65
+  },
+  "detections": [
+    {
+      "frame_id": 1,
+      "timestamp": "2026-05-30T13:55:51.045079",
+      "person_count": 2,
+      "bounding_boxes": [
+        {
+          "x": 100,
+          "y": 50,
+          "width": 60,
+          "height": 150,
+          "confidence": 0.92
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -241,330 +316,32 @@ class Config:
     PROCESSING_PORT = 6200
     STORAGE_PORT = 6300
     CONFIDENCE_THRESHOLD = 0.5
-```
-
----
-
-## Requirements
-
-- Python 3.8+
-- OpenCV
-- NumPy
-- Ultralytics (YOLO)
-- MediaPipe
-- PySpark (optional, for distributed processing)
-
-Install all with:
-```bash
-pip install opencv-python numpy ultralytics mediapipe pyspark
+    YOLO_MODEL_PATH = "models/yolo/yolo12n.pt"
 ```
 
 ---
 
 ## Screenshots
 
-See `output/screenshots/` for system screenshots.
-
----
-
-## License
-
-This project is for educational purposes as part of DS200.Q21.1 Big Data course.
-│   ├── run_detection.py                ← Run Python YOLO detection pipeline
-│   └── java.sh                         ← Convenience wrapper
-│
-├── data/
-│   ├── images/                         ← Test images for detection
-│   └── video/                          ← Test videos (people-detection.mp4)
-│
-├── models/
-│   └── yolo/                           ← YOLO model files (Git LFS tracked)
-│       └── yolo12n.pt                  ← Pre-trained YOLOv12 nano model
-│
-├── output/
-│   ├── results/                        ← Detection results
-│   │   └── detections.json             ← Bounding boxes and person counts
-│   └── screenshots/                    ← Execution screenshots
-│
-└── .planning/                          ← Project planning documentation
-```
-
----
-
-## Git LFS (Large File Storage)
-
-This project uses **Git LFS** to track large binary files. Before cloning or committing, ensure Git LFS is installed and configured.
-
-### Installation
-
-```bash
-# macOS
-brew install git-lfs
-
-# Ubuntu/Debian
-sudo apt-get install git-lfs
-
-# Windows
-# Download from https://git-lfs.github.com/
-```
-
-### Configuration
-
-```bash
-# Initialize Git LFS in the repository
-git lfs install
-
-# Track large files (already configured in .gitattributes)
-git lfs track "*.pt"           # YOLO model weights
-git lfs track "*.weights"      # Darknet weights
-git lfs track "*.mp4"          # Video files
-git lfs track "*.avi"          # Video files
-```
-
-### Tracked Files
-
-| File Pattern | Description | Location |
-|--------------|-------------|----------|
-| `*.pt` | PyTorch model weights | `models/yolo/yolo12n.pt` |
-| `*.mp4` | Test video files | `data/video/` |
-
----
-
-## Prerequisites
-
-### For Python Implementation (YOLO Detection)
-
-```bash
-# Python 3.8 or higher
-python --version
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### For Java Implementation (Server Infrastructure)
-
-```bash
-# Java 11 or higher
-java -version
-
-# Maven 3.6 or higher
-mvn -v
-
-# Apache Spark (optional, for cluster mode)
-spark-submit --version
-```
-
----
-
-## Quick Start
-
-### Option 1: Python Implementation (Recommended for YOLO Detection)
-
-This option executes actual person detection using the YOLO model.
-
-```bash
-# Navigate to lab directory
-cd DS200.Q21.1_Lab05
-
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Run the detection pipeline
-python scripts/run_detection.py
-```
-
-**Or run servers individually (4 terminals):**
-
-```bash
-# Terminal 1 — Storage Server
-python src/storage_server.py
-
-# Terminal 2 — Processing Server (YOLO + Spark)
-python src/processing_server.py
-
-# Terminal 3 — Receiver Server
-python src/receiver_server.py
-
-# Terminal 4 — Video Source
-python src/video_source.py
-```
-
-### Option 2: Java Implementation (Server Infrastructure Demo)
-
-This option demonstrates the distributed server architecture with mock detection.
-
-```bash
-# Navigate to lab directory
-cd DS200.Q21.1_Lab05
-
-# Make scripts executable
-chmod +x scripts/*.sh
-
-# Build the project
-./scripts/run_java_streaming_local.sh build
-```
-
-**Run servers (4 terminals):**
-
-```bash
-# Terminal 1 — Storage Server
-./scripts/run_java_streaming_local.sh storage
-
-# Terminal 2 — Processing Server (Spark Streaming)
-./scripts/run_java_streaming_local.sh processing
-
-# Terminal 3 — Receiver Server
-./scripts/run_java_streaming_local.sh receiver
-
-# Terminal 4 — Video Source
-./scripts/run_java_streaming_local.sh source
-```
-
----
-
-## Model Files
-
-### YOLO Model (Required for Python Detection)
-
-The pre-trained YOLOv12 nano model is included:
-
-```
-models/yolo/yolo12n.pt    ← Pre-trained model (Git LFS tracked)
-```
-
-To download manually:
-
-```bash
-cd models/yolo/
-curl -L -o yolo12n.pt "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt"
-```
-
-### Test Data
-
-```
-data/video/people-detection.mp4    ← Sample video with pedestrians
-data/images/                       ← Test images (optional)
-```
-
----
-
-## Output Results
-
-Detection results are saved to `output/results/detections.json`:
-
-```json
-{
-  "video_file": "data/video/people-detection.mp4",
-  "model": "models/yolo/yolo12n.pt",
-  "total_frames": 596,
-  "summary": {
-    "total_person_detections": 389,
-    "frames_with_persons": 218,
-    "max_persons_in_frame": 4,
-    "avg_persons_per_frame": 0.65
-  },
-  "detections": [
-    {
-      "frame_id": 1,
-      "person_count": 2,
-      "bounding_boxes": [
-        {"x": 100, "y": 150, "width": 50, "height": 120, "confidence": 0.95},
-        {"x": 250, "y": 180, "width": 45, "height": 110, "confidence": 0.89}
-      ]
-    }
-  ]
-}
-```
-
-Screenshots of execution are saved to `output/screenshots/`.
-
----
-
-## Configuration
-
-### Python Configuration (`src/config.py`)
-
-```python
-class Config:
-    RECEIVER_PORT = 6100
-    PROCESSING_PORT = 6200
-    STORAGE_PORT = 6300
-    
-    YOLO_MODEL_PATH = "models/yolo/yolo12n.pt"
-    CONFIDENCE_THRESHOLD = 0.5
-```
-
-### Java Configuration (`spark/java/.../Config.java`)
-
-```java
-public class Config {
-    public static final int RECEIVER_PORT = 6100;
-    public static final int PROCESSING_PORT = 6200;
-    public static final int STORAGE_PORT = 6300;
-    
-    public static final String SPARK_MASTER = "local[*]";
-    public static final int SPARK_BATCH_INTERVAL = 1;
-}
-```
-
----
-
-## Data Formats
-
-### Frame Payload (JSON via TCP)
-
-```json
-{
-  "frameId": "550e8400-e29b-41d4-a716-446655440000",
-  "timestamp": "2026-05-30T10:30:00Z",
-  "frameNumber": 1,
-  "data": "base64_encoded_image_data",
-  "width": 640,
-  "height": 480
-}
-```
-
-### Detection Result (JSON)
-
-```json
-{
-  "frameId": "550e8400-e29b-41d4-a716-446655440000",
-  "timestamp": "2026-05-30T10:30:01Z",
-  "personCount": 3,
-  "boundingBoxes": [
-    {"x": 100, "y": 150, "width": 50, "height": 120, "confidence": 0.95},
-    {"x": 250, "y": 180, "width": 45, "height": 110, "confidence": 0.89}
-  ],
-  "processingTimeMs": 45.2
-}
-```
-
----
-
-## Big Data Context
-
-This system demonstrates big data concepts through:
-
-| Concept | Implementation |
-|---------|----------------|
-| **Distributed Processing** | Three independent servers communicating via TCP network |
-| **Stream Processing** | Real-time frame processing with Apache Spark Streaming |
-| **Micro-batch Architecture** | Configurable batch intervals for optimized throughput |
-| **Horizontal Scalability** | Architecture supports scaling across multiple nodes |
-| **Fault Tolerance** | TCP connection retry logic and graceful error handling |
-| **Deep Learning Integration** | YOLO model for accurate person detection |
-
----
-
-## Execution Screenshots
-
-Execution screenshots are available in `output/screenshots/` directory, demonstrating:
+See `output/screenshots/` for system execution screenshots demonstrating:
 
 - Server startup sequences
 - Real-time frame processing
 - Detection results with bounding boxes
 - Storage server output
+
+---
+
+## Submission Checklist
+
+- [x] All Python source code in `src/`
+- [x] Shell scripts in `scripts/`
+- [x] YOLO model in `models/yolo/`
+- [x] Sample video in `data/video/`
+- [x] Detection results in `output/results/`
+- [x] Screenshots in `output/screenshots/`
+- [x] Student ID file `23521143.txt`
+- [x] This README with documentation
 
 ---
 
@@ -574,6 +351,6 @@ This project is developed for educational purposes as part of the DS200.Q21.1 Bi
 
 ---
 
-**Author**: Nguyen Cong Phat (23521143)  
+**Author**: Phat Cong Nguyen (23521143)  
 **GitHub**: [paht2005](https://github.com/paht2005)  
 **Email**: 23521143@gm.uit.edu.vn
