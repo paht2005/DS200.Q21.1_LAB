@@ -125,15 +125,24 @@ DS200.Q21.1_Lab/
     ├── scripts/
     │   ├── run_all.sh           ← Start all servers
     │   ├── run_demo.sh          ← Run demo pipeline
-    │   └── run_comparison.sh    ← Generate SAHI comparison screenshots
+    │   ├── run_comparison.sh    ← Generate SAHI comparison screenshots
+    │   ├── run_sender.sh        ← Start frame sender
+    │   ├── run_receiver.sh      ← Start receiver server
+    │   ├── run_detector.sh      ← Start detector server
+    │   ├── run_storage.sh       ← Start storage server
+    │   ├── run_background_remover.sh ← Run background removal utility
+    │   └── run_mediapipe.sh     ← Run MediaPipe explorer
     ├── src/                     ← Python implementation
-    │   ├── config.py            ← Configuration settings
+    │   ├── config.py            ← Configuration settings (confidence threshold, ports)
     │   ├── sender.py            ← Frame sender (client)
     │   ├── receiver.py          ← Frame receiver server
     │   ├── detect_object.py     ← Object detection server (YOLO + SAHI)
     │   ├── storage_server.py    ← Result storage server
     │   ├── process_videos.py    ← Batch video processing with PySpark
-    │   └── demo-example.py      ← End-to-end demo script
+    │   ├── demo-example.py      ← End-to-end demo script
+    │   ├── background_remover.py ← Background removal utility
+    │   ├── examine_mediapipe.py  ← MediaPipe exploration tool
+    │   └── generate_comparison_screenshots.py ← SAHI vs YOLO comparison
     ├── output/
     │   ├── results/             ← Detection results (JSON with bounding boxes)
     │   └── screenshots/         ← SAHI vs YOLO comparison screenshots
@@ -227,7 +236,7 @@ Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab01/   # Lab 01 — MapReduce
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab02/   # Lab 02 — Apache Pig
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab03/   # Lab 03 — Java Spark RDD
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab04/   # Lab 04 — Java Spark DataFrame
-Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab05/   # Lab 05 — Java Spark Streaming + YOLO Detection
+Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab05/   # Lab 05 — PySpark Streaming + YOLO Detection (Python)
 ```
 
 Keep the parent folder **`DS200.Q21.1_Lab`** as the root that contains each **`DS200.Q21.1_Lab0X`** lab directory.
