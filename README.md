@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/Apache%20Pig-Lab02-yellow?style=for-the-badge&logo=apache&logoColor=white" alt="Apache Pig" />
   <img src="https://img.shields.io/badge/Java%20Spark%20RDD-Lab03-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Java Spark RDD" />
   <img src="https://img.shields.io/badge/Java%20Spark%20DataFrame-Lab04-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Java Spark DataFrame" />
-  <img src="https://img.shields.io/badge/Java%20Spark%20Streaming-Lab05-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Java Spark Streaming" />
+  <img src="https://img.shields.io/badge/PySpark%20Streaming%20+%20YOLO-Lab05-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="PySpark Streaming + YOLO" />
   <img src="https://img.shields.io/badge/Python-optional-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python optional" />
 </p>
 
@@ -115,31 +115,32 @@ DS200.Q21.1_Lab/
 │   ├── output/                  ← Task reports (.txt)
 │   └── screenshots/             ← Submission screenshots
 │
-└── DS200.Q21.1_Lab05/           ← Lab 05 — Real-time Person Counting with Spark Streaming
+└── DS200.Q21.1_Lab05/           ← Lab 05 — Real-time Person Counting (Python + PySpark + YOLO)
     ├── README.md                ← Lab 05: architecture, run commands, setup
     ├── data/
     │   ├── images/              ← Test images for detection
-    │   └── video/               ← Test videos (people-detection.mp4)
+    │   └── video/               ← Test videos (pedestrian-video1.mp4, etc.)
     ├── models/yolo/             ← YOLO model files (Git LFS tracked)
     │   └── yolo12n.pt           ← Pre-trained YOLOv12 nano model
     ├── scripts/
-    │   ├── run_java_streaming_local.sh ← Build + run Java servers
-    │   ├── run_detection.py     ← Run Python YOLO detection pipeline
-    │   └── java.sh              ← Convenience wrapper
-    ├── spark/java/lab05-streaming/ ← Java Spark Streaming (server infrastructure)
-    │   └── src/main/java/lab05/ ← FrameReceiverServer, ProcessingServer, StorageServer
-    ├── src/                     ← Python implementation (YOLO detection)
-    │   ├── receiver_server.py   ← Server 1: Receives frames from camera
-    │   ├── processing_server.py ← Server 2: YOLO detection + Spark Streaming
-    │   ├── storage_server.py    ← Server 3: Persists results to JSON
-    │   └── video_source.py      ← Video/camera frame source
+    │   ├── run_all.sh           ← Start all servers
+    │   ├── run_demo.sh          ← Run demo pipeline
+    │   └── run_comparison.sh    ← Generate SAHI comparison screenshots
+    ├── src/                     ← Python implementation
+    │   ├── config.py            ← Configuration settings
+    │   ├── sender.py            ← Frame sender (client)
+    │   ├── receiver.py          ← Frame receiver server
+    │   ├── detect_object.py     ← Object detection server (YOLO + SAHI)
+    │   ├── storage_server.py    ← Result storage server
+    │   ├── process_videos.py    ← Batch video processing with PySpark
+    │   └── demo-example.py      ← End-to-end demo script
     ├── output/
     │   ├── results/             ← Detection results (JSON with bounding boxes)
-    │   └── screenshots/         ← Execution screenshots
-    └── requirements.txt         ← Python dependencies
+    │   └── screenshots/         ← SAHI vs YOLO comparison screenshots
+    └── requirements.txt         ← Python dependencies (ultralytics, pyspark, sahi, opencv)
 ```
 
-> **Note for Lab 05**: The Python implementation is required to execute the YOLO model (`yolo12n.pt`) for actual person detection. The Java implementation provides the distributed server architecture but uses mock detection. For production-quality detection with bounding boxes, run the Python scripts.
+> **Note for Lab 05**: Lab 05 is fully implemented in Python using PySpark Streaming for distributed processing and YOLOv12 for person detection. Features include SAHI (Slicing Aided Hyper Inference) for improved small object detection, batch video processing, and TCP-based server architecture.
 
 Add future labs as siblings, each with its own `README.md`.
 
