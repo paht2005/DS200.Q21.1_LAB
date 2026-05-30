@@ -25,7 +25,7 @@ class Config:
     
     # Detection settings
     CONFIDENCE_THRESHOLD = 0.5
-    YOLO_MODEL_PATH = "models/yolo/yolov8n.pt"
+    YOLO_MODEL_PATH = "models/yolo/yolo12n.pt"
     
     # Storage settings
     STORAGE_FILE = "output/results/detections.json"

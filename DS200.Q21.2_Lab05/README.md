@@ -129,13 +129,16 @@ For real person detection (instead of mock), download YOLO files:
 ```bash
 cd models/yolo/
 
-# Download YOLOv4-tiny (lightweight, fast)
-wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights
-wget https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg
-wget https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
+# YOLOv12 nano (Ultralytics - recommended)
+curl -L -o yolo12n.pt "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt"
+
+# Or YOLOv4-tiny (legacy Darknet format)
+# wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights
+# wget https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg
+# wget https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
 ```
 
-> **Note**: The system works without YOLO files using mock detection (random bounding boxes) for demonstration.
+> **Note**: Model đã được tải sẵn: `models/yolo/yolo12n.pt` ✓
 
 ### 3. Test Video → `data/video/` (Optional)
 

@@ -40,10 +40,13 @@ public class Config {
     /** Minimum confidence threshold for person detection (0.0 - 1.0) */
     public static final double CONFIDENCE_THRESHOLD = 0.5;
     
-    /** YOLO model weights file path */
+    /** YOLOv12 model file path (Ultralytics .pt format) */
+    public static final String YOLO_MODEL = "models/yolo/yolo12n.pt";
+    
+    /** YOLO model weights file path (legacy Darknet format) */
     public static final String YOLO_WEIGHTS = "models/yolo/yolov4-tiny.weights";
     
-    /** YOLO model config file path */
+    /** YOLO model config file path (legacy Darknet format) */
     public static final String YOLO_CONFIG = "models/yolo/yolov4-tiny.cfg";
     
     /** COCO class names file path */
