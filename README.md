@@ -115,21 +115,31 @@ DS200.Q21.1_Lab/
 │   ├── output/                  ← Task reports (.txt)
 │   └── screenshots/             ← Submission screenshots
 │
-└── DS200.Q21.2_Lab05/           ← Lab 05 — Real-time Person Counting with Java Spark Streaming
+└── DS200.Q21.1_Lab05/           ← Lab 05 — Real-time Person Counting with Spark Streaming
     ├── README.md                ← Lab 05: architecture, run commands, setup
     ├── data/
-    │   ├── images/              ← Test images for detection (download here)
-    │   └── video/               ← Test videos (optional)
-    ├── models/yolo/             ← YOLO model files (download here)
+    │   ├── images/              ← Test images for detection
+    │   └── video/               ← Test videos (people-detection.mp4)
+    ├── models/yolo/             ← YOLO model files (Git LFS tracked)
+    │   └── yolo12n.pt           ← Pre-trained YOLOv12 nano model
     ├── scripts/
-    │   ├── run_java_streaming_local.sh ← Build + run all servers locally
+    │   ├── run_java_streaming_local.sh ← Build + run Java servers
+    │   ├── run_detection.py     ← Run Python YOLO detection pipeline
     │   └── java.sh              ← Convenience wrapper
-    ├── spark/java/lab05-streaming/ ← Maven Java Spark Streaming project
+    ├── spark/java/lab05-streaming/ ← Java Spark Streaming (server infrastructure)
     │   └── src/main/java/lab05/ ← FrameReceiverServer, ProcessingServer, StorageServer
-    ├── src/lab05/               ← Optional Python implementation
-    ├── output/results/          ← Detection results (JSON)
-    └── screenshots/             ← Submission screenshots
+    ├── src/                     ← Python implementation (YOLO detection)
+    │   ├── receiver_server.py   ← Server 1: Receives frames from camera
+    │   ├── processing_server.py ← Server 2: YOLO detection + Spark Streaming
+    │   ├── storage_server.py    ← Server 3: Persists results to JSON
+    │   └── video_source.py      ← Video/camera frame source
+    ├── output/
+    │   ├── results/             ← Detection results (JSON with bounding boxes)
+    │   └── screenshots/         ← Execution screenshots
+    └── requirements.txt         ← Python dependencies
 ```
+
+> **Note for Lab 05**: The Python implementation is required to execute the YOLO model (`yolo12n.pt`) for actual person detection. The Java implementation provides the distributed server architecture but uses mock detection. For production-quality detection with bounding boxes, run the Python scripts.
 
 Add future labs as siblings, each with its own `README.md`.
 
@@ -145,10 +155,60 @@ Add future labs as siblings, each with its own `README.md`.
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab02   # Lab 02
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab03   # Lab 03
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab04   # Lab 04
-   cd /path/to/DS200.Q21.1_Lab/DS200.Q21.2_Lab05   # Lab 05
+   cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab05   # Lab 05
    ```
 
 3. **Docs:** each lab has its own `README.md` with setup, run commands, and submission steps.
+
+---
+
+## Git LFS (Large File Storage)
+
+This repository uses **Git LFS** to track large binary files such as model weights and video files. Before cloning or committing, ensure Git LFS is properly configured.
+
+### Installation
+
+```bash
+# macOS
+brew install git-lfs
+
+# Ubuntu/Debian
+sudo apt-get install git-lfs
+
+# Windows
+# Download from https://git-lfs.github.com/
+```
+
+### Configuration
+
+```bash
+# Initialize Git LFS in the repository
+git lfs install
+
+# Verify tracked patterns (defined in .gitattributes)
+git lfs track
+```
+
+### Tracked File Types
+
+| Pattern | Description | Location |
+|---------|-------------|----------|
+| `*.pt` | PyTorch model weights | `DS200.Q21.1_Lab05/models/yolo/` |
+| `*.weights` | Darknet model weights | `DS200.Q21.1_Lab05/models/yolo/` |
+| `*.mp4` | Video files | `DS200.Q21.1_Lab05/data/video/` |
+| `*.avi` | Video files | Various |
+
+### Cloning with LFS
+
+```bash
+# Clone with LFS files
+git lfs clone https://github.com/paht2005/DS200.Q21.1_Lab.git
+
+# Or pull LFS files after regular clone
+git clone https://github.com/paht2005/DS200.Q21.1_Lab.git
+cd DS200.Q21.1_Lab
+git lfs pull
+```
 
 ---
 
@@ -166,7 +226,7 @@ Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab01/   # Lab 01 — MapReduce
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab02/   # Lab 02 — Apache Pig
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab03/   # Lab 03 — Java Spark RDD
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab04/   # Lab 04 — Java Spark DataFrame
-Downloads/DS200.Q21.1_Lab/DS200.Q21.2_Lab05/   # Lab 05 — Java Spark Streaming
+Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab05/   # Lab 05 — Java Spark Streaming + YOLO Detection
 ```
 
 Keep the parent folder **`DS200.Q21.1_Lab`** as the root that contains each **`DS200.Q21.1_Lab0X`** lab directory.
