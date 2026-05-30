@@ -12,6 +12,7 @@
   <img src="https://img.shields.io/badge/Apache%20Pig-Lab02-yellow?style=for-the-badge&logo=apache&logoColor=white" alt="Apache Pig" />
   <img src="https://img.shields.io/badge/Java%20Spark%20RDD-Lab03-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Java Spark RDD" />
   <img src="https://img.shields.io/badge/Java%20Spark%20DataFrame-Lab04-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Java Spark DataFrame" />
+  <img src="https://img.shields.io/badge/Java%20Spark%20Streaming-Lab05-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Java Spark Streaming" />
   <img src="https://img.shields.io/badge/Python-optional-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python optional" />
 </p>
 
@@ -103,15 +104,30 @@ DS200.Q21.1_Lab/
 │   ├── output/                  ← Task reports (.txt)
 │   └── screenshots/             ← Submission screenshots
 │
-└── DS200.Q21.1_Lab04/           ← Lab 04 — Fecom e-commerce analytics with Java Spark DataFrame
-    ├── README.md                ← Lab 04: tasks, run commands, outputs
-    ├── assignments.ipynb        ← Lab wording (Vietnamese)
-    ├── data/                    ← Orders.csv, Customer_List.csv, Order_Items.csv, Products.csv, Order_Reviews.csv
+├── DS200.Q21.1_Lab04/           ← Lab 04 — Fecom e-commerce analytics with Java Spark DataFrame
+│   ├── README.md                ← Lab 04: tasks, run commands, outputs
+│   ├── assignments.ipynb        ← Lab wording (Vietnamese)
+│   ├── data/                    ← Orders.csv, Customer_List.csv, Order_Items.csv, Products.csv, Order_Reviews.csv
+│   ├── scripts/
+│   │   ├── run_java_dataframe_local.sh ← Build + run all 8 Java DataFrame tasks locally
+│   │   └── java.sh              ← Convenience wrapper for the main script
+│   ├── spark/java/lab04-dataframe/ ← Maven Java Spark project (DataFrame implementation)
+│   ├── output/                  ← Task reports (.txt)
+│   └── screenshots/             ← Submission screenshots
+│
+└── DS200.Q21.2_Lab05/           ← Lab 05 — Real-time Person Counting with Java Spark Streaming
+    ├── README.md                ← Lab 05: architecture, run commands, setup
+    ├── data/
+    │   ├── images/              ← Test images for detection (download here)
+    │   └── video/               ← Test videos (optional)
+    ├── models/yolo/             ← YOLO model files (download here)
     ├── scripts/
-    │   ├── run_java_dataframe_local.sh ← Build + run all 8 Java DataFrame tasks locally
-    │   └── java.sh              ← Convenience wrapper for the main script
-    ├── spark/java/lab04-dataframe/ ← Maven Java Spark project (DataFrame implementation)
-    ├── output/                  ← Task reports (.txt)
+    │   ├── run_java_streaming_local.sh ← Build + run all servers locally
+    │   └── java.sh              ← Convenience wrapper
+    ├── spark/java/lab05-streaming/ ← Maven Java Spark Streaming project
+    │   └── src/main/java/lab05/ ← FrameReceiverServer, ProcessingServer, StorageServer
+    ├── src/lab05/               ← Optional Python implementation
+    ├── output/results/          ← Detection results (JSON)
     └── screenshots/             ← Submission screenshots
 ```
 
@@ -129,6 +145,7 @@ Add future labs as siblings, each with its own `README.md`.
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab02   # Lab 02
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab03   # Lab 03
    cd /path/to/DS200.Q21.1_Lab/DS200.Q21.1_Lab04   # Lab 04
+   cd /path/to/DS200.Q21.1_Lab/DS200.Q21.2_Lab05   # Lab 05
    ```
 
 3. **Docs:** each lab has its own `README.md` with setup, run commands, and submission steps.
@@ -149,6 +166,7 @@ Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab01/   # Lab 01 — MapReduce
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab02/   # Lab 02 — Apache Pig
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab03/   # Lab 03 — Java Spark RDD
 Downloads/DS200.Q21.1_Lab/DS200.Q21.1_Lab04/   # Lab 04 — Java Spark DataFrame
+Downloads/DS200.Q21.1_Lab/DS200.Q21.2_Lab05/   # Lab 05 — Java Spark Streaming
 ```
 
 Keep the parent folder **`DS200.Q21.1_Lab`** as the root that contains each **`DS200.Q21.1_Lab0X`** lab directory.

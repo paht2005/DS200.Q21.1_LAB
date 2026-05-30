@@ -2,11 +2,13 @@
 
 > **Student ID**: 23521143  
 > **Course**: DS200.Q21.2 - Big Data  
-> **Lab**: 05 - Distributed Stream Processing
+> **Lab**: 05 - Distributed Stream Processing with Java Spark Streaming
+
+---
 
 ## Overview
 
-A distributed real-time person counting system that processes camera frames using big data technologies (Apache Spark Streaming). The system consists of three interconnected servers communicating via TCP sockets.
+A distributed real-time person counting system that processes camera frames using **Java Spark Streaming**. The system consists of three interconnected TCP servers for receiving, processing, and storing detection results.
 
 ## Architecture
 
@@ -25,153 +27,282 @@ A distributed real-time person counting system that processes camera frames usin
                                                          │    Server    │
                                                          │  (port 6300) │
                                                          └──────────────┘
+                                                                │
+                                                                ▼
+                                                    output/results/detections.json
 ```
 
 ### Components
 
 | Server | Port | Description |
 |--------|------|-------------|
-| **Receiver Server** | 6100 | Receives camera frames and forwards to processing |
-| **Processing Server** | 6200 | Object detection using YOLO, outputs bounding boxes |
-| **Storage Server** | 6300 | Stores detection results persistently |
+| **FrameReceiverServer** | 6100 | Receives camera frames via TCP and forwards to processing |
+| **ProcessingServer** | 6200 | Object detection with Spark Streaming, outputs bounding boxes |
+| **StorageServer** | 6300 | Stores detection results persistently to JSON |
+
+---
 
 ## Technologies
 
-- **Python 3.8+**
-- **Apache Spark Streaming** — Big data stream processing
-- **OpenCV** — Image processing
-- **YOLO** — Object detection model
-- **TCP Sockets** — Inter-server communication
+| Technology | Purpose |
+|------------|---------|
+| **Java 11+** | Primary implementation language |
+| **Apache Spark Streaming** | Big data stream processing |
+| **Maven** | Build and dependency management |
+| **JavaCV/OpenCV** | Image processing |
+| **GSON** | JSON serialization |
+| **TCP Sockets** | Inter-server communication |
+
+---
 
 ## Project Structure
 
 ```
 DS200.Q21.2_Lab05/
-├── README.md                    # This file
-├── requirements.txt             # Python dependencies
-├── src/
-│   ├── config.py               # Configuration settings
-│   ├── receiver_server.py      # Frame receiver server
-│   ├── processing_server.py    # Object detection server with Spark
-│   ├── storage_server.py       # Results storage server
-│   └── video_source.py         # Video/camera frame simulator
+├── README.md                           ← This file
+├── 23521143.txt                        ← Student ID
+├── requirements.txt                    ← Python dependencies (optional)
+│
+├── spark/java/lab05-streaming/         ← PRIMARY: Java Spark Streaming project
+│   ├── pom.xml                         ← Maven configuration
+│   └── src/main/java/lab05/
+│       ├── MainApp.java                ← Main launcher
+│       ├── Config.java                 ← Configuration constants
+│       ├── DataModels.java             ← Data classes (Frame, BoundingBox, etc.)
+│       ├── FrameReceiverServer.java    ← Server 1: Receives frames
+│       ├── ProcessingServer.java       ← Server 2: Detection + Spark
+│       ├── StorageServer.java          ← Server 3: Stores results
+│       └── VideoSource.java            ← Test video/image source
+│
+├── src/lab05/                          ← OPTIONAL: Python implementation
+│   ├── __init__.py
+│   └── config.py
+│
+├── scripts/
+│   ├── run_java_streaming_local.sh     ← Build + run Java servers
+│   └── java.sh                         ← Convenience wrapper
+│
 ├── data/
-│   └── results/                # Stored detection results
+│   ├── images/                         ← Test images for detection (download here)
+│   └── video/                          ← Test videos (optional)
+│
 ├── models/
-│   └── yolo/                   # YOLO model files
+│   └── yolo/                           ← YOLO model files (download here)
+│       ├── yolov4-tiny.weights
+│       ├── yolov4-tiny.cfg
+│       └── coco.names
+│
 ├── output/
-│   └── screenshots/            # Execution screenshots
-└── .planning/                  # Project planning docs
+│   ├── results/                        ← Detection results (auto-generated)
+│   │   └── detections.json
+│   └── screenshots/                    ← Submission screenshots
+│
+└── .planning/                          ← Project planning docs
 ```
 
-## Installation
+---
 
-### 1. Clone the repository
+## 📥 What to Download & Where to Put
+
+### 1. Test Images → `data/images/`
+
+Download sample images with people for detection testing:
+
 ```bash
-git clone https://github.com/paht2005/DS200.Q21.2_Lab05.git
+cd data/images/
+
+# Option 1: Download from COCO dataset samples
+wget https://images.cocodataset.org/val2017/000000039769.jpg
+wget https://images.cocodataset.org/val2017/000000397133.jpg
+wget https://images.cocodataset.org/val2017/000000037777.jpg
+
+# Option 2: Use any JPG/PNG images with people
+# Just copy your images to data/images/
+```
+
+**Supported formats**: `.jpg`, `.jpeg`, `.png`, `.bmp`
+
+### 2. YOLO Model Files → `models/yolo/` (Optional for real detection)
+
+For real person detection (instead of mock), download YOLO files:
+
+```bash
+cd models/yolo/
+
+# Download YOLOv4-tiny (lightweight, fast)
+wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights
+wget https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg
+wget https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
+```
+
+> **Note**: The system works without YOLO files using mock detection (random bounding boxes) for demonstration.
+
+### 3. Test Video → `data/video/` (Optional)
+
+```bash
+cd data/video/
+# Download any video file with people, e.g.:
+wget https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4 -O test.mp4
+```
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- **Java 11+**: `java -version`
+- **Maven 3.6+**: `mvn -v`
+- **Apache Spark** (optional, for cluster mode)
+
+### Build & Run
+
+```bash
+# Navigate to lab directory
 cd DS200.Q21.2_Lab05
+
+# Make scripts executable
+chmod +x scripts/*.sh
+
+# Build the project
+./scripts/run_java_streaming_local.sh build
 ```
 
-### 2. Create virtual environment
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-venv\Scripts\activate     # Windows
-```
+### Run Demo (4 Terminals)
 
-### 3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Download YOLO model (optional - for full detection)
-```bash
-# Download YOLOv8 weights
-wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt -P models/yolo/
-```
-
-## Usage
-
-### Start all servers (in separate terminals)
+Open **4 separate terminal windows** and run in order:
 
 **Terminal 1 — Storage Server:**
 ```bash
-python src/storage_server.py
+./scripts/run_java_streaming_local.sh storage
 ```
 
-**Terminal 2 — Processing Server:**
+**Terminal 2 — Processing Server (Spark):**
 ```bash
-python src/processing_server.py
+./scripts/run_java_streaming_local.sh processing
 ```
 
 **Terminal 3 — Receiver Server:**
 ```bash
-python src/receiver_server.py
+./scripts/run_java_streaming_local.sh receiver
 ```
 
-**Terminal 4 — Video Source (Simulator):**
+**Terminal 4 — Video Source (Test Frames):**
 ```bash
-python src/video_source.py
+./scripts/run_java_streaming_local.sh source
 ```
 
-### With Spark Streaming
+### View Results
+
+Detection results are saved to:
 ```bash
-spark-submit --master local[*] src/processing_server.py
+cat output/results/detections.json
 ```
+
+---
+
+## Alternative: Run with spark-submit
+
+For full Spark cluster integration:
+
+```bash
+# Build JAR
+cd spark/java/lab05-streaming
+mvn clean package
+
+# Run ProcessingServer with spark-submit
+spark-submit --class lab05.ProcessingServer \
+             --master local[*] \
+             target/lab05-streaming-1.0-SNAPSHOT.jar
+```
+
+---
 
 ## Configuration
 
-Edit `src/config.py` to modify server settings:
+Edit `spark/java/lab05-streaming/src/main/java/lab05/Config.java`:
 
-```python
-class Config:
-    # Server ports
-    RECEIVER_PORT = 6100
-    PROCESSING_PORT = 6200
-    STORAGE_PORT = 6300
+```java
+public class Config {
+    // Server ports
+    public static final int RECEIVER_PORT = 6100;
+    public static final int PROCESSING_PORT = 6200;
+    public static final int STORAGE_PORT = 6300;
     
-    # Spark settings
-    SPARK_BATCH_INTERVAL = 1  # seconds
+    // Spark settings
+    public static final String SPARK_MASTER = "local[*]";
+    public static final int SPARK_BATCH_INTERVAL = 1; // seconds
+    
+    // Detection
+    public static final double CONFIDENCE_THRESHOLD = 0.5;
+}
 ```
+
+---
 
 ## Data Formats
 
-### Frame Payload (JSON)
+### Frame Payload (JSON via TCP)
 ```json
 {
-  "frame_id": "uuid-string",
+  "frameId": "550e8400-e29b-41d4-a716-446655440000",
   "timestamp": "2026-05-30T10:30:00Z",
-  "data": "base64_encoded_image_data"
+  "frameNumber": 1,
+  "data": "base64_encoded_image_data",
+  "width": 640,
+  "height": 480
 }
 ```
 
 ### Detection Result (JSON)
 ```json
 {
-  "frame_id": "uuid-string",
-  "timestamp": "2026-05-30T10:30:00Z",
-  "person_count": 3,
-  "bounding_boxes": [
+  "frameId": "550e8400-e29b-41d4-a716-446655440000",
+  "timestamp": "2026-05-30T10:30:01Z",
+  "personCount": 3,
+  "boundingBoxes": [
     {"x": 100, "y": 150, "width": 50, "height": 120, "confidence": 0.95},
-    {"x": 250, "y": 180, "width": 45, "height": 110, "confidence": 0.89},
-    {"x": 400, "y": 160, "width": 55, "height": 125, "confidence": 0.92}
-  ]
+    {"x": 250, "y": 180, "width": 45, "height": 110, "confidence": 0.89}
+  ],
+  "processingTimeMs": 45.2
 }
 ```
+
+---
 
 ## Big Data Context
 
 This system demonstrates big data concepts through:
 
-1. **Distributed Processing**: Three independent servers communicating via network
-2. **Stream Processing**: Real-time frame processing with Spark Streaming
-3. **Scalability**: Architecture supports horizontal scaling
-4. **Fault Tolerance**: TCP connection handling with retry logic
+| Concept | Implementation |
+|---------|----------------|
+| **Distributed Processing** | Three independent servers communicating via network |
+| **Stream Processing** | Real-time frame processing with Spark Streaming |
+| **Micro-batch Architecture** | Configurable batch intervals for throughput |
+| **Scalability** | Architecture supports horizontal scaling |
+| **Fault Tolerance** | TCP connection retry logic |
+
+---
 
 ## Screenshots
 
 See `output/screenshots/` for execution screenshots.
+
+---
+
+## Python Alternative (Optional)
+
+A Python implementation is available in `src/lab05/` for reference:
+
+```bash
+pip install -r requirements.txt
+python -m lab05.storage_server
+python -m lab05.processing_server
+python -m lab05.receiver_server
+python -m lab05.video_source
+```
+
+---
 
 ## License
 
@@ -179,5 +310,6 @@ Educational use for DS200.Q21.2 course at UIT.
 
 ---
 
-**Author**: Student 23521143  
-**GitHub**: [paht2005](https://github.com/paht2005)
+**Author**: Nguyen Cong Phat (23521143)  
+**GitHub**: [paht2005](https://github.com/paht2005)  
+**Email**: 23521143@gm.uit.edu.vn
