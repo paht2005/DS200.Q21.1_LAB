@@ -21,7 +21,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spark.version>3.4.1</spark.version>
         <scala.binary.version>2.12</scala.binary.version>
-        <opencv.version>4.8.0-1.5.9</opencv.version>
         <gson.version>2.10.1</gson.version>
     </properties>
 
@@ -38,20 +37,6 @@
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-streaming_${scala.binary.version}</artifactId>
             <version>${spark.version}</version>
-        </dependency>
-
-        <!-- OpenCV via JavaCV for image processing -->
-        <dependency>
-            <groupId>org.bytedeco</groupId>
-            <artifactId>opencv-platform</artifactId>
-            <version>${opencv.version}</version>
-        </dependency>
-
-        <!-- JavaCV for easier OpenCV integration -->
-        <dependency>
-            <groupId>org.bytedeco</groupId>
-            <artifactId>javacv-platform</artifactId>
-            <version>1.5.9</version>
         </dependency>
 
         <!-- JSON processing -->

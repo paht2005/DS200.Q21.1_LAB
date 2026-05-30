@@ -1,0 +1,628 @@
+[
+  {
+    "frameId": "1088d651-447d-44a2-9025-061900828baf",
+    "timestamp": "2026-05-30T06:40:07.293891Z",
+    "originalTimestamp": "2026-05-30T06:40:06.122915Z",
+    "personCount": 0,
+    "boundingBoxes": [],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:40:07.313844"
+  },
+  {
+    "frameId": "be99c149-9df5-4176-85fb-b45e297b63cb",
+    "timestamp": "2026-05-30T06:40:08.131867Z",
+    "originalTimestamp": "2026-05-30T06:40:07.107264Z",
+    "personCount": 3,
+    "boundingBoxes": [
+      {
+        "x": 419,
+        "y": 221,
+        "width": 42,
+        "height": 153,
+        "confidence": 0.7299936585474611
+      },
+      {
+        "x": 50,
+        "y": 69,
+        "width": 52,
+        "height": 141,
+        "confidence": 0.936667260029836
+      },
+      {
+        "x": 436,
+        "y": 79,
+        "width": 70,
+        "height": 139,
+        "confidence": 0.8877768027713495
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:40:08.134254"
+  },
+  {
+    "frameId": "93dc6091-0346-499d-bc16-b56fc0559edd",
+    "timestamp": "2026-05-30T06:40:09.137407Z",
+    "originalTimestamp": "2026-05-30T06:40:08.113177Z",
+    "personCount": 2,
+    "boundingBoxes": [
+      {
+        "x": 400,
+        "y": 353,
+        "width": 45,
+        "height": 119,
+        "confidence": 0.8847588997460986
+      },
+      {
+        "x": 356,
+        "y": 339,
+        "width": 68,
+        "height": 137,
+        "confidence": 0.6878784492658865
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:40:09.138212"
+  },
+  {
+    "frameId": "84b0f491-e096-4c2d-866c-926cf540bc4b",
+    "timestamp": "2026-05-30T06:40:10.106999Z",
+    "originalTimestamp": "2026-05-30T06:40:09.116756Z",
+    "personCount": 2,
+    "boundingBoxes": [
+      {
+        "x": 548,
+        "y": 284,
+        "width": 57,
+        "height": 161,
+        "confidence": 0.9723602144903725
+      },
+      {
+        "x": 93,
+        "y": 297,
+        "width": 53,
+        "height": 102,
+        "confidence": 0.8929943979035547
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:40:10.107659"
+  },
+  {
+    "frameId": "00249982-bbbe-4cc0-98f2-274bfc5582ab",
+    "timestamp": "2026-05-30T06:40:11.098560Z",
+    "originalTimestamp": "2026-05-30T06:40:10.118917Z",
+    "personCount": 1,
+    "boundingBoxes": [
+      {
+        "x": 204,
+        "y": 337,
+        "width": 44,
+        "height": 170,
+        "confidence": 0.9131440601231344
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:40:11.099058"
+  },
+  {
+    "frameId": "ec4bb62d-3f67-469e-837b-e001c8caf674",
+    "timestamp": "2026-05-30T06:40:12.111121Z",
+    "originalTimestamp": "2026-05-30T06:40:11.120591Z",
+    "personCount": 4,
+    "boundingBoxes": [
+      {
+        "x": 242,
+        "y": 367,
+        "width": 48,
+        "height": 168,
+        "confidence": 0.9876047507254417
+      },
+      {
+        "x": 249,
+        "y": 58,
+        "width": 48,
+        "height": 174,
+        "confidence": 0.7923800235301568
+      },
+      {
+        "x": 159,
+        "y": 64,
+        "width": 48,
+        "height": 114,
+        "confidence": 0.7591444007415278
+      },
+      {
+        "x": 544,
+        "y": 50,
+        "width": 49,
+        "height": 101,
+        "confidence": 0.7364172634443461
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:40:12.111690"
+  },
+  {
+    "frameId": "2788ead9-c00d-4499-bcc8-1f5f8a2c3f99",
+    "timestamp": "2026-05-30T06:40:13.118316Z",
+    "originalTimestamp": "2026-05-30T06:40:12.125306Z",
+    "personCount": 5,
+    "boundingBoxes": [
+      {
+        "x": 159,
+        "y": 107,
+        "width": 41,
+        "height": 143,
+        "confidence": 0.7369303089198236
+      },
+      {
+        "x": 481,
+        "y": 65,
+        "width": 49,
+        "height": 113,
+        "confidence": 0.6546581707098011
+      },
+      {
+        "x": 501,
+        "y": 130,
+        "width": 41,
+        "height": 172,
+        "confidence": 0.7381012170652784
+      },
+      {
+        "x": 364,
+        "y": 345,
+        "width": 64,
+        "height": 110,
+        "confidence": 0.9395193430653788
+      },
+      {
+        "x": 361,
+        "y": 333,
+        "width": 47,
+        "height": 100,
+        "confidence": 0.8618129713063134
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:40:13.119497"
+  },
+  {
+    "frameId": "97c801ab-2e97-4a98-9c78-ae81985c55ca",
+    "timestamp": "2026-05-30T06:40:14.087203Z",
+    "originalTimestamp": "2026-05-30T06:40:13.130141Z",
+    "personCount": 4,
+    "boundingBoxes": [
+      {
+        "x": 493,
+        "y": 179,
+        "width": 61,
+        "height": 178,
+        "confidence": 0.6406783554609028
+      },
+      {
+        "x": 125,
+        "y": 337,
+        "width": 48,
+        "height": 166,
+        "confidence": 0.6203525413686671
+      },
+      {
+        "x": 181,
+        "y": 112,
+        "width": 66,
+        "height": 162,
+        "confidence": 0.6580072653548777
+      },
+      {
+        "x": 306,
+        "y": 244,
+        "width": 79,
+        "height": 105,
+        "confidence": 0.7834995914025376
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:40:14.088072"
+  },
+  {
+    "frameId": "e7b4930b-756a-4c11-b9ea-6febbada5610",
+    "timestamp": "2026-05-30T06:40:15.059655Z",
+    "originalTimestamp": "2026-05-30T06:40:14.135837Z",
+    "personCount": 1,
+    "boundingBoxes": [
+      {
+        "x": 215,
+        "y": 127,
+        "width": 77,
+        "height": 111,
+        "confidence": 0.7565105009372481
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:40:15.060340"
+  },
+  {
+    "frameId": "bfd2144b-7685-46b9-bb4b-f44b94e16bd5",
+    "timestamp": "2026-05-30T06:40:16.196473Z",
+    "originalTimestamp": "2026-05-30T06:40:15.140153Z",
+    "personCount": 2,
+    "boundingBoxes": [
+      {
+        "x": 233,
+        "y": 270,
+        "width": 52,
+        "height": 107,
+        "confidence": 0.9828039940197209
+      },
+      {
+        "x": 363,
+        "y": 313,
+        "width": 67,
+        "height": 101,
+        "confidence": 0.6608180297147108
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:40:16.197982"
+  },
+  {
+    "frameId": "93bfdf64-f61c-4b8e-91a2-732780db9ff6",
+    "timestamp": "2026-05-30T06:42:37.458524Z",
+    "originalTimestamp": "2026-05-30T06:42:36.617261Z",
+    "personCount": 3,
+    "boundingBoxes": [
+      {
+        "x": 297,
+        "y": 392,
+        "width": 67,
+        "height": 134,
+        "confidence": 0.8278920114999107
+      },
+      {
+        "x": 543,
+        "y": 240,
+        "width": 58,
+        "height": 178,
+        "confidence": 0.6673897985931483
+      },
+      {
+        "x": 217,
+        "y": 260,
+        "width": 72,
+        "height": 100,
+        "confidence": 0.671288913122733
+      }
+    ],
+    "processingTimeMs": 1.0,
+    "stored_at": "2026-05-30T13:42:37.468774"
+  },
+  {
+    "frameId": "bc1f1926-b4cc-46de-8f19-1c725d67a35d",
+    "timestamp": "2026-05-30T06:42:38.127544Z",
+    "originalTimestamp": "2026-05-30T06:42:37.610985Z",
+    "personCount": 1,
+    "boundingBoxes": [
+      {
+        "x": 265,
+        "y": 123,
+        "width": 48,
+        "height": 100,
+        "confidence": 0.6280008241955712
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:42:38.128202"
+  },
+  {
+    "frameId": "f74f6a29-d3c5-4178-9b90-46c5c9a3ff67",
+    "timestamp": "2026-05-30T06:42:39.085496Z",
+    "originalTimestamp": "2026-05-30T06:42:38.614671Z",
+    "personCount": 3,
+    "boundingBoxes": [
+      {
+        "x": 207,
+        "y": 69,
+        "width": 72,
+        "height": 144,
+        "confidence": 0.7494816467158362
+      },
+      {
+        "x": 294,
+        "y": 127,
+        "width": 54,
+        "height": 128,
+        "confidence": 0.7782164469770323
+      },
+      {
+        "x": 76,
+        "y": 326,
+        "width": 75,
+        "height": 174,
+        "confidence": 0.6038212437185996
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:42:39.087013"
+  },
+  {
+    "frameId": "c3bb4e74-ac96-495e-abc1-3cf9582c015f",
+    "timestamp": "2026-05-30T06:42:40.100301Z",
+    "originalTimestamp": "2026-05-30T06:42:39.616505Z",
+    "personCount": 1,
+    "boundingBoxes": [
+      {
+        "x": 66,
+        "y": 280,
+        "width": 73,
+        "height": 120,
+        "confidence": 0.8106209141548991
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:42:40.100872"
+  },
+  {
+    "frameId": "8923479b-40f1-4448-a3b5-3829c89d47b7",
+    "timestamp": "2026-05-30T06:42:41.061229Z",
+    "originalTimestamp": "2026-05-30T06:42:40.621099Z",
+    "personCount": 1,
+    "boundingBoxes": [
+      {
+        "x": 138,
+        "y": 235,
+        "width": 68,
+        "height": 159,
+        "confidence": 0.6753921453698624
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:42:41.061794"
+  },
+  {
+    "frameId": "f2f06c24-32cd-4f08-87cb-9ec8725f692c",
+    "timestamp": "2026-05-30T06:43:53.192520Z",
+    "originalTimestamp": "2026-05-30T06:43:51.875728Z",
+    "personCount": 4,
+    "boundingBoxes": [
+      {
+        "x": 541,
+        "y": 266,
+        "width": 62,
+        "height": 169,
+        "confidence": 0.932164059985787
+      },
+      {
+        "x": 138,
+        "y": 329,
+        "width": 60,
+        "height": 168,
+        "confidence": 0.9817689220399706
+      },
+      {
+        "x": 419,
+        "y": 52,
+        "width": 46,
+        "height": 161,
+        "confidence": 0.7962342325474177
+      },
+      {
+        "x": 294,
+        "y": 125,
+        "width": 78,
+        "height": 177,
+        "confidence": 0.979174915879386
+      }
+    ],
+    "processingTimeMs": 2.0,
+    "stored_at": "2026-05-30T13:43:53.198447"
+  },
+  {
+    "frameId": "29c0038d-f1fe-4478-a45e-05ca96f9289b",
+    "timestamp": "2026-05-30T06:43:54.093189Z",
+    "originalTimestamp": "2026-05-30T06:43:52.867033Z",
+    "personCount": 5,
+    "boundingBoxes": [
+      {
+        "x": 80,
+        "y": 357,
+        "width": 58,
+        "height": 168,
+        "confidence": 0.9082181835745554
+      },
+      {
+        "x": 448,
+        "y": 292,
+        "width": 43,
+        "height": 133,
+        "confidence": 0.6966152298504573
+      },
+      {
+        "x": 220,
+        "y": 230,
+        "width": 45,
+        "height": 142,
+        "confidence": 0.7453771210123847
+      },
+      {
+        "x": 237,
+        "y": 254,
+        "width": 43,
+        "height": 165,
+        "confidence": 0.6166987489272443
+      },
+      {
+        "x": 155,
+        "y": 127,
+        "width": 72,
+        "height": 166,
+        "confidence": 0.6456476461986962
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:43:54.093758"
+  },
+  {
+    "frameId": "7e1f65e0-178c-4355-b8e2-d2269f87ed22",
+    "timestamp": "2026-05-30T06:43:55.135658Z",
+    "originalTimestamp": "2026-05-30T06:43:53.870202Z",
+    "personCount": 3,
+    "boundingBoxes": [
+      {
+        "x": 547,
+        "y": 164,
+        "width": 69,
+        "height": 102,
+        "confidence": 0.6629526677574565
+      },
+      {
+        "x": 86,
+        "y": 393,
+        "width": 59,
+        "height": 143,
+        "confidence": 0.6354814806618343
+      },
+      {
+        "x": 359,
+        "y": 151,
+        "width": 52,
+        "height": 169,
+        "confidence": 0.875799775952663
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:43:55.136294"
+  },
+  {
+    "frameId": "f3ca6852-679c-4137-ac7f-9ecbf9540df8",
+    "timestamp": "2026-05-30T06:43:56.092385Z",
+    "originalTimestamp": "2026-05-30T06:43:54.871740Z",
+    "personCount": 0,
+    "boundingBoxes": [],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:43:56.092908"
+  },
+  {
+    "frameId": "ebab4d5f-1f00-42b8-9636-5b5c00416eb5",
+    "timestamp": "2026-05-30T06:43:57.063452Z",
+    "originalTimestamp": "2026-05-30T06:43:55.875759Z",
+    "personCount": 0,
+    "boundingBoxes": [],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:43:57.063885"
+  },
+  {
+    "frameId": "65e68a7b-8dc1-42f8-bd77-d40e7ad63aaa",
+    "timestamp": "2026-05-30T06:45:34.204439Z",
+    "originalTimestamp": "2026-05-30T06:45:33.286376Z",
+    "personCount": 4,
+    "boundingBoxes": [
+      {
+        "x": 181,
+        "y": 147,
+        "width": 61,
+        "height": 118,
+        "confidence": 0.9221749933392279
+      },
+      {
+        "x": 134,
+        "y": 291,
+        "width": 58,
+        "height": 157,
+        "confidence": 0.9446437534513606
+      },
+      {
+        "x": 90,
+        "y": 308,
+        "width": 40,
+        "height": 103,
+        "confidence": 0.8213419920170213
+      },
+      {
+        "x": 324,
+        "y": 182,
+        "width": 41,
+        "height": 102,
+        "confidence": 0.856368887995947
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:45:34.212882"
+  },
+  {
+    "frameId": "ad77cef7-657e-4ace-83bd-6133b4060361",
+    "timestamp": "2026-05-30T06:45:35.093694Z",
+    "originalTimestamp": "2026-05-30T06:45:34.279560Z",
+    "personCount": 4,
+    "boundingBoxes": [
+      {
+        "x": 118,
+        "y": 244,
+        "width": 73,
+        "height": 179,
+        "confidence": 0.6416034083606305
+      },
+      {
+        "x": 91,
+        "y": 252,
+        "width": 56,
+        "height": 135,
+        "confidence": 0.7291550335140498
+      },
+      {
+        "x": 527,
+        "y": 281,
+        "width": 46,
+        "height": 140,
+        "confidence": 0.6278652536255521
+      },
+      {
+        "x": 263,
+        "y": 94,
+        "width": 77,
+        "height": 143,
+        "confidence": 0.8053631003680913
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:45:35.094779"
+  },
+  {
+    "frameId": "6db8a8d1-cefd-4437-be76-7b359e4e9664",
+    "timestamp": "2026-05-30T06:45:36.092109Z",
+    "originalTimestamp": "2026-05-30T06:45:35.281940Z",
+    "personCount": 4,
+    "boundingBoxes": [
+      {
+        "x": 156,
+        "y": 317,
+        "width": 67,
+        "height": 169,
+        "confidence": 0.6941512356562496
+      },
+      {
+        "x": 169,
+        "y": 134,
+        "width": 79,
+        "height": 142,
+        "confidence": 0.7216374598566552
+      },
+      {
+        "x": 335,
+        "y": 234,
+        "width": 78,
+        "height": 124,
+        "confidence": 0.8863297271361944
+      },
+      {
+        "x": 274,
+        "y": 312,
+        "width": 61,
+        "height": 147,
+        "confidence": 0.8428348029479551
+      }
+    ],
+    "processingTimeMs": 0.0,
+    "stored_at": "2026-05-30T13:45:36.092955"
+  }
+]
